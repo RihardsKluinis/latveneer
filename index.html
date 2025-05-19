@@ -142,31 +142,35 @@
 							<p>For the fastest response- give us a call. </p>
 							<div class="split style1">
 								<section>
-									<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-									  <input type="hidden" name="form-name" value="contact" />
-									  <p hidden>
-										<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-									  </p>
-								  
-									  <div class="fields">
-										<div class="field half">
-										  <label for="name">Name</label>
-										  <input type="text" name="name" id="name" required />
-										</div>
-										<div class="field half">
-										  <label for="email">Email</label>
-										  <input type="email" name="email" id="email" required />
-										</div>
-										<div class="field">
-										  <label for="message">Message</label>
-										  <textarea name="message" id="message" rows="5" required></textarea>
-										</div>
-									  </div>
-								  
-									  <ul class="actions">
-										<li><button type="submit" class="button submit">Send Message</button></li>
-									  </ul>
-									</form>
+									<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+										<input type="hidden" name="form-name" value="contact" />
+										<p hidden>
+										  <label>Don’t fill this out: <input name="bot-field" /></label>
+										</p>
+									  
+										<!-- your fields here -->
+									  
+										<button type="submit">Send Message</button>
+									  </form>
+									  
+									  <p id="success-msg" style="display:none; color:green;">Thank you! Your message has been sent.</p>
+									  
+									  <script>
+										function handleSubmit(e) {
+										  e.preventDefault();
+										  const form = e.target;
+										  fetch("/", {
+											method: "POST",
+											headers: { "Content-Type": "application/x-www-form-urlencoded" },
+											body: new URLSearchParams(new FormData(form)).toString()
+										  })
+										  .then(() => {
+											form.style.display = 'none';
+											document.getElementById("success-msg").style.display = 'block';
+										  })
+										  .catch((error) => alert(error));
+										}
+									  </script>
 								  </section>
 								  
 								<section>
