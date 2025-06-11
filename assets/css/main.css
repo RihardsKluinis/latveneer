@@ -115,7 +115,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(6, 1, 1, 0.693);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -1835,7 +1835,7 @@ input, select, textarea {
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #0b0404e2 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1965,7 +1965,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color: #0d0404e2 !important;
 			}
 
 				input[type="submit"]:hover:active:after,
