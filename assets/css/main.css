@@ -3907,3 +3907,7 @@ input, select, textarea {
 			}
 
 		}
+		.highlight {
+			color: #252323c8;
+			font-weight: bold;
+		  }
