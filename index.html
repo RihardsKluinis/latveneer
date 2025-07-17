@@ -20,6 +20,16 @@
 	<noscript><link href="assets/css/noscript.css" rel="stylesheet"/></noscript>
 </head>
 <body class="is-preload">
+	<header id="header">
+
+		<nav>
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="procurement.html" >Procurement</a></li>
+				<li><a href="product.html" >Product</a></li>
+			</ul>
+		</nav>
+	</header>
 	<!-- Sidebar -->
 	<section id="sidebar" style="background-color: #f6e0bd; color: rgba(49, 71, 59, 1);">
 		<div class="inner" style="position: relative; z-index: 1;">
@@ -240,6 +250,28 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-				<script src="assets/js/i18n.js"></script></body>
-				</html>
+				<script src="assets/js/i18n.js"></script>
+			
+				<script>
+					function toggleMenus() {
+						const sidebar = document.getElementById('sidebar');
+						const mobileHeader = document.getElementById('header');
+					
+						if (window.innerWidth <= 736) {
+						sidebar.style.display = 'none';
+						mobileHeader.style.display = 'flex';
+						} else {
+						sidebar.style.display = 'block';
+						mobileHeader.style.display = 'none';
+						}
+					}
+					
+					// Run on page load
+					toggleMenus();
+					
+					// Run on window resize
+					window.addEventListener('resize', toggleMenus);
+					</script>
+			</body>
+</html>
 				
