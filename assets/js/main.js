@@ -70,13 +70,19 @@
 				})
 				.each(function() {
 
-					var	$this = $(this),
-						id = $this.attr('href'),
-						$section = $(id);
-
+					var $this = $(this),
+						id = $this.attr('href');
+				
+					// Skip non-anchor links (external pages like "/product")
+					if (!id || id.charAt(0) !== '#')
+						return;
+				
+					var $section = $(id);
+				
 					// No section for this link? Bail.
-						if ($section.length < 1)
-							return;
+					if ($section.length < 1)
+						return;
+				
 
 					// Scrollex.
 						$section.scrollex({
