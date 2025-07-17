@@ -3911,3 +3911,53 @@ input, select, textarea {
 			color: #252323c8;
 			font-weight: bold;
 		  }
+
+/* Desktop default background image */
+.intro-box {
+	background: rgba(255, 255, 255, 0.7);
+	color: #252323c8;
+	padding: 2em;
+	border-radius: 15px;
+	display: inline-block;
+	max-width: 90%;
+  }
+  
+  @media screen and (max-width: 736px) {
+	.intro-box {
+	  background-color: rgba(49, 71, 59, 1); /* dark green */
+	  color: #d9ab20; /* yellow text */
+	  border-radius: 0;
+	  padding: 2em;
+	}
+  
+	.intro-box h1,
+	.intro-box p,
+	.intro-box a {
+	  color: #d9ab20 !important;
+	}
+  
+	.intro-box a.button {
+	  border-color: #d9ab20 !important;
+	}
+  }
+  .homescreenBackround {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+
+	background-image: url('images/berzi_galvena.jpg'); /* ✅ correct relative path */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 736px) {
+	.homescreenBackround {
+		background-image: none;
+		background-color: rgba(49, 71, 59, 1);
+	}
+}
+  
