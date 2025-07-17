@@ -1,0 +1,19 @@
+{
+    "home": {
+      "title": "LatVeneer",
+      "subtitle": "Jauna finiera rūpnīca te pat Latvijā",
+      "learnMore": "Uzzināt vairāk"
+    },
+    "menu": {
+      "product": "Produktu piedāvājums",
+      "procurement": "Apaļkoku iepirkšana",
+      "who": "Kas mēs esam",
+      "what": "Ko mēs darām",
+      "contact": "Sazināties ar mums"
+    },
+    "liste": {
+        "who": "Mūsu Rūpnīca",
+        "who_Description": "Šobrīd mēs piedāvājam bērza finieri no divām ražošanas līnijām — 1300 mm un 2600 mm garumā. Galvenie izmēri: 1300x1300; 1300x2600; 2600x1300. Tajā pašā laikā mēs strādājam pie divu jaunu ražošanas līniju uzstādīšanas, tostarp 1600 mm."
+
+      }
+  }
