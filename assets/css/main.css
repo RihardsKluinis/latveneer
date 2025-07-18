@@ -3436,6 +3436,12 @@ input, select, textarea {
 			#header {
 				padding: 1em 2em;
 			}
+			#header > nav > ul > li {
+				display: inline-block;
+				margin-left: 1.75em;
+				padding-top: 0em;
+				vertical-align: middle;
+			}
 
 		}
 
