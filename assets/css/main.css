@@ -3372,7 +3372,11 @@ input, select, textarea {
 		display: flex;
 		background-color: #273e1c;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding-top: 1.5em;
+		padding-left: 2em;
+		padding-right: 2em;
+		padding-bottom: 0.25em;
+		
 	}
 
 		#header > .title {
@@ -3961,3 +3965,13 @@ input, select, textarea {
 		background-color: #273e1c;
 	}
 }
+body.index #header {
+	background-color: #f6e0bd; /* beige or whatever you want */
+  }
+  
+  /* On index page, but mobile: go back to green */
+  @media screen and (max-width: 768px) {
+	body.index #header {
+	  background-color: #31473b !important; /* force green on mobile */
+	}
+  }
