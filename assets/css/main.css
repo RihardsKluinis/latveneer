@@ -2997,6 +2997,8 @@ input, select, textarea {
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3372,7 +3374,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #273e1c;
 		cursor: default;
-		padding-top: 1.5em;
+		padding-top: 0.25em;
 		padding-left: 2em;
 		padding-right: 2em;
 		padding-bottom: 0.25em;
@@ -3403,7 +3405,7 @@ input, select, textarea {
 				#header > nav > ul > li {
 					display: inline-block;
 					margin-left: 1.75em;
-					padding: 0;
+					padding-top: 1.5em;
 					vertical-align: middle;
 				}
 
