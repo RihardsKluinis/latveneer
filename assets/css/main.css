@@ -2997,6 +2997,8 @@ input, select, textarea {
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3372,7 +3374,11 @@ input, select, textarea {
 		display: flex;
 		background-color: #273e1c;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding-top: 0.25em;
+		padding-left: 5%;
+		padding-right: 2em;
+		padding-bottom: 0.25em;
+		
 	}
 
 		#header > .title {
@@ -3399,7 +3405,7 @@ input, select, textarea {
 				#header > nav > ul > li {
 					display: inline-block;
 					margin-left: 1.75em;
-					padding: 0;
+					padding-top: 1.5em;
 					vertical-align: middle;
 				}
 
@@ -3429,6 +3435,12 @@ input, select, textarea {
 
 			#header {
 				padding: 1em 2em;
+			}
+			#header > nav > ul > li {
+				display: inline-block;
+				margin-left: 1.75em;
+				padding-top: 0em;
+				vertical-align: middle;
 			}
 
 		}
@@ -3961,3 +3973,13 @@ input, select, textarea {
 		background-color: #273e1c;
 	}
 }
+body.index #header {
+	background-color: #f6e0bd; /* beige or whatever you want */
+  }
+  
+  /* On index page, but mobile: go back to green */
+  @media screen and (max-width: 768px) {
+	body.index #header {
+	  background-color: #31473b !important; /* force green on mobile */
+	}
+  }
