@@ -1,133 +1,173 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Procurement</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="images/favicon.ico">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	
-	<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-	<script>
-	  async function loadPriceTable() {
-		try {
-		  const response = await fetch('price_table.xlsx');
-		  if (!response.ok) throw new Error("Failed to fetch Excel file");
-	
-		  const data = await response.arrayBuffer();
-		  const workbook = XLSX.read(data, { type: 'array' });
-	
-		  const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
-		  const rows = XLSX.utils.sheet_to_json(firstSheet, { header: 1, defval: "" });
-	
-		  console.log("Excel rows loaded:", rows);
-	
-		  const tbody = document.querySelector('#price-table tbody');
-		  if (rows.length <= 1) {
-			const tr = document.createElement('tr');
-			const td = document.createElement('td');
-			td.colSpan = 5;
-			td.textContent = "No data found in Excel file.";
-			tr.appendChild(td);
-			tbody.appendChild(tr);
-			return;
-		  }
-	
-		  rows.slice(1).forEach(row => {
-			const tr = document.createElement('tr');
-			row.forEach(cell => {
-			  const td = document.createElement('td');
-			  td.textContent = cell;
-			  tr.appendChild(td);
-			});
-			tbody.appendChild(tr);
-		  });
-	
-		} catch (err) {
-		  console.error("Error loading Excel table:", err);
-		  const tbody = document.querySelector('#price-table tbody');
-		  const tr = document.createElement('tr');
-		  const td = document.createElement('td');
-		  td.colSpan = 5;
-		  td.textContent = "Error loading price table.";
-		  tr.appendChild(td);
-		  tbody.appendChild(tr);
-		}
-	  }
-	
-	  loadPriceTable();
-	</script>
+  <head>
+    <title>Procurement</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
 
-	<body class="is-preload">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script>
+    async function loadPriceTable() {
+      try {
+        const response = await fetch('price_table.xlsx');
+        if (!response.ok) throw new Error('Failed to fetch Excel file');
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html">
-					<img 
-					  src="images/logoYellow.png" 
-					  alt="LatVeneer Logo" 
-					  style="width: 8em; height: auto; object-fit: contain;"
-					/>
-				  </a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="procurement.html" class="active">Procurement</a></li>
-						<li><a href="product.html" >Product</a></li>
-					</ul>
-				</nav>
-			</header>
+        const data = await response.arrayBuffer();
+        const workbook = XLSX.read(data, { type: 'array' });
 
-		<!-- Wrapper -->
-		<div id="wrapper">
-			<!-- Main -->
-			<section class="wrapper style1 fade-up">
-				<div class="inner">
-				  <div class="row aln-top" style="align-items: center; flex-wrap: wrap;">
-			  
-					<!-- Text Column (left) -->
-					<div class="col-6 col-12-medium">
-						<h1 class="major">Log Procurement</h1>
-			  
-						<p><span class="highlight">We purchase birch roundwood.</span></p>
-				
-						<p><span class="highlight">Volume and diameter group measurement:</span><br />
-						  Diameter groups for veneer logs are determined based on the measured end diameter under bark using the TIMBETER photo processing technology in accordance with LVS 82:2003.
-						</p>
-						<p>Hand meansurement according to under bark diameter can be used. For TARA coeficent measurement is applied.</p>
-				
-						<p><span class="highlight">Birch logs</span></p>
-						<p><span class="highlight">Payable lengths:</span><br />
-						  - 2.70 m <span style="font-style: italic;">(delivered length: 2.80 m)</span><br />
-						  - 3.20 m <span style="font-style: italic;">(delivered length: 3.30 m)</span><br />
-						  - 3.30 m <span style="font-style: italic;">(delivered length: 3.40 m)</span>
-						</p>
-				
-						<p><span class="highlight">Log measurement time:</span> every working day from 08:00 to 18:00</p>
-  
-			  
-					 <!--Atkomentēet kad cenu lapa bus aktuala  <p><span class="highlight">PRICES FROM 01.06.2025</span></p>  -->
-					</div>
-			  
-					<!-- Image Column (right) -->
-					<div class="col-6 col-12-medium" style="display: flex; align-items: center; justify-content: center;">
-					  <span class="image fit" style="margin-top: 0;">
-						<img src="images/birch_logs.avif" alt="Log Procurement Image" />
-					  </span>
-					</div>
-			  
-				  </div>
-				</div>
-			  </section>
-			  
-			  <!-- Cenradis
+        const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+        const rows = XLSX.utils.sheet_to_json(firstSheet, {
+          header: 1,
+          defval: '',
+        });
+
+        console.log('Excel rows loaded:', rows);
+
+        const tbody = document.querySelector('#price-table tbody');
+        if (rows.length <= 1) {
+          const tr = document.createElement('tr');
+          const td = document.createElement('td');
+          td.colSpan = 5;
+          td.textContent = 'No data found in Excel file.';
+          tr.appendChild(td);
+          tbody.appendChild(tr);
+          return;
+        }
+
+        rows.slice(1).forEach((row) => {
+          const tr = document.createElement('tr');
+          row.forEach((cell) => {
+            const td = document.createElement('td');
+            td.textContent = cell;
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+      } catch (err) {
+        console.error('Error loading Excel table:', err);
+        const tbody = document.querySelector('#price-table tbody');
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.colSpan = 5;
+        td.textContent = 'Error loading price table.';
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+      }
+    }
+
+    loadPriceTable();
+  </script>
+
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html">
+        <img
+          src="images/logoYellow.png"
+          alt="LatVeneer Logo"
+          style="width: 8em; height: auto; object-fit: contain"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="procurement.html" class="active">Procurement</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section class="wrapper style1 fade-up">
+        <div class="inner">
+          <div class="row aln-top" style="align-items: center; flex-wrap: wrap">
+            <!-- Text Column (left) -->
+            <div class="col-6 col-12-medium">
+              <h1 class="major">Log Procurement</h1>
+
+              <p><span class="highlight">We purchase birch roundwood.</span></p>
+
+              <p>
+                <span class="highlight"
+                  >Volume and diameter group measurement:</span
+                ><br />
+                Diameter groups for veneer logs are determined based on the
+                measured end diameter under bark using the TIMBETER photo
+                processing technology in accordance with LVS 82:2003.
+              </p>
+              <p>
+                Hand meansurement according to under bark diameter can be used.
+                For TARA coeficent measurement is applied.
+              </p>
+
+              <p><span class="highlight">Birch logs</span></p>
+              <p>
+                <span class="highlight">Payable lengths:</span><br />
+                - 2.70 m
+                <span style="font-style: italic"
+                  >(delivered length: 2.80 m)</span
+                ><br />
+                - 3.20 m
+                <span style="font-style: italic"
+                  >(delivered length: 3.30 m)</span
+                ><br />
+                - 3.30 m
+                <span style="font-style: italic"
+                  >(delivered length: 3.40 m)</span
+                >
+              </p>
+
+              <p>
+                <span class="highlight">Log measurement time:</span> every
+                working day from 08:00 to 18:00
+              </p>
+
+              <!-- New contact section -->
+              <p>
+                <span class="highlight">Contact With:</span><br />
+                Roberts Dai<br />
+                <a href="mailto:roberts@latveneer.lv">roberts@latveneer.lv</a
+                ><br />
+                +371 29813958
+              </p>
+
+              <!--Atkomentēet kad cenu lapa bus aktuala  <p><span class="highlight">PRICES FROM 01.06.2025</span></p>  -->
+            </div>
+
+            <!-- Image Column (right) -->
+            <div
+              class="col-6 col-12-medium"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span class="image fit" style="margin-top: 0">
+                <img src="images/birch_logs.avif" alt="Log Procurement Image" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cenradis
 			  <section class="wrapper style1 fade-up">
 				<div class="inner">
 				  <h2 class="major">Price Table</h2>
@@ -151,30 +191,25 @@
 				</div>
 			  </section>
 			  -->
-			  
-			  
-		  </div>
-		  
+    </div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; LatVeneer. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; LatVeneer. All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/i18n.js"></script>
-
-	</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/i18n.js"></script>
+  </body>
 </html>
