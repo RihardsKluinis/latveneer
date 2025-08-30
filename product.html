@@ -56,37 +56,22 @@
                 1.0-3.0mm available. The veneer is available in ABCD and E grade
                 packs.
                 <br /><br />
-                <span class="highlight"
-                  >To place an order or if you have any questions, please
-                  contact our sales manager:</span
-                ><br />
-
-                <!-- New contact info -->
+                <span class="highlight">
+                  To place an order or if you have any questions, please
+                  contact our sales manager:
+                </span>
+                <br />
                 Nora Ziedkalna<br />
-                <a href="mailto:nora.ziedkalna@latveneer.lv"
-                  >nora.ziedkalna@latveneer.lv</a
-                ><br />
+                <a href="mailto:nora.ziedkalna@latveneer.lv">
+                  nora.ziedkalna@latveneer.lv
+                </a><br />
                 +371 28298028
               </p>
             </div>
-
-            <!-- Image Column (right) -->
-            <div
-              class="col-6 col-12-medium"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <span class="image fit" style="margin-top: 0">
-                <img src="images/img09.webp" alt="Our Product Offer" />
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+    
+            <!-- Image Column (right) --> <div class="col-6 col-12-medium" style=" display: flex; align-items: center; justify-content: center; " > <span class="image fit" style="margin-top: 0"> <img src="images/img09.webp" alt="Our Product Offer" /> </span> </div> </div> </div> </section>
     </div>
+    
 
     <!-- Footer -->
     <footer id="footer" class="wrapper alt">
@@ -105,5 +90,32 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".carousel-images img");
+        const prevBtn = document.querySelector(".carousel-btn.prev");
+        const nextBtn = document.querySelector(".carousel-btn.next");
+    
+        let currentIndex = 0;
+    
+        function showImage(index) {
+          images.forEach((img, i) => {
+            img.classList.toggle("active", i === index);
+          });
+        }
+    
+        prevBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        });
+    
+        nextBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        });
+      });
+    </script>
+    
+    
   </body>
 </html>

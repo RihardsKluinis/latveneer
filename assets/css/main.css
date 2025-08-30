@@ -3368,18 +3368,23 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		background-color: #273e1c;
-		cursor: default;
-		padding-top: 0.25em;
-		padding-left: 5%;
-		padding-right: 2em;
-		padding-bottom: 0.25em;
-		
-	}
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    background-color: #273e1c;
+    cursor: default;
+    padding-top: 0.25em;
+    padding-left: 5%;
+    padding-right: 2em;
+    padding-bottom: 0.25em;
+
+    /* make sticky */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 
 		#header > .title {
 			border: 0;
@@ -3983,3 +3988,5 @@ body.index #header {
 	  background-color: #31473b !important; /* force green on mobile */
 	}
   }
+
+  
