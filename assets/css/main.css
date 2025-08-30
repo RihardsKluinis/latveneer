@@ -3383,7 +3383,22 @@ input, select, textarea {
     position: sticky;
     top: 0;
     z-index: 1000;
+	transition: background-color 1s ease;
 }
+#header.light {
+	background-color: #f6e0bd; /* bright */
+  }
+  
+  #header.light nav a {
+	color: #273e1c; /* darker text on light bg */
+  }
+  
+  #header.light nav a.active {
+	color: #273e1c; /* ensure active link also visible */
+  }
+  #header img {
+	transition: opacity 1s ease;
+  }
 
 
 		#header > .title {

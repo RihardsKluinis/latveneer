@@ -37,26 +37,25 @@
     /></noscript>
   </head>
   <body class="is-preload">
-    <header id="header" style="background-color: #f6e0bd">
+    <header id="header" class="light">
       <a href="index.html">
         <img
           src="images/FinalColour.png"
           alt="LatVeneer Logo"
+          id="header-logo"
           style="width: 8em; height: auto; object-fit: contain"
         />
       </a>
       <nav>
         <ul>
-          <li>
-            <a href="index.html" class="active" style="color: #273e1c">Home</a>
-          </li>
-          <li>
-            <a href="procurement.html" style="color: #273e1c80">Procurement</a>
-          </li>
-          <li><a href="product.html" style="color: #273e1c80">Product</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="procurement.html">Procurement</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="#three" class="scrolly">Contacts</a></li>
         </ul>
       </nav>
     </header>
+    
     <!-- Sidebar 
 	<section id="sidebar" style="background-color: #f6e0bd; color: rgba(49, 71, 59, 1);">
 		<div class="inner" style="position: relative; z-index: 1;">
@@ -372,5 +371,38 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script>
+      document.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        const logo = document.getElementById("header-logo");
+    
+        if (window.scrollY > 50) {
+          // Switch to dark mode
+          header.classList.remove("light");
+          // Fade logo swap
+          if (logo.src.indexOf("FinalColour.png") !== -1) {
+            logo.style.opacity = 0;
+            setTimeout(() => {
+              logo.src = "images/logoYellow.png";
+              logo.style.opacity = 1;
+            }, 500); // half of 1s transition for smooth swap
+          }
+        } else {
+          // Back to light mode
+          header.classList.add("light");
+          if (logo.src.indexOf("logoYellow.png") !== -1) {
+            logo.style.opacity = 0;
+            setTimeout(() => {
+              logo.src = "images/FinalColour.png";
+              logo.style.opacity = 1;
+            }, 500);
+          }
+        }
+      });
+    </script>
+    
   </body>
 </html>
