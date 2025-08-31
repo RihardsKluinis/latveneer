@@ -1866,7 +1866,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
 			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
 			transition: opacity 0.2s ease, transform 0.2s ease;
-			background: #ffffff;
+
 			border-radius: 3em;
 			content: '';
 			height: 100%;
@@ -3020,10 +3020,10 @@ input, select, textarea {
 			}
 
 			.spotlights > section > .image:before {
-				-moz-transition: opacity 1s ease;
-				-webkit-transition: opacity 1s ease;
-				-ms-transition: opacity 1s ease;
-				transition: opacity 1s ease;
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
 				background: rgba(60, 80, 36, 0.9);
 				content: '';
 				display: block;
@@ -3058,10 +3058,10 @@ input, select, textarea {
 				-webkit-transform: translateX(0) translateY(0);
 				-ms-transform: translateX(0) translateY(0);
 				transform: translateX(0) translateY(0);
-				-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-				-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-				-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-				transition: opacity 1s ease, transform 1s ease;
+				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+				-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+				-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+				transition: opacity 0.5s ease, transform 0.5s ease;
 				opacity: 1;
 			}
 
@@ -3315,10 +3315,10 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
+			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+			transition: opacity 0.5s ease, transform 0.5s ease;
 			opacity: 1.0;
 		}
 
@@ -3336,10 +3336,10 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
+			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+			transition: opacity 0.5s ease, transform 0.5s ease;
 			opacity: 1.0;
 		}
 
@@ -3353,10 +3353,10 @@ input, select, textarea {
 		}
 
 		.wrapper.fade > .inner {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
 			opacity: 1.0;
 		}
 
@@ -3383,7 +3383,7 @@ input, select, textarea {
     position: sticky;
     top: 0;
     z-index: 1000;
-	transition: background-color 1s ease;
+	transition: background-color 0.5s ease;
 }
 #header.light {
 	background-color: #f6e0bd; /* bright */
@@ -3397,7 +3397,7 @@ input, select, textarea {
 	color: #273e1c; /* ensure active link also visible */
   }
   #header img {
-	transition: opacity 1s ease;
+	transition: opacity 0.5s ease;
   }
 
 
@@ -3424,13 +3424,13 @@ input, select, textarea {
 
 				#header > nav > ul > li {
 					display: inline-block;
-					margin-left: 1.75em;
+					margin-left: 1.15em;
 					padding-top: 1.5em;
 					vertical-align: middle;
 				}
 
 					#header > nav > ul > li:first-child {
-						margin-left: 0;
+						margin-left: 1.15em;
 					}
 
 					#header > nav > ul > li a {
@@ -3458,7 +3458,7 @@ input, select, textarea {
 			}
 			#header > nav > ul > li {
 				display: inline-block;
-				margin-left: 1.75em;
+				margin-left: 1.15em;
 				padding-top: 0em;
 				vertical-align: middle;
 			}
@@ -3474,7 +3474,7 @@ input, select, textarea {
 			}
 
 				#header .title {
-					font-size: 1.25em;
+					font-size: 1.15em;
 					padding: 1em 0;
 				}
 
@@ -3484,7 +3484,7 @@ input, select, textarea {
 				}
 
 					#header > nav > ul > li {
-						margin-left: 1.5em;
+						margin-left: 1.15em;
 					}
 
 						#header > nav > ul > li a {
@@ -3586,10 +3586,10 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
 			min-height: 100%;
 			opacity: 1;
 			width: 100%;
@@ -4004,4 +4004,108 @@ body.index #header {
 	}
   }
 
+
+
+
+
+  
+  /* Hide hamburger by default */
+ /* Header layout */
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /* logo left, menu button right */
+	background-color: #273e1c;
+	padding: 0.25em 1em;
+  }
+  
+  /* Hamburger button */
+  #menu-toggle {
+	display: none;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #d9ab20 !important;
+	margin-left: auto;
+	padding-left:1em;
+	padding-right:0.5em;
+	border: 0px !important;
+	transition: color 0.5s ease
+  }
+  
+  /* Remove focus/outline */
+  #menu-toggle:focus {
+	outline: none;
+  }
+  #header.light #menu-toggle {
+	color: #273e1c !important;; /* dark burger on bright background */
+  }
+  
+  /* Mobile menu */
+  @media (max-width: 768px) {
+	#menu-toggle {
+	  display: block;
+	}
+  
+	/* Dropdown menu */
+	#nav-menu {
+	  overflow: hidden;
+	  max-height: 0;                     
+	  background: #273e1c;                /* dark background by default */
+	  position: absolute;
+	  top: 100%;
+	  right: 0;
+	  width: 100%;
+	  text-align: right;
+  
+	  /* Smooth transitions */
+	  transition:
+		max-height 0.5s ease,
+		background-color 0.5s ease;   /* background fades */
+	}
+  
+	#nav-menu.active {
+	  max-height: 500px; /* enough space for all items */
+	}
+  
+	#nav-menu ul {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 0;
+	  margin: 0;
+	  padding: 1rem;
+	}
+  
+	#nav-menu li {
+	  margin: 0.5rem 0;
+	}
+  
+	#nav-menu a {
+	  color: #fff; /* default dark mode links */
+	  font-size: 1.2rem;
+	  padding: 0.75rem 0;
+	  display: block;
+	  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  
+	  /* Smooth transition for text/border color */
+	  transition: color 0.5s ease, border-color 0.5s ease;
+	}
+  
+	#nav-menu a:last-child {
+	  border-bottom: none;
+	}
+  
+	/* Light variant (when header has .light) */
+	#header.light #nav-menu {
+	  background: #f6e0bd; /* bright background */
+	}
+  
+	#header.light #nav-menu a {
+	  color: #273e1c; /* dark text */
+	  border-color: rgba(39, 62, 28, 0.2);
+	}
+  }
+  
+  
   

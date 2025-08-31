@@ -82,12 +82,13 @@
           style="width: 8em; height: auto; object-fit: contain"
         />
       </a>
-      <nav>
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="nav-menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="procurement.html" class="active">Procurement</a></li>
           <li><a href="product.html">Product</a></li>
-          <li><a href="index.html#three" class="scrolly">Contacts</a></li>
+          <li><a href="index.html#Contacts" class="scrolly">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -215,5 +216,13 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/i18n.js"></script>
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

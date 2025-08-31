@@ -46,12 +46,14 @@
           style="width: 8em; height: auto; object-fit: contain"
         />
       </a>
-      <nav>
+
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="nav-menu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="procurement.html">Procurement</a></li>
           <li><a href="product.html">Product</a></li>
-          <li><a href="#three" class="scrolly">Contacts</a></li>
+          <li><a href="#Contacts" class="scrolly">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -256,7 +258,7 @@
 					</div>
 				</section>
 				Two -->
-      <section class="wrapper style1 fade-up" id="three">
+      <section class="wrapper style1 fade-up" id="Contacts">
         <div class="inner" style="position: relative; z-index: 1">
           <h2 data-i18n="menu.contact">Get in touch</h2>
           <p>For the fastest response- give us a call.</p>
@@ -403,6 +405,15 @@
         }
       });
     </script>
-    
+
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+
   </body>
 </html>
