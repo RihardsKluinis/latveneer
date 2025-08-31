@@ -31,6 +31,7 @@
     />
 
     <meta property="og:url" content="https://latveneer.lv" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <link href="assets/css/main.css" rel="stylesheet" />
     <noscript
       ><link href="assets/css/noscript.css" rel="stylesheet"
@@ -54,7 +55,9 @@
           <li><a href="procurement.html">Procurement</a></li>
           <li><a href="product.html">Product</a></li>
           <li><a href="#Contacts" class="scrolly">Contacts</a></li>
+          <li><a href="#company-info" class="scrolly">Company info</a></li>
         </ul>
+        
       </nav>
     </header>
     
@@ -355,6 +358,35 @@
           </div>
         </div>
       </section>
+
+      <!-- Divider -->
+      <section class="wrapper">
+        <div class="inner">
+          <div class="animated-divider"></div>
+        </div>
+      </section>
+
+      <!-- Company Info Section -->
+      <section id="company-info" class="wrapper style1 fade-up">
+        <div class="inner">
+          <h2>Company Information</h2>
+          <p>
+            <strong>SIA LatVeneer</strong><br />
+            Reg. No. 40203561748<br />
+            Ausekļa iela 1, Jēkabpils, LV-5201<br />
+            <a href="mailto:info@latveneer.lv">info@latveneer.lv</a><br /><br />
+      
+            <strong>AS Citadele</strong><br />
+            LV20PARX0032329260001<br /><br />
+      
+            <strong>BluOr Bank</strong><br />
+            LV28CBBR112B47250001000
+          </p>
+        </div>
+      </section>
+
+
+
     </div>
     <!-- Footer -->
     <footer class="wrapper style1-alt" id="footer">
@@ -405,6 +437,7 @@
         }
       });
     </script>
+    
 
     <script>
       const toggleBtn = document.getElementById("menu-toggle");
@@ -412,6 +445,28 @@
 
       toggleBtn.addEventListener("click", () => {
         navMenu.classList.toggle("active");
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const divider = document.querySelector(".animated-divider");
+
+        if (divider) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  divider.classList.add("visible");
+                  observer.unobserve(divider); // run only once
+                }
+              });
+            },
+            { threshold: 0.3 } // triggers when ~30% visible
+          );
+
+          observer.observe(divider);
+        }
       });
     </script>
 

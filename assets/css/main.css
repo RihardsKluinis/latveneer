@@ -162,7 +162,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #333232;
 		font-weight: bold;
 	}
 
@@ -4108,4 +4108,21 @@ body.index #header {
   }
   
   
+  .animated-divider {
+	height: 2px;
+	width: 0; /* starts hidden */
+	background-color: #273e1c; /* dark green (matches header) */
+	margin: 2rem 0;
+	transition: width 1s ease;
+  }
+  
+  /* Active state when scrolled into view */
+  .animated-divider.visible {
+	width: 100%; /* grows to full width */
+  }
+
+  section {
+	scroll-margin-top: 500px; /* adjust to your header height */
+  }
+
   
