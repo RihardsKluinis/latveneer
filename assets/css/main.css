@@ -4122,7 +4122,7 @@ body.index #header {
   }
 
   section {
-	scroll-margin-top: 500px; /* adjust to your header height */
+	scroll-margin-top: 100px; /* adjust to your header height */
   }
 
   
