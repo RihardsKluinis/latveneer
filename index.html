@@ -31,7 +31,7 @@
     />
 
     <meta property="og:url" content="https://latveneer.lv" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
     <link href="assets/css/main.css" rel="stylesheet" />
     <noscript
       ><link href="assets/css/noscript.css" rel="stylesheet"
@@ -446,6 +446,11 @@
       toggleBtn.addEventListener("click", () => {
         navMenu.classList.toggle("active");
       });
+      document.querySelectorAll("#nav-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
+    });
     </script>
 
     <script>
