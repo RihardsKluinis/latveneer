@@ -4165,13 +4165,16 @@ body.index #header {
 
 
 
-.hero-production {
-  background: url("../../images/img10.webp") no-repeat center top / cover;
-  background-attachment: fixed;
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-}
+  .hero-production {
+	background: url("../../images/img10.webp") no-repeat center top / cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+  
+	 /* give breathing room */
+	min-height: 50vh;  /* still ensures it fills screen at least once */
+	height: auto;       /* but expands naturally if text needs more space */
+  }
 
 .hero-production::before {
   content: "";
