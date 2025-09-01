@@ -3232,7 +3232,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 3em 2em 1em 2em ;
+					padding: 2em 2em 0em 2em ;
 				}
 
 			}
@@ -4112,7 +4112,7 @@ body.index #header {
 	height: 2px;
 	width: 0; /* starts hidden */
 	background-color: #273e1c; /* dark green (matches header) */
-	margin: 2rem 0;
+	margin: 0.3rem 0;
 	transition: width 1s ease;
   }
   
