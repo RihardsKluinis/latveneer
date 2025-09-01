@@ -77,6 +77,7 @@
     </div>
 
     <section class="hero-section hero-production">
+      <div class="hero-bg"></div>
       <div class="hero-overlay">
         <h1 class="hero-title">Production Process</h1>
         <p class="hero-subtitle">From raw logs to graded veneer</p>
@@ -160,12 +161,12 @@
             navMenu.classList.toggle("active");
           });
         </script>
-        
+
         <script>
+        const bg = document.querySelector(".hero-bg");
         document.addEventListener("scroll", () => {
           const scrolled = window.pageYOffset;
-          const bg = document.querySelector(".hero-production::before"); // or a dedicated .bg element
-          bg.style.transform = `translateY(${scrolled * 0.5}px)`;
+          bg.style.transform = `translateY(${scrolled * 0.3}px)`; // adjust speed
         });
       </script>
     
