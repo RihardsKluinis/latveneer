@@ -4264,7 +4264,12 @@ body.index #header {
   color: #eee;
 }
 
-  
+#company-info::before {
+	content: "";
+	display: block;
+	height: 30px; /* offset height */
+	margin-top: -30px;
+  }
   
   
   
