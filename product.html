@@ -160,6 +160,14 @@
             navMenu.classList.toggle("active");
           });
         </script>
+        
+        <script>
+        document.addEventListener("scroll", () => {
+          const scrolled = window.pageYOffset;
+          const bg = document.querySelector(".hero-production::before"); // or a dedicated .bg element
+          bg.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+      </script>
     
     
   </body>
