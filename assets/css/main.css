@@ -4272,5 +4272,15 @@ body.index #header {
   }
   
   
+  .split.style1 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em; /* spacing between left & right */
+  }
   
+  .split.style1 > section {
+	flex: 1; /* make them take equal width */
+	min-width: 250px; /* prevents squishing on small screens */
+	align-self: flex-start; /* keeps top aligned */
+  }
   

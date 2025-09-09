@@ -55,7 +55,7 @@
           <li><a href="procurement.html">Procurement</a></li>
           <li><a href="product.html">Product</a></li>
           <li><a href="#Contacts" class="scrolly">Contacts</a></li>
-          <li><a href="#company-info" class="scrolly">Company info</a></li>
+
         </ul>
         
       </nav>
@@ -261,133 +261,73 @@
 					</div>
 				</section>
 				Two -->
-      <section class="wrapper style1 fade-up" id="Contacts">
-        <div class="inner" style="position: relative; z-index: 1">
-          <h2 data-i18n="menu.contact">Get in touch</h2>
-          <p>For the fastest response- give us a call.</p>
-          <div class="split style1">
-            <section>
-              <form
-                data-netlify="true"
-                method="POST"
-                name="contact"
-                netlify-honeypot="bot-field"
-                onsubmit="handleSubmit(event)"
-              >
-                <input name="form-name" type="hidden" value="contact" />
-                <p hidden="">
-                  <label>Don’t fill this out: <input name="bot-field" /></label>
-                </p>
-                <div class="fields">
-                  <div class="field half">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" required="" type="text" />
-                  </div>
-                  <div class="field half">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" required="" type="email" />
-                  </div>
-                  <div class="field">
-                    <label for="message">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required=""
-                      rows="5"
-                    ></textarea>
-                  </div>
-                </div>
-                <button type="submit">Send Message</button>
-              </form>
-              <p id="success-msg" style="display: none; color: green">
-                Thank you! Your message has been sent.
-              </p>
-              <script>
-                function handleSubmit(e) {
-                  e.preventDefault();
-                  const form = e.target;
-                  fetch('/', {
-                    method: 'POST',
-                    headers: {
-                      'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    body: new URLSearchParams(new FormData(form)).toString(),
-                  })
-                    .then(() => {
-                      form.style.display = 'none';
-                      document.getElementById('success-msg').style.display =
-                        'block';
-                    })
-                    .catch((error) => alert(error));
-                }
-              </script>
-            </section>
-            <section>
-              <ul class="contact">
-                <li>
-                  <h3>Address</h3>
-                  <span
-                    >Ausekļa iela 3A, <br />
-                    Jēkabpils, LV-5201<br />
-                    Latvia</span
-                  >
-                </li>
-                <li>
-                  <h3>Email</h3>
-                  <a href="#">info@latveneer.lv</a>
-                </li>
-                <li>
-                  <h3>Phone</h3>
-                  <span>+371 28 298 028</span>
-                </li>
-                <!--
-											<li>
-												
-												<h3>Social</h3>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												</ul>
-											</li>
-										-->
-              </ul>
-            </section>
-          </div>
-        </div>
+<!-- Contacts Section -->
+<section class="wrapper style1 fade-up" id="Contacts">
+  <div class="inner" style="position: relative; z-index: 1">
+    <h2 data-i18n="menu.contact">Get in touch</h2>
+    <p>You can reach us using the details below.</p>
+    <div class="split style1">
+
+      <!-- Left column: Company Info -->
+      <section>
+        <ul class="contact">
+          <li>
+            <h3>Address</h3>
+            <span>
+              Ausekļa iela 3A, <br />
+              Jēkabpils, LV-5201<br />
+              Latvia
+            </span>
+          </li>
+          <li>
+            <h3>Email</h3>
+            <a href="mailto:info@latveneer.lv">info@latveneer.lv</a>
+          </li>
+          <li>
+            <h3>Phone</h3>
+            <span>+371 28 298 028</span>
+          </li>
+        </ul>
+      </section>
+      
+
+      <!-- Right column: Contact Details -->
+      <section>
+        <ul class="contact">
+          <li>
+            <h3>Company</h3>
+            <span>
+              <strong>SIA LatVeneer</strong><br />
+              Reg. No. 40203561748<br />
+              Ausekļa iela 1, Jēkabpils, LV-5201<br />
+              VAT Number: LV40203561748
+            </span>
+          </li>
+          <li>
+            <h3>Email</h3>
+            <a href="mailto:info@latveneer.lv">info@latveneer.lv</a>
+          </li>
+          <li>
+            <h3>AS Citadele</h3>
+            <span>
+              IBAN: LV20PARX0032329260001<br />
+              SWIFT: PARXLV22
+            </span>
+          </li>
+          <li>
+            <h3>BluOr Bank</h3>
+            <span>
+              IBAN: LV28CBBR112B47250001000<br />
+              SWIFT: CBBRLV22
+            </span>
+          </li>
+        </ul>
       </section>
 
-      <!-- Divider -->
-      
-      <section class="wrapper" id="company-info">
-        <div class="inner">
-          <div class="animated-divider"></div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
 
-      <!-- Company Info Section -->
-      <section  class="wrapper style1 fade-up">
-        <div class="inner">
-          <h2>Company Information</h2>
-          <p>
-            <strong>SIA LatVeneer</strong><br />
-            Reg. No. 40203561748<br />
-            Ausekļa iela 1, Jēkabpils, LV-5201<br />
-            VAT Number: LV40203561748<br />
-            <a href="mailto:info@latveneer.lv">info@latveneer.lv</a><br /><br />
-      
-            <strong>AS Citadele</strong><br />
-            IBAN: LV20PARX0032329260001<br />
-            SWIFT: PARXLV22<br /><br />
-          
-            <strong>BluOr Bank</strong><br />
-            IBAN: LV28CBBR112B47250001000<br />
-            SWIFT: CBBRLV22
-          </p>
-        </div>
-      </section>
 
 
 
