@@ -4207,6 +4207,7 @@ body.index #header {
   text-align: center;
 }
 
+
 .hero-title {
 	font-size: 3rem;
 	margin-bottom: 0.8rem;
@@ -4346,7 +4347,15 @@ body.index #header {
 	margin-left: -1em;
   }
   
-  
+  @media (max-width: 768px) {
+	.hero-title {
+		padding-top: 6rem;
+		font-size: 2rem;
+	} 
+	.hero-requirements {
+		padding-bottom: 5rem;
+	}
+  }
   
   
   
