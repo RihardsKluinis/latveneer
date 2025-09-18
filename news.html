@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company News</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- PAGE-SPECIFIC OVERRIDES -->
+    <style>
+      /* keep overrides specific so main.css still applies elsewhere */
+      section.news-section .inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+      }
+
+      .news-section .major {
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      .news-item {
+        display: flex !important;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 5rem;   /* was 3rem → gives more breathing room */
+        padding-top: 2rem;     /* new */
+        padding-bottom: 2rem;  /* new */
+        border-bottom: 1px solid #eee; /* optional: light divider */
+        }
+
+
+      /* image column */
+      .news-item .news-image {
+        flex: 0 0 48%;      /* image takes ~48% of row */
+        max-width: 48%;
+      }
+
+      /* text column */
+      .news-item .news-text {
+        flex: 1 1 48%;
+        min-width: 260px;
+        text-align: left;
+      }
+
+      .news-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      .news-item {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+        }
+
+        .news-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+        .news-title {
+        position: relative;
+        display: inline-block;
+        }
+
+        .news-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #ffd700, #033406);
+        transition: width 0.4s ease;
+        }
+
+        .news-item.visible .news-title::after {
+        width: 100%;
+        }
+
+        .news-date {
+        font-size: 0.95rem;
+        color: #434343;       /* lighter gray tone */
+        margin: 0 0 1rem;
+        }
+
+        .news-subtext {
+        margin: 0;
+        line-height: 1.6;
+        color: #333;
+        }
+
+      /* alternate items are reversed (staggered) */
+      .news-item:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .news-image img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+      /* Responsive: stack vertically on smaller screens */
+      @media (max-width: 900px) {
+        .news-item {
+          flex-direction: column !important;
+          gap: 1rem;
+        }
+        .news-item .news-image,
+        .news-item .news-text {
+          flex: none;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html">
+        <img
+          src="images/logoYellow.png"
+          alt="LatVeneer Logo"
+          style="width: 8em; height: auto; object-fit: contain"
+        />
+      </a>
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="procurement.html">Procurement</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="news.html" class="active">Company News</a></li>
+          <li><a href="index.html#Contacts" class="scrolly">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <section class="news-section">
+            <div class="inner">
+              <h1 class="major">Company News</h1>
+          
+              <!-- 09.09.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture1.jpg" alt="First finished product loading" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">First finished product loading</h2>
+                  <p class="news-date">09.09.2025</p>
+                  <p class="news-subtext">
+                    We are very happy that the first stage of the company's operations is over. 
+                    To celebrate this day, we invited all the company's employees and also the supporters, 
+                    without whom we could not achieve what we have, to have a festive meal. Today we celebrate 
+                    and feel grateful for what we have accomplished and draw strength for future work.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 02.09.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture2.jpg" alt="FSC Certification" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">FSC Certification</h2>
+                  <p class="news-date">02.09.2025</p>
+                  <p class="news-subtext">
+                    Big events inevitably bring with them some stress. But we had confidence in the measures implemented 
+                    and we passed the certification with honor. We are very pleased with our work and support from our 
+                    certification body. Now we just have to wait for the certificate itself.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 12.08.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture3.jpg" alt="Veneer dryer is ready for work" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">Veneer dryer is ready for work</h2>
+                  <p class="news-date">12.08.2025</p>
+                  <p class="news-subtext">
+                    Final stage of assembly is finished as today we start to fire up our dryer. Still a little tinkering 
+                    is on its way until we fully configure the equipment and can be confident that we have full control 
+                    over the moisture level. As in our experience various final product manufacturers have different 
+                    needs regarding the moisture. With this step we are swiftly moving towards normal production times 
+                    and volumes. We hope to be working full shifts by the end of the month.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 02.08.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture5.jpg" alt="Peeling lines are online" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">Peeling lines are online</h2>
+                  <p class="news-date">02.08.2025</p>
+                  <p class="news-subtext">
+                    Today we start testing the peeling lines. We have two production lines in total: 1300 and 1600. 
+                    Assembly has finished, now we have to test and configure accordingly to guarantee the best quality 
+                    possible. Especially we have set our minds to reduce thickness tolerance to 0.02mm. Let's see if 
+                    we can achieve our goals! In the meantime we will appreciate the smell of the first freshly peeled 
+                    veneer sheets.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 21.07.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture6.jpg" alt="Assembly process update" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">A little update on assembly process</h2>
+                  <p class="news-date">21.07.2025</p>
+                  <p class="news-subtext">
+                    Slowly but surely our equipment is filling the space. Today the heaviest of all arrived – furnace for 
+                    the dryer. It took some serious skill from the truck crane driver. But Jēkabpils has all the best 
+                    professionals, so we managed with excellence. In the meantime we are also renovating our office and 
+                    already discussing the best place for a coffee machine. The to-do list never runs out and the factory 
+                    is slowly taking shape.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 22.05.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture7.jpg" alt="First equipment container arrives" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">First equipment container arrives</h2>
+                  <p class="news-date">22.05.2025</p>
+                  <p class="news-subtext">
+                    All equipment for production is shipped by sea and fitted inside 16 pieces of 40’’ containers. On this 
+                    day the first one arrives, and the rest will follow soon. We are ready to roll up our sleeves and start 
+                    working hard to install the equipment in time for the new production season. Yesterday we swept the 
+                    facility clean in preparation of the equipment. Hard work is in front of us but we do not fear it and 
+                    will be victorious!
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 10.02.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture8.png" alt="We have our identity" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">We have our identity</h2>
+                  <p class="news-date">10.02.2025</p>
+                  <p class="news-subtext">
+                    Today the final draft of our logo has been approved. And we are eager to share these news with you. 
+                    If you look closely, you can see that it most directly reflects our main production process: a blade 
+                    peels the log, and a veneer sheet detaches. At a time when AI and “Scandinavian minimalism” have taken 
+                    over the public space, we wanted to return to a more traditional solution — an illustration rather than 
+                    a symbol.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- 17.01.2025 -->
+              <div class="news-item">
+                <div class="news-image">
+                  <img src="images/Picture4.jpg" alt="We have found our home" />
+                </div>
+                <div class="news-text">
+                  <h2 class="news-title">We have found our home</h2>
+                  <p class="news-date">17.01.2025</p>
+                  <p class="news-subtext">
+                    We had been discussing a different facility in Jēkabpils city for a while now. Until suddenly, a close 
+                    friendship from old work relations opened a completely new option in the same city even more suitable 
+                    for our needs. Today we are happy to say that we have officially signed the contract and can call 
+                    Jēkabpils the city of our future. Once again, it proves that human relationships are the most important 
+                    thing in business. Now we can take the “bull by the horns”, plan the layout, order equipment, and 
+                    everything else before moving in. Wish us luck!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; LatVeneer. All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts (same as your site) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+    <script>
+        const items = document.querySelectorAll('.news-item');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.1 });
+      
+        items.forEach(item => observer.observe(item));
+      </script>
+      
+  </body>
+</html>
