@@ -39,15 +39,15 @@
     "phoneTitle": "Phone",
     "phone": "+371 28 298 028",
     "companyTitle": "Company",
-    "companyInfo": "SIA LatVeneer\\nReg. No. 40203561748\\nAusekļa iela 1, Jēkabpils, LV-5201\\nVAT Number: LV40203561748",
+    "companyInfo": "SIA LatVeneer<br>Reg. No. 40203561748<br>Ausekļa iela 1, Jēkabpils, LV-5201<br>VAT Number: LV40203561748",
     "emailTitle2": "Email",
     "email2": "info@latveneer.lv",
     "bank1": "AS Citadele",
-    "bank1Info": "IBAN: LV20PARX0032329260001\\nSWIFT: PARXLV22",
+    "bank1Info": "IBAN: LV20PARX0032329260001<br>SWIFT: PARXLV22",
     "bank2": "BluOr Bank",
-    "bank2Info": "IBAN: LV28CBBR112B47250001000\\nSWIFT: CBBRLV22"
+    "bank2Info": "IBAN: LV28CBBR112B47250001000<br>SWIFT: CBBRLV22"
   },
   "footer": {
-    "rights": "© LatVeneer. All rights reserved."
+    "rights": "@ LatVeneer. All rights reserved."
   }
 }

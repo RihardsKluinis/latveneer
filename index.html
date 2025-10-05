@@ -51,19 +51,24 @@
 
       <button id="menu-toggle" aria-label="Toggle menu">☰</button>
       <nav id="nav-menu">
-        <ul>
+        <ul class="menu-items">
           <li><a href="index.html" class="active" data-i18n="menu.home">Home</a></li>
           <li><a href="procurement.html" data-i18n="menu.procurement">Procurement</a></li>
           <li><a href="product.html" data-i18n="menu.product">Product</a></li>
           <li><a href="news.html" data-i18n="menu.news">Company News</a></li>
           <li><a href="#Contacts" class="scrolly" data-i18n="menu.contact">Contacts</a></li>
+      
+          <!-- Language buttons as list items -->
+          <li class="lang-item">
+            <button class="lang-btn" onclick="switchLanguage('lv')" title="Latviešu">
+              <img src="images/lv.svg" alt="Latvian" />
+            </button>
+            <button class="lang-btn" onclick="switchLanguage('en')" title="English">
+              <img src="images/gb.svg" alt="English" />
+            </button>
+          </li>
         </ul>
-        
       </nav>
-      <div class="language-switcher">
-        <button class="lang-btn" onclick="switchLanguage('lv')" title="Latviešu">🇱🇻</button>
-        <button class="lang-btn" onclick="switchLanguage('en')" title="English">🇬🇧</button>
-      </div>
     </header>
     
     <!-- Sidebar 

@@ -39,13 +39,13 @@
     "phoneTitle": "Tālrunis",
     "phone": "+371 28 298 028",
     "companyTitle": "Uzņēmums",
-    "companyInfo": "SIA LatVeneer\\nReģ. Nr. 40203561748\\nAusekļa iela 1, Jēkabpils, LV-5201\\nPVN numurs: LV40203561748",
+    "companyInfo": "SIA LatVeneer<br>Reģ. Nr. 40203561748<br>Ausekļa iela 1, Jēkabpils, LV-5201<br>PVN numurs: LV40203561748",
     "emailTitle2": "E-pasts",
     "email2": "info@latveneer.lv",
     "bank1": "AS Citadele",
-    "bank1Info": "IBAN: LV20PARX0032329260001\\nSWIFT: PARXLV22",
+    "bank1Info": "IBAN: LV20PARX0032329260001<br>SWIFT: PARXLV22",
     "bank2": "BluOr Bank",
-    "bank2Info": "IBAN: LV28CBBR112B47250001000\\nSWIFT: CBBRLV22"
+    "bank2Info": "IBAN: LV28CBBR112B47250001000<br>SWIFT: CBBRLV22"
   },
   "footer": {
     "rights": "© LatVeneer. Visas tiesības aizsargātas."

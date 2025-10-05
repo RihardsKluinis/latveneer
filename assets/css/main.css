@@ -4356,7 +4356,119 @@ body.index #header {
 		padding-bottom: 5rem;
 	}
   }
+
+
+
+ /* === FIXED HEADER ALIGNMENT + LANGUAGE BUTTONS === */
+
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5em 1em;
+  }
+  
+  /* Make sure nav always stays on the right */
+  #nav-menu {
+	margin-left: auto;              /* Push to right */
+	display: flex;
+	align-items: center;
+  }
+  
+  /* Menu items inline */
+  #nav-menu ul.menu-items {
+	display: flex !important;       /* Force horizontal layout */
+	align-items: center;
+	justify-content: flex-end;      /* Align to right */
+	gap: 1.5em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  }
+  
+  /* Menu links */
+  #nav-menu ul.menu-items li a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* === Language Buttons === */
+/* === Language Flags Refined === */
+.lang-item {
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+  }
+  
+  .lang-btn {
+	background: none;
+	border: none !important;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	width: 24px;
+	height: 16px;
+	border-radius: 3px;
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(1.05); /* make hover effect default */
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .lang-btn img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	border-radius: 3px;
+  }
+  
+  /* Hover: slightly enlarge */
+  .lang-btn:hover {
+	transform: scale(1.18);
+  }
+  
+  /* Focus accessibility */
+  .lang-btn:focus {
+	outline: none;
+  }
   
   
+  /* === Mobile Responsive === */
+  @media (max-width: 768px) {
+	#header {
+	  flex-wrap: wrap;
+	}
   
+	#menu-toggle {
+	  display: block;
+	}
+  
+	#nav-menu {
+	  width: 100%;
+	  margin-left: 0;
+	}
+  
+	#nav-menu ul.menu-items {
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 0.75em;
+	}
+  
+	.lang-item {
+	  justify-content: center;
+	  gap: 0.5em;
+	}
+  
+	.lang-btn {
+	  width: 28px;
+	  height: 18px;
+	}
+  }
   
