@@ -1,19 +1,53 @@
 {
-    "home": {
-      "title": "LatVeneer",
-      "subtitle": "Jauna finiera rūpnīca te pat Latvijā",
-      "learnMore": "Uzzināt vairāk"
-    },
-    "menu": {
-      "product": "Produktu piedāvājums",
-      "procurement": "Apaļkoku iepirkšana",
-      "who": "Kas mēs esam",
-      "what": "Ko mēs darām",
-      "contact": "Sazināties ar mums"
-    },
-    "liste": {
-        "who": "Mūsu Ražotne",
-        "who_Description": "Mēs piedāvājam bērza finierskaidu, kas tiek lobīta uz divām ražošanas līnijām 1300mm un 1600mm garumā. Galvenokārt ražojam šādus izmērus: 1300x1300; 1300x2600, 1600x1600, 1600x3100 u.c."
-
-      }
+  "home": {
+    "title": "LatVeneer",
+    "subtitle": "Jauna finiera ražotne Latvijā.",
+    "learnMore": "Uzzināt vairāk"
+  },
+  "meta": {
+    "description": "LatVeneer – Jauna finiera ražotne Latvijā. Piegādā izsekojamu bērza finieri Eiropas tirgiem.",
+    "ogTitle": "LatVeneer – Bērza finieris Latvijā",
+    "ogDescription": "Mēs piegādājam augstas kvalitātes bērza finieri no Latvijas uz Eiropu."
+  },
+  "menu": {
+    "toggle": "Atvērt slēpt izvēlni",
+    "home": "Sākums",
+    "procurement": "Iegāde",
+    "product": "Produkts",
+    "news": "Uzņēmuma jaunumi",
+    "contact": "Kontakti"
+  },
+  "factory": {
+    "title": "Mūsu ražotne",
+    "description": "Mēs varam piedāvāt kodolbērza finieri no divām ražošanas līnijām: 1300 mm un 1600 mm garumā. Galvenokārt ražojam šādus izmērus: 1300x1300; 1300x2600, 1600x1600, 1600x3100. Mēs arī strādājam pie divu jaunu ražošanas līniju uzstādīšanas, tostarp 1600 mm."
+  },
+  "location": {
+    "title": "Kur mūs atrast",
+    "description": "Mūsu ražotne atrodas rūpnieciskajā parkā Jēkabpilī, Latvijā."
+  },
+  "what": {
+    "title": "Ko mēs darām",
+    "description": "Mēs ražojam stienīšu nesaturējošu bērza finieri galvenokārt saplākšņa un formētā saplākšņa mēbeļu ražotājiem. Mūsu galvenais tirgus ir Eiropa, un mēs rūpīgi nodrošinām tikai izsekojamus un atbildīgi iegūtus produktus atbilstošā kvalitātē."
+  },
+  "contact": {
+    "title": "Sazinieties ar mums",
+    "description": "Jūs varat mūs sasniegt, izmantojot zemāk norādītos kontaktus.",
+    "addressTitle": "Adrese",
+    "address": "Ausekļa iela 3A, Jēkabpils, LV-5201, Latvija",
+    "emailTitle": "E-pasts",
+    "email": "info@latveneer.lv",
+    "phoneTitle": "Tālrunis",
+    "phone": "+371 28 298 028",
+    "companyTitle": "Uzņēmums",
+    "companyInfo": "SIA LatVeneer\\nReģ. Nr. 40203561748\\nAusekļa iela 1, Jēkabpils, LV-5201\\nPVN numurs: LV40203561748",
+    "emailTitle2": "E-pasts",
+    "email2": "info@latveneer.lv",
+    "bank1": "AS Citadele",
+    "bank1Info": "IBAN: LV20PARX0032329260001\\nSWIFT: PARXLV22",
+    "bank2": "BluOr Bank",
+    "bank2Info": "IBAN: LV28CBBR112B47250001000\\nSWIFT: CBBRLV22"
+  },
+  "footer": {
+    "rights": "© LatVeneer. Visas tiesības aizsargātas."
   }
+}
