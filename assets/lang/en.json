@@ -1,19 +1,53 @@
 {
-    "home": {
-      "title": "LatVeneer",
-      "subtitle": "A new veneer production facility in Latvia.",
-      "learnMore": "Learn more"
-    },
-    "menu": {
-      "product": "Product offering",
-      "procurement": "Log Procurement",
-      "who": "Who we are",
-      "what": "What we do",
-      "contact": "Get in touch"
-    },
-    "liste": {
-        "who": "Our Factory",
-        "who_Description": "Currently we can offer core birch veneer from two production lines 1300mm and 2600mm in length. Mainly the following sizes: 1300x1300; 1300x2600, 2600x1300. In the meantime we are working to install two new production lines including 1600mm."
-
-      }
+  "home": {
+    "title": "LatVeneer",
+    "subtitle": "A new veneer production facility in Latvia.",
+    "learnMore": "Learn more"
+  },
+  "meta": {
+    "description": "LatVeneer – A new veneer production facility in Latvia. Supplying traceable birch veneer to European markets.",
+    "ogTitle": "LatVeneer – Birch Veneer in Latvia",
+    "ogDescription": "We supply high-quality birch veneer from Latvia to Europe."
+  },
+  "menu": {
+    "toggle": "Toggle menu",
+    "home": "Home",
+    "procurement": "Procurement",
+    "product": "Product",
+    "news": "Company News",
+    "contact": "Contacts"
+  },
+  "factory": {
+    "title": "Our Factory",
+    "description": "We can offer core birch veneer from two production lines 1300mm and 1600mm in length. Mainly producing the following sizes: 1300x1300; 1300x2600, 1600x1600, 1600x3100. We are also working to install two new production lines including 1600mm."
+  },
+  "location": {
+    "title": "Where to find us",
+    "description": "Our factory is located in the industrial park in Jēkabpils, Latvia."
+  },
+  "what": {
+    "title": "What we do",
+    "description": "We manufacture spindleless birch veneer mainly for plywood and molded plywood furniture manufacturers. Our primary market is in Europe, and we take great care to provide only traceable and responsibly sourced products of appropriate quality."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "description": "You can reach us using the details below.",
+    "addressTitle": "Address",
+    "address": "Ausekļa iela 3A, Jēkabpils, LV-5201, Latvia",
+    "emailTitle": "Email",
+    "email": "info@latveneer.lv",
+    "phoneTitle": "Phone",
+    "phone": "+371 28 298 028",
+    "companyTitle": "Company",
+    "companyInfo": "SIA LatVeneer\\nReg. No. 40203561748\\nAusekļa iela 1, Jēkabpils, LV-5201\\nVAT Number: LV40203561748",
+    "emailTitle2": "Email",
+    "email2": "info@latveneer.lv",
+    "bank1": "AS Citadele",
+    "bank1Info": "IBAN: LV20PARX0032329260001\\nSWIFT: PARXLV22",
+    "bank2": "BluOr Bank",
+    "bank2Info": "IBAN: LV28CBBR112B47250001000\\nSWIFT: CBBRLV22"
+  },
+  "footer": {
+    "rights": "© LatVeneer. All rights reserved."
   }
+}

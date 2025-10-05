@@ -38,7 +38,8 @@
     /></noscript>
   </head>
   <body class="is-preload">
-    <header id="header" class="light">
+    <header id="header" class="light" 
+    style="display: flex; align-items: center; justify-content: space-between;">
       <a href="index.html">
         <img
           src="images/FinalColour.png"
@@ -51,15 +52,18 @@
       <button id="menu-toggle" aria-label="Toggle menu">☰</button>
       <nav id="nav-menu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="procurement.html">Procurement</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="news.html" >Company News</a></li>
-          <li><a href="#Contacts" class="scrolly">Contacts</a></li>
-
+          <li><a href="index.html" class="active" data-i18n="menu.home">Home</a></li>
+          <li><a href="procurement.html" data-i18n="menu.procurement">Procurement</a></li>
+          <li><a href="product.html" data-i18n="menu.product">Product</a></li>
+          <li><a href="news.html" data-i18n="menu.news">Company News</a></li>
+          <li><a href="#Contacts" class="scrolly" data-i18n="menu.contact">Contacts</a></li>
         </ul>
         
       </nav>
+      <div class="language-switcher">
+        <button class="lang-btn" data-lang="lv" title="Latviešu">🇱🇻</button>
+        <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+      </div>
     </header>
     
     <!-- Sidebar 
@@ -91,127 +95,55 @@
         <div class="inner" style="position: relative; z-index: 1">
           <div class="intro-box">
             <h1 data-i18n="home.title">LatVeneer</h1>
-            <p data-i18n="home.subtitle">
-              A new veneer production facility in Latvia
-            </p>
+            <p data-i18n="home.subtitle">A new veneer production facility in Latvia</p>
             <ul class="actions">
               <li>
-                <a
-                  class="button scrolly"
-                  data-i18n="home.learnMore"
-                  href="#one"
-                  style="
-                    background-color: transparent;
-                    color: black;
-                    border: 2px solid black;
-                  "
-                  >Learn more</a
-                >
+                <a class="button scrolly" data-i18n="home.learnMore" href="#one" style="background-color: transparent; color: black; border: 2px solid black;">Learn more</a>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- One -->
+      <!-- Our Factory -->
       <section class="wrapper style1 spotlights" id="one">
         <section>
-          <a class="image" href="#">
-            <img
-              alt=""
-              data-position="center center"
-              src="images/pic01.webp"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                max-width: 100%;
-              "
-            />
-          </a>
+          <a class="image" href="#"><img alt="" data-position="center center" src="images/pic01.webp" style="width: 100%; height: 100%; object-fit: cover; max-width: 100%;" /></a>
           <div class="content">
             <div class="inner" style="position: relative; z-index: 1">
-              <h2 data-i18n="liste.who">Our Factory</h2>
-              <p data-i18n="liste.who_Description">
-                We can offer core birch veneer from two production lines 1300mm and 1600mm in length. Mainly producing the following sizes: 1300x1300; 1300x2600, 1600x1600, 1600x3100 In the meantime we are working
-                to install two new production lines including 1600mm.
-              </p>
+              <h2 data-i18n="factory.title">Our Factory</h2>
+              <p data-i18n="factory.description">We can offer core birch veneer from two production lines 1300mm and 1600mm in length. Mainly producing the following sizes: 1300x1300; 1300x2600, 1600x1600, 1600x3100. We are also working to install two new production lines including 1600mm.</p>
               <ul class="actions">
-                <li>
-                  <a
-                    class="button"
-                    data-i18n="home.learnMore"
-                    href="product.html"
-                    >Learn more</a
-                  >
-                </li>
+                <li><a class="button" data-i18n="home.learnMore" href="product.html">Learn more</a></li>
               </ul>
             </div>
           </div>
         </section>
+
+        <!-- Where to find us -->
         <section>
           <div class="image">
-            <iframe
-              allowfullscreen=""
-              height="100%"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027054.1247579302!2d25.873241444530017!3d56.45364456444276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e9b666f8ecd96b%3A0xd39c831586ce77fd!2sAusek%C4%BCa%20iela%203A%2C%20J%C4%93kabpils%2C%20LV-5201!5e0!3m2!1slv!2slv!4v1747689343317!5m2!1slv!2slv"
-              style="border: 0; min-height: 300px"
-              width="100%"
-            >
-            </iframe>
+            <iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027054.1247579302!2d25.873241444530017!3d56.45364456444276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e9b666f8ecd96b%3A0xd39c831586ce77fd!2sAusek%C4%BCa%20iela%203A%2C%20J%C4%93kabpils%2C%20LV-5201!5e0!3m2!1slv!2slv!4v1747689343317!5m2!1slv!2slv" style="border: 0; min-height: 300px" width="100%"></iframe>
           </div>
           <div class="content">
             <div class="inner" style="position: relative; z-index: 1">
-              <h2>Where to find us</h2>
-              <p>
-                Our Factory is located in industrial park in Jekabpils, Latvia
-              </p>
+              <h2 data-i18n="location.title">Where to find us</h2>
+              <p data-i18n="location.description">Our factory is located in the industrial park in Jēkabpils, Latvia.</p>
               <ul class="actions">
-                <li>
-                  <a
-                    class="button"
-                    data-i18n="home.learnMore"
-                    href="product.html"
-                    >Learn more</a
-                  >
-                </li>
+                <li><a class="button" data-i18n="home.learnMore" href="product.html">Learn more</a></li>
               </ul>
             </div>
           </div>
         </section>
+
+        <!-- What we do -->
         <section>
-          <a class="image" href="#">
-            <img
-              alt=""
-              data-position="center center"
-              src="images/img08.webp"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                max-width: 100%;
-              "
-            />
-          </a>
+          <a class="image" href="#"><img alt="" data-position="center center" src="images/img08.webp" style="width: 100%; height: 100%; object-fit: cover; max-width: 100%;" /></a>
           <div class="content" id="two">
             <div class="inner" style="position: relative; z-index: 1">
-              <h2 data-i18n="menu.what">What we do</h2>
-              <p>
-                We manufacture spindleless birch veneer mainly for plywood and
-                molded plywood furniture piece manufacturers. Our primary market
-                is in Europe. We take great care to provide only traceable and
-                responsible goods of appropriate quality.
-              </p>
+              <h2 data-i18n="what.title">What we do</h2>
+              <p data-i18n="what.description">We manufacture spindleless birch veneer mainly for plywood and molded plywood furniture manufacturers. Our primary market is in Europe, and we take great care to provide only traceable and responsibly sourced products of appropriate quality.</p>
               <ul class="actions">
-                <li>
-                  <a
-                    class="button"
-                    data-i18n="home.learnMore"
-                    href="product.html"
-                    >Learn more</a
-                  >
-                </li>
+                <li><a class="button" data-i18n="home.learnMore" href="product.html">Learn more</a></li>
               </ul>
             </div>
           </div>
@@ -261,71 +193,30 @@
 				</section>
 				Two -->
 <!-- Contacts Section -->
-<section class="wrapper style1 fade-up" id="Contacts">
-  <div class="inner" style="position: relative; z-index: 1">
-    <h2 data-i18n="menu.contact">Get in touch</h2>
-    <p>You can reach us using the details below.</p>
-    <div class="split style1">
+  <section class="wrapper style1 fade-up" id="Contacts">
+    <div class="inner" style="position: relative; z-index: 1">
+      <h2 data-i18n="contact.title">Get in touch</h2>
+      <p data-i18n="contact.description">You can reach us using the details below.</p>
+      <div class="split style1">
+        <section>
+          <ul class="contact">
+            <li><h3 data-i18n="contact.addressTitle">Address</h3><span data-i18n="contact.address">Ausekļa iela 3A, Jēkabpils, LV-5201, Latvia</span></li>
+            <li><h3 data-i18n="contact.emailTitle">Email</h3><a href="mailto:info@latveneer.lv" data-i18n="contact.email">info@latveneer.lv</a></li>
+            <li><h3 data-i18n="contact.phoneTitle">Phone</h3><span data-i18n="contact.phone">+371 28 298 028</span></li>
+          </ul>
+        </section>
 
-      <!-- Left column: Company Info -->
-      <section>
-        <ul class="contact">
-          <li>
-            <h3>Address</h3>
-            <span>
-              Ausekļa iela 3A, <br />
-              Jēkabpils, LV-5201<br />
-              Latvia
-            </span>
-          </li>
-          <li>
-            <h3>Email</h3>
-            <a href="mailto:info@latveneer.lv">info@latveneer.lv</a>
-          </li>
-          <li>
-            <h3>Phone</h3>
-            <span>+371 28 298 028</span>
-          </li>
-        </ul>
-      </section>
-      
-
-      <!-- Right column: Contact Details -->
-      <section>
-        <ul class="contact">
-          <li>
-            <h3>Company</h3>
-            <span>
-              <strong>SIA LatVeneer</strong><br />
-              Reg. No. 40203561748<br />
-              Ausekļa iela 1, Jēkabpils, LV-5201<br />
-              VAT Number: LV40203561748
-            </span>
-          </li>
-          <li>
-            <h3>Email</h3>
-            <a href="mailto:info@latveneer.lv">info@latveneer.lv</a>
-          </li>
-          <li>
-            <h3>AS Citadele</h3>
-            <span>
-              IBAN: LV20PARX0032329260001<br />
-              SWIFT: PARXLV22
-            </span>
-          </li>
-          <li>
-            <h3>BluOr Bank</h3>
-            <span>
-              IBAN: LV28CBBR112B47250001000<br />
-              SWIFT: CBBRLV22
-            </span>
-          </li>
-        </ul>
-      </section>
-
+        <section>
+          <ul class="contact">
+            <li><h3 data-i18n="contact.companyTitle">Company</h3><span data-i18n="contact.companyInfo">SIA LatVeneer<br />Reg. No. 40203561748<br />Ausekļa iela 1, Jēkabpils, LV-5201<br />VAT Number: LV40203561748</span></li>
+            <li><h3 data-i18n="contact.emailTitle2">Email</h3><a href="mailto:info@latveneer.lv" data-i18n="contact.email2">info@latveneer.lv</a></li>
+            <li><h3 data-i18n="contact.bank1">AS Citadele</h3><span data-i18n="contact.bank1Info">IBAN: LV20PARX0032329260001<br />SWIFT: PARXLV22</span></li>
+            <li><h3 data-i18n="contact.bank2">BluOr Bank</h3><span data-i18n="contact.bank2Info">IBAN: LV28CBBR112B47250001000<br />SWIFT: CBBRLV22</span></li>
+          </ul>
+        </section>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -415,6 +306,24 @@
 
           observer.observe(divider);
         }
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('lang') || 'en';
+        if (typeof setLanguage === 'function') {
+          setLanguage(savedLang);
+        }
+    
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            localStorage.setItem('lang', lang);
+            if (typeof setLanguage === 'function') {
+              setLanguage(lang);
+            }
+          });
+        });
       });
     </script>
 
