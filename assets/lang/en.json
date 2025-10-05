@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "home": {
     "title": "LatVeneer",
     "subtitle": "A new veneer production facility in Latvia.",
@@ -51,3 +52,23 @@
     "rights": "© LatVeneer. All rights reserved."
   }
 }
+=======
+    "home": {
+      "title": "LatVeneer",
+      "subtitle": "A new veneer production facility in Latvia.",
+      "learnMore": "Learn more"
+    },
+    "menu": {
+      "product": "Product offering",
+      "procurement": "Log Procurement",
+      "who": "Who we are",
+      "what": "What we do",
+      "contact": "Get in touch"
+    },
+    "liste": {
+        "who": "Our Factory",
+        "who_Description": "We can offer core birch veneer from two production lines 1300mm and 1600mm in length. Mainly producing the following sizes: 1300x1300; 1300x2600, 1600x1600, 1600x3100 etc."
+
+      }
+  }
+>>>>>>> 23c4a98667e1d76d44d4f267a7265d7592469ee6
