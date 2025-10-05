@@ -61,8 +61,8 @@
         
       </nav>
       <div class="language-switcher">
-        <button class="lang-btn" data-lang="lv" title="Latviešu">🇱🇻</button>
-        <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+        <button class="lang-btn" onclick="switchLanguage('lv')" title="Latviešu">🇱🇻</button>
+        <button class="lang-btn" onclick="switchLanguage('en')" title="English">🇬🇧</button>
       </div>
     </header>
     
@@ -308,24 +308,7 @@
         }
       });
     </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const savedLang = localStorage.getItem('lang') || 'en';
-        if (typeof setLanguage === 'function') {
-          setLanguage(savedLang);
-        }
-    
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            localStorage.setItem('lang', lang);
-            if (typeof setLanguage === 'function') {
-              setLanguage(lang);
-            }
-          });
-        });
-      });
-    </script>
+
 
   </body>
 </html>
