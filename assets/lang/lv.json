@@ -5,7 +5,7 @@
     "learnMore": "Uzzināt vairāk"
   },
   "meta": {
-    "description": "LatVeneer – Jauna finiera ražotne Latvijā. Piegādā izsekojamu bērza finieri Eiropas tirgiem.",
+    "description": "LatVeneer – Jauna finiera ražotne Latvijā. Piegādā izsekojamu bērza finieri Eiropas tirgum.",
     "ogTitle": "LatVeneer – Bērza finieris Latvijā",
     "ogDescription": "Mēs piegādājam augstas kvalitātes bērza finieri no Latvijas uz Eiropu."
   },
@@ -19,15 +19,15 @@
   },
   "factory": {
     "title": "Mūsu ražotne",
-    "description": "Mēs varam piedāvāt kodolbērza finieri no divām ražošanas līnijām: 1300 mm un 1600 mm garumā. Galvenokārt ražojam šādus izmērus: 1300x1300; 1300x2600, 1600x1600, 1600x3100. Mēs arī strādājam pie divu jaunu ražošanas līniju uzstādīšanas, tostarp 1600 mm."
+    "description": "Mēs varam piedāvāt serdes finieri no divām ražošanas līnijām: 1300 mm un 1600 mm garumā. Galvenokārt ražojam šādus izmērus: 1300x1300; 1300x2600, 1600x1600, 1600x3100."
   },
   "location": {
     "title": "Kur mūs atrast",
-    "description": "Mūsu ražotne atrodas rūpnieciskajā parkā Jēkabpilī, Latvijā."
+    "description": "Mūsu ražotne atrodas bijušajā AEAR ražotnē Jēkabpilī, Latvijā."
   },
   "what": {
     "title": "Ko mēs darām",
-    "description": "Mēs ražojam stienīšu nesaturējošu bērza finieri galvenokārt saplākšņa un formētā saplākšņa mēbeļu ražotājiem. Mūsu galvenais tirgus ir Eiropa, un mēs rūpīgi nodrošinām tikai izsekojamus un atbildīgi iegūtus produktus atbilstošā kvalitātē."
+    "description": "Mēs ražojam bezspiņģeļa bērza finieri galvenokārt saplākšņa un formētā saplākšņa mēbeļu ražotājiem. Mūsu galvenais tirgus ir Eiropa, un mēs pievēršam lielu uzmanību matreriāla izsekojamībai."
   },
   "contact": {
     "title": "Sazinieties ar mums",
