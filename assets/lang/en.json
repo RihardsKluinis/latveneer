@@ -74,6 +74,23 @@
     "requirement3": "Minimal branching (no more than three branches per meter)",
     "requirement4": "Freshly sawn (staining logs are not suitable for production)",
     "requirement5": "Maximum diameter 40cm (if exceeded, then will be marked as defective)"
+  },
+  "_comment_after": "Šis ir komentars kas atdala Tekstus no Procurement Lapas no Product lapas AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  
+  "product": {
+    "title": "Our Product Offer",
+    "intro": "Spindleless birch veneer",
+    "sizesTitle": "Two production lines 1300 and 1600mm. Available sizes:",
+    "thicknessTitle": "Standard thickness is 1.5mm, non-standard thickness ranging from",
+    "thicknessText": "1.0-3.0mm available. The veneer is available in ABCD and E grade packs.",
+    "contactTitle": "To place an order or if you have any questions, please contact our sales manager:",
+    "processTitle": "Production Process",
+    "processSubtitle": "From raw logs to sorted veneer",
+    "step1": "Logs are peeled on two spindleless lines, at natural moisture levels without presoaking. Thickness and quality are monitored regularly.",
+    "step2": "Fresh veneer rests for at least 48 hours, allowing natural redistribution of moisture.",
+    "step3": "A 32m, four-belt dryer powered by recycled woodchips brings veneer to the required moisture levels.",
+    "step4": "Hourly inspections ensure the ideal 4-8% moisture range is maintained.",
+    "step5": "Each sheet is manually inspected and sorted into grade packs for consistent quality."
   }
 
 
