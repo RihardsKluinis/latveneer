@@ -49,5 +49,28 @@
   },
   "footer": {
     "rights": "@ LatVeneer. All rights reserved."
+  },
+
+
+  "_comment_after_what": "Šis ir komentars kas atdala Tekstus no Home page no no Procurement lapas AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  
+  "procurement": {
+    "title": "Log Procurement",
+    "intro": "We purchase birch roundwood.",
+    "volumeTitle": "Volume and diameter group measurement:",
+    "volumeText": "Hand measurement according to under bark diameter as well as coefficient measurement is applied.",
+    "lengthsTitle": "Payable lengths:",
+    "measurementTimeTitle": "Log measurement time:",
+    "contactTitle": "For more information, please contact our procurement manager:",
+    "requirementsTitle": "Requirements for Logs",
+    "requirement1": "Curvature per meter no more than 2 cm (within the cut)",
+    "requirement2": "S-shaped curvature is not allowed",
+    "requirement3": "Minimal branching (no more than three branches per meter)",
+    "requirement4": "Freshly sawn (staining logs are not suitable for production)",
+    "requirement5": "Maximum diameter 40cm (if exceeded, then will be marked as defective)"
   }
+
+
+
+
 }
