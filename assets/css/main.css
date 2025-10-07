@@ -4390,7 +4390,7 @@ body.index #header {
   
   /* Menu links */
   #nav-menu ul.menu-items li a {
-	color: #333;
+	
 	text-decoration: none;
 	display: block;
   }
@@ -4471,4 +4471,4 @@ body.index #header {
 	  height: 18px;
 	}
   }
-  
+
