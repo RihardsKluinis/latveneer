@@ -51,9 +51,30 @@
     "rights": "© LatVeneer. Visas tiesības aizsargātas."
   },
 
-  
-  "_comment_after_what": "Šis ir komentars kas atdala Tekstus no Home page no no Procurement lapas AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
+  "_comment_after_what": "Šis ir komentars kas atdala Tekstus no Home page no no Procurement lapas AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+
+  "procurement": {
+    "title": "Apaļkoksnes iepirkums",
+    "intro": "Mēs iepērkam bērza apaļkoksni.",
+    "volumeTitle": "Apjoma un diametru grupu noteikšana:",
+    "volumeText": "Roku mērījums pēc zem mizas diametra, kā arī tiek piemērots koeficienta mērījums.",
+    "lengthsTitle": "Apmaksājamie garumi:",
+    "procurement.garums1": "(piegādes garums: 2.80 m)",
+    "procurement.garums2": "(piegādes garums: 3.10 m)",
+    "procurement.garums3": "(piegādes garums: 3.30 m)",
+    "procurement.garums4": "(piegādes garums: 3.40 m)",
+    "measurementTimeTitle": "Apaļkoksnes pieņemšanas laiks:",
+    "measurementTime": "darba dienās no 07:00 līdz 19:00",
+  
+    "contact": "Papildu informācijai, lūdzu, sazinieties ar mūsu iepirkumu vadītāju:",
+    "requirementsTitle": "Koksnes prasības",
+    "requirement1": "Izliece uz vienu metru – ne vairāk kā 2 cm (griezuma robežās)",
+    "requirement2": "S-veida izliece nav atļauta",
+    "requirement3": "Minimāla zarišanās (ne vairāk kā trīs zari uz metru)",
+    "requirement4": "Svaigi zāģēta koksne (zilganie baļķi nav piemēroti ražošanai)",
+    "requirement5": "Maksimālais diametrs – 40 cm (ja pārsniegts, baļķis tiek uzskatīts par brāķi)"
+  }
 
 
 
