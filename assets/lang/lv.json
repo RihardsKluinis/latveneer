@@ -74,6 +74,25 @@
     "requirement3": "Minimāla zarišanās (ne vairāk kā trīs zari uz metru)",
     "requirement4": "Svaigi zāģēta koksne (zilganie baļķi nav piemēroti ražošanai)",
     "requirement5": "Maksimālais diametrs – 40 cm (ja pārsniegts, baļķis tiek uzskatīts par brāķi)"
+  },
+
+  "_comment_after": "Šis ir komentars kas atdala Tekstus no Procurement Lapas no Product lapas AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+
+  "product": {
+    "title": "Mūsu produkcijas piedāvājums",
+    "intro": "Bezvārpstas bērza finieris",
+    "sizesTitle": "Divas ražošanas līnijas – 1300 un 1600 mm. Pieejamie izmēri:",
+    "thicknessTitle": "Standarta biezums ir 1.5 mm, nestandarta biezums pieejams diapazonā",
+    "thicknessText": "no 1.0 līdz 3.0 mm. Finieris ir pieejams ABCD un E kvalitātes pakās.",
+    "contactTitle": "Pasūtījuma veikšanai vai jautājumu gadījumā, lūdzu, sazinieties ar mūsu pārdošanas vadītāju:",
+    "contact": "Pasūtījuma veikšanai vai jautājumu gadījumā, lūdzu, sazinieties ar mūsu pārdošanas vadītāju:",
+    "processTitle": "Ražošanas process",
+    "processSubtitle": "No apaļkoksnes līdz sašķirotam finierim",
+    "step1": "Baļķi tiek mizoti uz divām bezvārpstas līnijām dabīgā mitruma līmenī, bez iepriekšējas mērcēšanas. Biezums un kvalitāte tiek regulāri kontrolēta.",
+    "step2": "Svaigs finieris tiek atstāts vismaz uz 48 stundām, lai nodrošinātu dabīgu mitruma izlīdzināšanos.",
+    "step3": "32 metrus garā, četrjostu žāvētava, ko darbina ar pārstrādātām koksnes skaidām, nodrošina nepieciešamo mitruma līmeni.",
+    "step4": "Katru stundu tiek veiktas pārbaudes, lai nodrošinātu ideālo 4–8% mitruma līmeni.",
+    "step5": "Katrs loks tiek manuāli pārbaudīts un sašķirots kvalitātes pakās, lai garantētu vienmērīgu kvalitāti."
   }
 
 
