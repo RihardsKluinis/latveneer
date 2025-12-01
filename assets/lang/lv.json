@@ -1,19 +1,19 @@
 {
   "home": {
     "title": "LatVeneer",
-    "subtitle": "Jauna finiera ražotne Latvijā.",
+    "subtitle": "Jauna finierskaidas ražotne Latvijā.",
     "learnMore": "Uzzināt vairāk"
   },
   "meta": {
-    "description": "LatVeneer – Jauna finiera ražotne Latvijā. Piegādā izsekojamu bērza finieri Eiropas tirgum.",
-    "ogTitle": "LatVeneer – Bērza finieris Latvijā",
-    "ogDescription": "Mēs piegādājam augstas kvalitātes bērza finieri no Latvijas uz Eiropu."
+    "description": "LatVeneer – Jauna finierskaidas ražotne Latvijā. Piegādā izsekojamu bērza finieri Eiropas tirgum.",
+    "ogTitle": "LatVeneer – Bērza finieriskaida Latvijā",
+    "ogDescription": "Mēs piegādājam augstas kvalitātes bērza finierskaidu no Latvijas uz Eiropu."
   },
   "menu": {
     "toggle": "Atvērt slēpt izvēlni",
     "home": "Sākums",
-    "procurement": "Iegāde",
-    "product": "Produkts",
+    "procurement": "Apaļkoku iepirkšana",
+    "product": "Produkti",
     "news": "Jaunumi",
     "contact": "Kontakti"
   },
@@ -27,11 +27,11 @@
   },
   "what": {
     "title": "Ko mēs darām",
-    "description": "Mēs ražojam bezspiņģeļa bērza finieri galvenokārt saplākšņa un formētā saplākšņa mēbeļu ražotājiem. Mūsu galvenais tirgus ir Eiropa, un mēs pievēršam lielu uzmanību matreriāla izsekojamībai."
+    "description": "Mēs ražojam bērza finierskaidu galvenokārt saplākšņa un formētā saplākšņa mēbeļu ražotājiem. Mūsu galvenais tirgus ir Eiropa, un mēs pievēršam lielu uzmanību matreriāla izsekojamībai."
   },
   "contact": {
     "title": "Sazinieties ar mums",
-    "description": "Jūs varat mūs sasniegt, izmantojot zemāk norādītos kontaktus.",
+    "description": "Sazinieties ar mums, izmantojot zemāk norādītos kontaktus.",
     "addressTitle": "Adrese",
     "address": "Ausekļa iela 3A, Jēkabpils, LV-5201, Latvija",
     "emailTitle": "E-pasts",
@@ -55,10 +55,10 @@
   "_comment_after_what": "Šis ir komentars kas atdala Tekstus no Home page no no Procurement lapas AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 
   "procurement": {
-    "title": "Apaļkoksnes iepirkums",
-    "intro": "Mēs iepērkam bērza apaļkoksni.",
+    "title": "Apaļkoku iepirkums",
+    "intro": "Mēs iepērkam bērza apaļkokus.",
     "volumeTitle": "Apjoma un diametru grupu noteikšana:",
-    "volumeText": "Roku mērījums pēc zem mizas diametra, kā arī tiek piemērots koeficienta mērījums.",
+    "volumeText": "Manuāls mērījums pēc diametra zem mizas, kā arī tiek piemērots koeficienta mērījums.",
     "lengthsTitle": "Apmaksājamie garumi:",
     "garums1": "(piegādes garums: 2.80 m)",
     "garums2": "(piegādes garums: 3.10 m)",
@@ -71,7 +71,7 @@
     "requirementsTitle": "Koksnes prasības",
     "requirement1": "Izliece uz vienu metru – ne vairāk kā 2 cm (griezuma robežās)",
     "requirement2": "S-veida izliece nav atļauta",
-    "requirement3": "Minimāla zarišanās (ne vairāk kā trīs zari uz metru)",
+    "requirement3": "Minimāla zarainība (ne vairāk kā trīs zari uz metru)",
     "requirement4": "Svaigi zāģēta koksne (zilganie baļķi nav piemēroti ražošanai)",
     "requirement5": "Maksimālais diametrs – 40 cm (ja pārsniegts, baļķis tiek uzskatīts par brāķi)"
   },
@@ -80,19 +80,19 @@
 
   "product": {
     "title": "Mūsu produkcijas piedāvājums",
-    "intro": "Bezvārpstas bērza finieris",
+    "intro": "Bērza finierskaida",
     "sizesTitle": "Divas ražošanas līnijas – 1300 un 1600 mm. Pieejamie izmēri:",
     "thicknessTitle": "Standarta biezums ir 1.5 mm, nestandarta biezums diapazonā no 1.0 līdz 3.0 mm. Finieris ir pieejams ABCD un E kvalitātes pakās.",
     "thicknessText": "Standarta biezums ir 1.5 mm, nestandarta biezums diapazonā no 1.0 līdz 3.0 mm. Finieris ir pieejams ABCD un E kvalitātes pakās.",
-    "contactTitle": "Pasūtījuma veikšanai vai jautājumu gadījumā, lūdzu, sazinieties ar mūsu pārdošanas vadītāju:",
-    "contact": "Pasūtījuma veikšanai vai jautājumu gadījumā, lūdzu, sazinieties ar mūsu pārdošanas vadītāju:",
+    "contactTitle": "Pasūtījumu veikšanai vai jautājumu gadījumā, lūdzu, sazinieties ar mūsu pārdošanas vadītāju:",
+    "contact": "Pasūtījumu veikšanai vai jautājumu gadījumā, lūdzu, sazinieties ar mūsu pārdošanas vadītāju:",
     "processTitle": "Ražošanas process",
     "processSubtitle": "No apaļkoksnes līdz sašķirotam finierim",
     "step1": "Baļķi tiek mizoti uz divām bezvārpstas līnijām dabīgā mitruma līmenī, bez iepriekšējas mērcēšanas. Biezums un kvalitāte tiek regulāri kontrolēta.",
     "step2": "Svaigs finieris tiek atstāts vismaz uz 48 stundām, lai nodrošinātu dabīgu mitruma izlīdzināšanos.",
-    "step3": "32 metrus garā, četrjostu žāvētava, ko darbina ar pārstrādātām koksnes skaidām, nodrošina nepieciešamo mitruma līmeni.",
+    "step3": "32 metrus garā, četrjostu žāvētava, kas tiek darbināta ar ražošanas blakusproduktu - šķeldu, nodrošina nepieciešamo mitruma līmeni.",
     "step4": "Katru stundu tiek veiktas pārbaudes, lai nodrošinātu ideālo 4–8% mitruma līmeni.",
-    "step5": "Katrs loks tiek manuāli pārbaudīts un sašķirots kvalitātes pakās, lai garantētu vienmērīgu kvalitāti."
+    "step5": "Katra loksne tiek manuāli pārbaudīts un sašķirots kvalitātes pakās, lai garantētu vienmērīgu kvalitāti."
   },
 
 
@@ -105,22 +105,22 @@
       "text": "Vēl viena diena, ko atzīmēt – esam saņēmuši savu FSC® sertifikātu. Mūsu ražotnē tiks ieviestas divas sistēmas: procentuālā un pārneses. Ražošanas procesā mēs izsekojam katru produkcijas paleti individuāli, kas ļauj piešķirt nepieciešamo FSC® marķējumu katram pasūtījumam. Vienlaikus iepazīstamies ar EUDR sistēmu un DDS izveidi. Ceram, ka kopā spēsim nodrošināt 100% izsekojamību koksnes nozarē un novērst jebkādus nelikumīgus centienus, kas kaitē tirgus cenām. Uz labklājīgu nākotni! 🍾"
     },
     "2025_09_09": {
-      "title": "Pirmais gatavās produkcijas kraušana",
+      "title": "Pirmā gatavās produkcijas kraušana",
       "date": "09.09.2025",
       "text": "Mēs esam ļoti priecīgi, ka pirmais uzņēmuma darbības posms ir noslēdzies. Lai atzīmētu šo dienu, aicinājām visus darbiniekus un atbalstītājus, bez kuriem nebūtu iespējams paveikt paveikto, uz svinīgām pusdienām. Šodien svinam, jūtam pateicību par sasniegto un smeļamies spēku turpmākajam darbam."
     },
     "2025_09_02": {
       "title": "Sertifikācija",
       "date": "02.09.2025",
-      "text": "Lieli notikumi neizbēgami rada zināmu stresu. Taču mums bija pārliecība par ieviestajiem pasākumiem, un sertifikāciju nokārtojām ar godu. Esam ļoti apmierināti ar paveikto un saņemto atbalstu no mūsu sertifikācijas institūcijas. Tagad atliek tikai sagaidīt pašu sertifikātu."
+      "text": "Lieli notikumi, neizbēgami, rada zināmu stresu. Taču mums bija pārliecība par ieviestajiem pasākumiem, un sertifikāciju nokārtojām ar godu. Esam ļoti apmierināti ar paveikto un saņemto atbalstu no mūsu sertifikācijas institūcijas. Tagad atliek tikai sagaidīt pašu sertifikātu."
     },
     "2025_08_12": {
       "title": "Finiera žāvētava gatava darbam",
       "date": "12.08.2025",
-      "text": "Montāžas noslēdzošais posms ir pabeigts, un šodien sākam žāvētavas iedarbināšanu. Vēl nedaudz pielāgošanas darbu, līdz pilnībā nokonfigurēsim iekārtas un būsim droši par mitruma kontroles precizitāti. Mūsu pieredze rāda, ka dažādi gala produktu ražotājiem ir atšķirīgas prasības attiecībā uz mitrumu. Ar šo soli mēs strauji tuvojamies normāliem ražošanas apjomiem un termiņiem. Ceram līdz mēneša beigām strādāt pilnās maiņās."
+      "text": "Montāžas noslēdzošais posms ir pabeigts, un šodien sākam žāvētavas darbināšanu. Vēl nedaudz pielāgošanas darbu, līdz pilnībā nokonfigurēsim iekārtas un būsim droši par mitruma kontroles precizitāti. Mūsu pieredze rāda, ka dažādiem ražotājiem ir atšķirīgas prasības attiecībā uz mitrumu. Ar šo soli mēs strauji tuvojamies normāliem ražošanas apjomiem un termiņiem. Ceram līdz mēneša beigām strādāt pilnās maiņās."
     },
     "2025_08_02": {
-      "title": "Mizošanas līnijas ir darbībā",
+      "title": "Mizošanas līnijas ir darba gatavībā",
       "date": "02.08.2025",
       "text": "Šodien sākam testēt mizošanas līnijas. Kopumā mums ir divas ražošanas līnijas – 1300 un 1600. Montāža ir pabeigta, tagad nepieciešams veikt pārbaudes un regulēšanu, lai nodrošinātu iespējami augstāko kvalitāti. Īpašu uzmanību pievēršam biezuma tolerances samazināšanai līdz 0.02 mm. Redzēsim, vai sasniegsim mērķi! Tikmēr baudīsim pirmo svaigi nomizoto finiera lokšņu smaržu."
     },
@@ -132,7 +132,7 @@
     "2025_05_22": {
       "title": "Ieradies pirmais iekārtu konteiners",
       "date": "22.05.2025",
-      "text": "Visa ražošanas iekārta tiek piegādāta jūrā pa sūtījumiem 16 konteineros (40’’). Šodien ieradies pirmais, un drīzumā sekos pārējie. Esam gatavi uzrotīt piedurknes un smagi strādāt, lai uzstādītu iekārtas līdz jaunās ražošanas sezonas sākumam. Vakar rūpnīcas telpas tika iztīrītas, gatavojoties to uzstādīšanai. Smags darbs priekšā, bet mēs no tā nebaidāmies – un būsim uzvarētāji!"
+      "text": "Visa ražošanas iekārta tiek piegādāta ar 16 jūras konteineriem (40’’). Šodien ieradies pirmais, un drīzumā sekos pārējie. Esam gatavi uzrotīt piedurknes un smagi strādāt, lai uzstādītu iekārtas līdz jaunās ražošanas sezonas sākumam. Vakar rūpnīcas telpas tika iztīrītas, gatavojoties to uzstādīšanai. Smags darbs priekšā, bet mēs no tā nebaidāmies – un būsim uzvarētāji!"
     },
     "2025_02_10": {
       "title": "Mums ir sava identitāte",
