@@ -108,29 +108,25 @@
           </div>
         </div>
       </div>
-
-      <script>
-        console.log("TEST: pixel script is running");
-        
-        var img = new Image();
-        img.onload = function() { console.log("IMAGE LOADED OK"); };
-        img.onerror = function() { console.log("IMAGE FAILED"); };
-        
-        img.src = "https://via.placeholder.com/1";
-        
-        document.body.appendChild(img);
-        </script>
+    </section>
+    
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="images/carusel/page-0001.jpg" >
+          <img src="images/carusel/page-0002.jpg" >
+          <img src="images/carusel/page-0003.jpg" >
+          <img src="images/carusel/page-0004.jpg" >
+          <img src="images/carusel/page-0005.jpg" >
+        </div>
+    
+        <!-- Carousel Controls -->
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
     </section>
 
-    <!-- FastCMP Trace Pixel -->
-    <script>
-      (function() {
-        var u = "https://trace.fastcmp.com/pixel";
-        var img = new Image();
-        img.src = "https://latveneer.lv/images/logoYellow.png"
-      })();
-    </script>
-    <!-- End FastCMP Trace Pixel -->
+
 
     <!-- Footer -->
     <footer id="footer" class="wrapper alt">
@@ -165,6 +161,32 @@
         bg.style.transform = `translateY(${scrolled * 0.3}px)`;
       });
     </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slideContainer = document.querySelector(".carousel-slide");
+    const slides = document.querySelectorAll(".carousel-slide img");
+    const prevBtn = document.querySelector(".carousel-btn.prev");
+    const nextBtn = document.querySelector(".carousel-btn.next");
+  
+    let currentIndex = 0;
+  
+    function showSlide(index) {
+      if(index < 0) index = slides.length - 1;
+      if(index >= slides.length) index = 0;
+      currentIndex = index;
+      slideContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  
+    prevBtn.addEventListener("click", () => showSlide(currentIndex - 1));
+    nextBtn.addEventListener("click", () => showSlide(currentIndex + 1));
+  
+    // Optional: Auto slide every 5 seconds
+    setInterval(() => showSlide(currentIndex + 1), 7000);
+  });
+  </script>
+  
+
 
   </body>
 </html>
