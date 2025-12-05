@@ -178,13 +178,29 @@
       slideContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
   
-    prevBtn.addEventListener("click", () => showSlide(currentIndex - 1));
-    nextBtn.addEventListener("click", () => showSlide(currentIndex + 1));
+    // Auto-slide every 7 seconds
+    let autoSlide = setInterval(() => showSlide(currentIndex + 1), 5000);
   
-    // Optional: Auto slide every 5 seconds
-    setInterval(() => showSlide(currentIndex + 1), 7000);
+    // Function to disable auto-slide on first click
+    function userInteracted() {
+      clearInterval(autoSlide);
+      prevBtn.removeEventListener("click", userInteracted);
+      nextBtn.removeEventListener("click", userInteracted);
+    }
+  
+    prevBtn.addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+    });
+    nextBtn.addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+    });
+  
+    // Detect first user click on either button
+    prevBtn.addEventListener("click", userInteracted);
+    nextBtn.addEventListener("click", userInteracted);
   });
   </script>
+  
   
 
 
