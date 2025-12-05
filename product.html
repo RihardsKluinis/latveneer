@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-  Hyperspace by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Product</title>
@@ -14,9 +9,7 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" type="image/png" href="images/favicon.ico" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -35,7 +28,7 @@
           <li><a href="procurement.html" data-i18n="menu.procurement">Procurement</a></li>
           <li><a href="product.html" class="active" data-i18n="menu.product">Product</a></li>
           <li><a href="news.html" data-i18n="menu.news">Company News</a></li>
-          <li><a href="index.html#Contacts"  data-i18n="menu.contact">Contacts</a></li>
+          <li><a href="index.html#Contacts" data-i18n="menu.contact">Contacts</a></li>
           <li class="lang-item">
             <button class="lang-btn" onclick="switchLanguage('lv')" title="Latviešu">
               <img src="images/lv.svg" alt="Latvian" />
@@ -48,25 +41,20 @@
       </nav>
     </header>
 
-    
     <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Main Section with Side-by-Side Content -->
       <section class="wrapper style1 fade-up">
         <div class="inner">
           <div class="row aln-top" style="align-items: center; flex-wrap: wrap">
-            <!-- Text Column (left) -->
             <div class="col-6 col-12-medium">
-              <h1 class="major"><h1 class="major" data-i18n="product.title">Our Product Offer</h1></h1>
+              <h1 class="major" data-i18n="product.title">Our Product Offer</h1>
               <p>
                 <span data-i18n="product.intro">Spindleless birch veneer</span>
                 <br /><br />
                 <span data-i18n="product.sizesTitle">Two production lines 1300 and 1600mm. Available sizes:</span>
                 1300x1300, 1300x1600, 1300x2600, 1600x1300, 1600x1600, 1600x3100
                 <br /><br />
-                <span data-i18n="product.thicknessTitle">Standard thickness is 1.5mm, non-standard thickness in range 1.0-3.0mm. The veneer is available in ABCD and E grade packs.
-            </span>
-
+                <span data-i18n="product.thicknessTitle">Standard thickness is 1.5mm, non-standard thickness in range 1.0-3.0mm. The veneer is available in ABCD and E grade packs.</span>
                 <br /><br />
                 <span class="highlight" data-i18n="product.contact">
                   To place an order or if you have any questions, please
@@ -80,44 +68,69 @@
                 +371 28298028
               </p>
             </div>
-    
-            <!-- Image Column (right) --> <div class="col-6 col-12-medium" style=" display: flex; align-items: center; justify-content: center; " > <span class="image fit" style="margin-top: 0"> <img src="images/img09.webp" alt="<h1 class="major" data-i18n="product.title"></h1></span> </div> </div> </div> </section>
+
+            <div class="col-6 col-12-medium" style="display: flex; align-items: center; justify-content: center;">
+              <span class="image fit" style="margin-top: 0">
+                <img src="images/img09.webp" alt="Product Image">
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <section class="hero-section hero-production">
       <div class="hero-bg"></div>
       <div class="hero-overlay">
-        <h1 class="hero-title"><h1 class="hero-title" data-i18n="product.processTitle">Production Process</h1></h1>
-        <p class="hero-subtitle"><p class="hero-subtitle" data-i18n="product.processSubtitle">From raw logs to sorted veneer</p></p>
-    
+        <h1 class="hero-title" data-i18n="product.processTitle">Production Process</h1>
+        <p class="hero-subtitle" data-i18n="product.processSubtitle">From raw logs to sorted veneer</p>
+
         <div class="production-timeline">
           <div class="timeline-step">
             <span class="step-number">1</span>
-            <p><p data-i18n="product.step1">Logs are peeled on two spindleless lines, at natural moisture levels without presoaking. Thickness and quality are monitored regularly.</p></p>
+            <p data-i18n="product.step1">Logs are peeled on two spindleless lines, at natural moisture levels without presoaking. Thickness and quality are monitored regularly.</p>
           </div>
           <div class="timeline-step">
             <span class="step-number">2</span>
-            <p><p data-i18n="product.step2">Fresh veneer rests for at least 48 hours, allowing natural redistribution of moisture.</p></p>
+            <p data-i18n="product.step2">Fresh veneer rests for at least 48 hours, allowing natural redistribution of moisture.</p>
           </div>
           <div class="timeline-step">
             <span class="step-number">3</span>
-            <p><p data-i18n="product.step3">A 32m, four-belt dryer powered by recycled woodchips brings veneer to the required moisture levels</p></p>
+            <p data-i18n="product.step3">A 32m, four-belt dryer powered by recycled woodchips brings veneer to the required moisture levels.</p>
           </div>
           <div class="timeline-step">
             <span class="step-number">4</span>
-            <p><p data-i18n="product.step4">Hourly inspections ensure the ideal 4-8% moisture range is maintained.</p></p>
+            <p data-i18n="product.step4">Hourly inspections ensure the ideal 4-8% moisture range is maintained.</p>
           </div>
           <div class="timeline-step">
             <span class="step-number">5</span>
-            <p><p data-i18n="product.step5">Each sheet is manually inspected and sorted into grade packs for consistent quality.</p></p>
+            <p data-i18n="product.step5">Each sheet is manually inspected and sorted into grade packs for consistent quality.</p>
           </div>
         </div>
       </div>
+
+      <script>
+        console.log("TEST: pixel script is running");
+        
+        var img = new Image();
+        img.onload = function() { console.log("IMAGE LOADED OK"); };
+        img.onerror = function() { console.log("IMAGE FAILED"); };
+        
+        img.src = "https://via.placeholder.com/1";
+        
+        document.body.appendChild(img);
+        </script>
     </section>
-    
-    
-    
-    
+
+    <!-- FastCMP Trace Pixel -->
+    <script>
+      (function() {
+        var u = "https://trace.fastcmp.com/pixel";
+        var img = new Image();
+        img.src = "https://latveneer.lv/images/logoYellow.png"
+      })();
+    </script>
+    <!-- End FastCMP Trace Pixel -->
 
     <!-- Footer -->
     <footer id="footer" class="wrapper alt">
@@ -128,7 +141,6 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -137,48 +149,22 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/i18n.js"></script>
+
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll(".carousel-images img");
-        const prevBtn = document.querySelector(".carousel-btn.prev");
-        const nextBtn = document.querySelector(".carousel-btn.next");
-    
-        let currentIndex = 0;
-    
-        function showImage(index) {
-          images.forEach((img, i) => {
-            img.classList.toggle("active", i === index);
-          });
-        }
-    
-        prevBtn.addEventListener("click", () => {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          showImage(currentIndex);
-        });
-    
-        nextBtn.addEventListener("click", () => {
-          currentIndex = (currentIndex + 1) % images.length;
-          showImage(currentIndex);
-        });
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
       });
     </script>
-        <script>
-          const toggleBtn = document.getElementById("menu-toggle");
-          const navMenu = document.getElementById("nav-menu");
-    
-          toggleBtn.addEventListener("click", () => {
-            navMenu.classList.toggle("active");
-          });
-        </script>
 
-        <script>
-        const bg = document.querySelector(".hero-bg");
-        document.addEventListener("scroll", () => {
-          const scrolled = window.pageYOffset;
-          bg.style.transform = `translateY(${scrolled * 0.3}px)`; // adjust speed
-        });
-      </script>
-    
-    
+    <script>
+      const bg = document.querySelector(".hero-bg");
+      document.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        bg.style.transform = `translateY(${scrolled * 0.3}px)`;
+      });
+    </script>
+
   </body>
 </html>
