@@ -4472,3 +4472,53 @@ body.index #header {
 	}
   }
 
+
+
+
+
+
+  .carousel-container {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	margin: 2em auto;
+	overflow: hidden;
+  }
+  
+  .carousel-slide {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+	width: 100%;
+	flex-shrink: 0;
+  }
+  
+  .carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none !important;   /* Remove any background */
+	border: none !important;       /* Remove any border */
+	outline: none !important;      /* Remove focus outline */
+	color: #333;
+	font-size: 2em;
+	cursor: pointer;
+	z-index: 10;
+	padding: 0 0.2em;
+	user-select: none;
+  }
+  
+  .carousel-btn:hover {
+	color: #000;
+  }
+  
+  .carousel-btn.prev {
+	left: 10px;
+  }
+  
+  .carousel-btn.next {
+	right: 10px;
+  }
+  
