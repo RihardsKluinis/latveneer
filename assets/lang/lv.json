@@ -13,13 +13,13 @@
     "toggle": "Atvērt slēpt izvēlni",
     "home": "Sākums",
     "procurement": "Apaļkoku iepirkšana",
-    "product": "Produkti",
+    "product": "Prece",
     "news": "Jaunumi",
     "contact": "Kontakti"
   },
   "factory": {
     "title": "Mūsu ražotne",
-    "description": "Mēs piedāvājam serdes finieri no divām ražošanas līnijām: 1300 mm un 1600 mm garumā. Galvenokārt, ražojam šādus izmērus: 1300x1300; 1300x2600, 1600x1600, 1600x3100."
+    "description": "Mēs piedāvājam serdes finieri no divām bez spiņģeļa lobīšanas līnijām: 1300mm un 1600mm garumā. Galvenokārt, ražojam šādus izmērus: 1300x1300; 1300x1600, 1300x2600, 1600x1300, 1600x1600, 1600x2600, 1600x3100."
   },
   "location": {
     "title": "Kur mūs atrast",
@@ -31,14 +31,14 @@
   },
   "contact": {
     "title": "Sazinieties ar mums",
-    "description": "Sazinieties ar mums, izmantojot zemāk norādītos kontaktus.",
+    "description": "Sazinieties ar mums, izmantojot zemāk norādīto kontaktinformāciju.",
     "addressTitle": "Adrese",
     "address": "Ausekļa iela 3A, Jēkabpils, LV-5201, Latvija",
     "emailTitle": "E-pasts",
     "email": "info@latveneer.lv",
     "phoneTitle": "Tālrunis",
     "phone": "+371 28 298 028",
-    "companyTitle": "Uzņēmums",
+    "companyTitle": "Rekvizīti",
     "companyInfo": "SIA LatVeneer<br>Reģ. Nr. 40203561748<br>Ausekļa iela 1, Jēkabpils, LV-5201<br>PVN numurs: LV40203561748",
     "emailTitle2": "E-pasts",
     "email2": "info@latveneer.lv",
@@ -72,7 +72,7 @@
     "requirement1": "Izliece uz vienu metru – ne vairāk kā 2 cm (griezuma robežās)",
     "requirement2": "S-veida izliece nav atļauta",
     "requirement3": "Minimāla zarainība (ne vairāk kā trīs zari uz metru)",
-    "requirement4": "Svaigi zāģēta koksne (zilganie baļķi nav piemēroti ražošanai)",
+    "requirement4": "Svaigi zāģēta koksne (sabrūnējuši baļķi nav piemēroti ražošanai)",
     "requirement5": "Maksimālais diametrs – 40 cm (ja pārsniedz, tad baļķis tiek uzskatīts par brāķi)"
   },
 
