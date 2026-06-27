@@ -101,7 +101,11 @@
   "news": {
     "headline":"Jaunumi",
 
-
+    "10.06.2026": {
+    "title": "VID piešķīris A reitingu",
+    "date": "10.06.2026",
+    "text": "Šodien mēs svinam mazas uzvaras. Valsts ieņēmumu dienests mums ir piešķīris augstāko uzņēmuma novērtējumu par mūsu darbu 2025. gadā. Esam ļoti gandarīti par šādu atzinību un ceram turpināt strādāt ar tādu pašu centību."
+    },
     "2026_02_17": {
     "title": "Sagaidām Jauno zirga gadu!",
     "date": "17.02.2026",
