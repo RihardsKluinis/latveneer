@@ -1,263 +1,188 @@
 <!DOCTYPE html>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Procurement</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/png" href="images/favicon.ico" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>We Buy Birch Roundwood — Log Requirements &amp; Prices | LatVeneer</title>
+  <meta name="description" content="LatVeneer buys birch veneer logs in Jēkabpils, Latvia. Payable lengths, measurement rules, log quality requirements and today's price by phone — measurement every working day 07:00–19:00." />
+  <link rel="canonical" href="https://latveneer.lv/procurement.html" />
+  <link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement.html" />
+  <link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana.html" />
+  <link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement.html" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LatVeneer" />
+  <meta property="og:title" content="We Buy Birch Roundwood — Log Requirements &amp; Prices | LatVeneer" />
+  <meta property="og:description" content="Birch veneer log buying in Jēkabpils, Latvia. Requirements, payable lengths, and today's price by phone." />
+  <meta property="og:image" content="https://latveneer.lv/images/og.jpg" />
+  <meta property="og:url" content="https://latveneer.lv/procurement.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="We Buy Birch Roundwood — Log Requirements &amp; Prices | LatVeneer" />
+  <meta name="twitter:description" content="Birch veneer log buying in Jēkabpils, Latvia. Requirements, payable lengths, and today's price by phone." />
+  <meta name="twitter:image" content="https://latveneer.lv/images/og.jpg" />
 
-  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-  <script>
-    async function loadPriceTable() {
-      try {
-        const response = await fetch('price_table.xlsx');
-        if (!response.ok) throw new Error('Failed to fetch Excel file');
-
-        const data = await response.arrayBuffer();
-        const workbook = XLSX.read(data, { type: 'array' });
-
-        const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(firstSheet, {
-          header: 1,
-          defval: '',
-        });
-
-        console.log('Excel rows loaded:', rows);
-
-        const tbody = document.querySelector('#price-table tbody');
-        if (rows.length <= 1) {
-          const tr = document.createElement('tr');
-          const td = document.createElement('td');
-          td.colSpan = 5;
-          td.textContent = 'No data found in Excel file.';
-          tr.appendChild(td);
-          tbody.appendChild(tr);
-          return;
-        }
-
-        rows.slice(1).forEach((row) => {
-          const tr = document.createElement('tr');
-          row.forEach((cell) => {
-            const td = document.createElement('td');
-            td.textContent = cell;
-            tr.appendChild(td);
-          });
-          tbody.appendChild(tr);
-        });
-      } catch (err) {
-        console.error('Error loading Excel table:', err);
-        const tbody = document.querySelector('#price-table tbody');
-        const tr = document.createElement('tr');
-        const td = document.createElement('td');
-        td.colSpan = 5;
-        td.textContent = 'Error loading price table.';
-        tr.appendChild(td);
-        tbody.appendChild(tr);
-      }
-    }
-
-    loadPriceTable();
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://latveneer.lv/" },
+      { "@type": "ListItem", "position": 2, "name": "Log procurement", "item": "https://latveneer.lv/procurement.html" }
+    ]
+  }
   </script>
 
-  <body class="is-preload">
-    <!-- Header -->
-    <header id="header">
-      <a href="index.html">
-        <img
-          src="images/logoYellow.png"
-          alt="LatVeneer Logo"
-          style="width: 8em; height: auto; object-fit: contain"
-        />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="assets/css/veneer.css" rel="stylesheet" />
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="rings" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="24" cy="24" r="21" stroke-width="2.4" />
+        <ellipse cx="23.2" cy="24.6" rx="16.4" ry="15.6" />
+        <ellipse cx="24.8" cy="23.2" rx="12.1" ry="11.4" />
+        <ellipse cx="23.6" cy="24.9" rx="8" ry="7.3" />
+        <ellipse cx="24.4" cy="23.7" rx="4.6" ry="4.1" />
+        <circle cx="24" cy="24.2" r="1.6" fill="currentColor" stroke="none" />
+      </g>
+    </defs>
+  </svg>
+
+  <header class="site">
+    <div class="wrap header-in">
+      <a class="brand" href="/" aria-label="LatVeneer home">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
+        <strong>LATVENEER</strong>
       </a>
-      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav id="nav-menu">
-        <ul class="menu-items">
-          <li><a href="index.html"  data-i18n="menu.home">Home</a></li>
-          <li><a href="procurement.html" class="active" data-i18n="menu.procurement">Procurement</a></li>
-          <li><a href="product.html" data-i18n="menu.product">Product</a></li>
-          <li><a href="news.html" data-i18n="menu.news">Company News</a></li>
-          <li><a href="index.html#Contacts"  data-i18n="menu.contact">Contacts</a></li>
-          <li class="lang-item">
-            <button class="lang-btn" onclick="switchLanguage('lv')" title="Latviešu">
-              <img src="images/lv.svg" alt="Latvian" />
-            </button>
-            <button class="lang-btn" onclick="switchLanguage('en')" title="English">
-              <img src="images/gb.svg" alt="English" />
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <section class="wrapper style1 fade-up">
-        <div class="inner">
-          <div class="row aln-top" style="align-items: center; flex-wrap: wrap">
-            <!-- Text Column (left) -->
-            <div class="col-6 col-12-medium">
-              <h1 class="major"><h1 class="major" data-i18n="procurement.title">Log Procurement</h1></h1>
-
-              <p><span class="highlight"><p data-i18n="procurement.intro"><span class="highlight">We purchase birch roundwood.</span></p></span></p>
-
-              <p>
-                <span class="highlight"
-                  ><span class="highlight" data-i18n="procurement.volumeTitle">Volume and diameter group measurement:</span></span
-                ><br />
-                <span data-i18n="procurement.volumeText">Hand meansurement according to under bark diameter as well as coefficient measurement is applied.</span>
-              </p>
-
-
-              
-              <p>
-                <span class="highlight"><span class="highlight" data-i18n="procurement.lengthsTitle">Payable lengths:</span></span><br />
-                - 2.70 m
-                <span style="font-style: italic" data-i18n="procurement.garums1"
-                  >(delivered length: 2.80 m)</span
-                ><br />
-
-                - 3.00 m
-                <span style="font-style: italic" data-i18n="procurement.garums2"
-                  >(delivered length: 3.10 m)</span
-                ><br />
-                - 3.20 m
-                <span style="font-style: italic" data-i18n="procurement.garums3"
-                  >(delivered length: 3.30 m)</span
-                ><br />
-                - 3.30 m
-                <span style="font-style: italic" data-i18n="procurement.garums4"
-                  >(delivered length: 3.40 m)</span
-                >
-              </p>
-
-              <p>
-                <span class="highlight" data-i18n="procurement.measurementTime"><span class="highlight" data-i18n="procurement.measurementTimeTitle"
-                  >Log measurement time: every working day from 07:00 to 19:00</span>
-              </p>
-
-              <!-- New contact section -->
-              <p>
-                <span class="highlight" data-i18n="procurement.contact"
-                  >For more information, please contact our procurement
-                  manager:</span
-                ><br />
-                Roberts Dai<br />
-                <a href="mailto:roberts@latveneer.lv">roberts@latveneer.lv</a
-                ><br />
-                +371 29813958
-              </p>
-
-              <!--Atkomentēet kad cenu lapa bus aktuala  <p><span class="highlight">PRICES FROM 01.06.2025</span></p>  -->
-            </div>
-
-            <!-- Image Column (right) -->
-            <div
-              class="col-6 col-12-medium"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <span class="image fit" style="margin-top: 0">
-                <img src="images/birch_logs.jpg" alt="<h1 class="major" data-i18n="procurement.title"></h1> 
-              </span>
-            </div>
+      <nav class="main" aria-label="Main">
+        <a href="index.html#film" class="hide-m">The film</a>
+        <a href="product.html" class="hide-m">Product</a>
+        <a href="procurement.html" class="active hide-m">Log buying</a>
+        <a href="news.html" class="hide-m">News</a>
+        <a href="index.html#contact" class="hide-m">Contact</a>
+        <details class="mobnav">
+          <summary aria-label="Open menu">Menu</summary>
+          <div class="sheet-menu">
+            <a href="index.html#film">The film</a>
+            <a href="product.html">Product</a>
+            <a href="procurement.html">Log buying</a>
+            <a href="news.html">News</a>
+            <a href="index.html#contact">Contact</a>
           </div>
-        </div>
-      </section>
-
-      <!-- Cenradis
-			  <section class="wrapper style1 fade-up">
-				<div class="inner">
-				  <h2 class="major">Price Table</h2>
-				  <div class="table-wrapper">
-					<table id="price-table">
-					  <thead>
-						<tr>
-						  <th>Quality</th>
-						  <th>Diameter Group, mm</th>
-						  <th>2.7 m Price (EUR/m³)</th>
-						  <th>3.2 m Price (EUR/m³)</th>
-						  <th>3.3 m Price (EUR/m³)</th>
-						</tr>
-					  </thead>
-					  <tbody>
-						
-						
-					  </tbody>
-					</table>
-				  </div>
-				</div>
-			  </section>
-			  -->
+        </details>
+        <a class="btn" href="#offer">Offer your logs</a>
+        <a class="btn ghost lang-btn" href="lv/iepirksana.html" lang="lv" hreflang="lv" title="Latviski">LV</a>
+      </nav>
     </div>
+  </header>
 
-
-    <!-- 
-    <section class="hero-section" style="background-image: url('images/img07.jpg');">
-      <div class="hero-overlay">
-        <h1 class="hero-title">Another Page Title</h1>
-        <h2 class="hero-subtitle">This page’s subtitle</h2>
+  <section class="page-hero">
+    <svg class="rings" viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
+    <div class="wrap">
+      <p class="kicker">Log procurement · <a href="lv/iepirksana.html" lang="lv" style="text-decoration:underline">Latviski</a></p>
+      <h1>We buy birch roundwood.</h1>
+      <p class="lead">
+        Veneer-grade birch logs, measured and unloaded at our mill in Jēkabpils
+        every working day. Volume and diameter group measurement: hand
+        measurement according to under-bark diameter, as well as coefficient
+        measurement, is applied.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#offer">Offer your logs</a>
+        <a class="btn ghost" href="tel:+37129813958">Call for today's price</a>
       </div>
-    </section>
-    -->
-    <section class="hero-section hero-procurement">
-      <div class="hero-overlay">
-        <h1 class="hero-title"><h1 class="hero-title" data-i18n="procurement.requirementsTitle">Requirements for Logs</h1></h1>
-        <ul class="hero-requirements">
-          <li data-i18n="procurement.requirement1">Curvature per meter no more than 2 cm (within the cut)</li>
-          <li data-i18n="procurement.requirement2">S-shaped curvature is not allowed</li>
-          <li data-i18n="procurement.requirement3">Minimal branching (no more than three branches per meter)</li>
-          <li data-i18n="procurement.requirement4">Freshly sawn (staining logs are not suitable for production)</li>
-          <li data-i18n="procurement.requirement5">Maximum diameter 40cm (if exceeded, then will be marked as defective)</li>
-        </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Terms</p>
+        <h2>Payable lengths.</h2>
+        <table class="data-table">
+          <thead>
+            <tr><th>Payable length</th><th>Delivered length</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>2.70 m</strong></td><td>2.80 m</td></tr>
+            <tr><td><strong>3.00 m</strong></td><td>3.10 m</td></tr>
+            <tr><td><strong>3.20 m</strong></td><td>3.30 m</td></tr>
+            <tr><td><strong>3.30 m</strong></td><td>3.40 m</td></tr>
+          </tbody>
+        </table>
+        <p class="copy" style="margin-top:2rem">
+          <strong>Log measurement time:</strong> every working day from 07:00 to 19:00.<br />
+          <strong>Price:</strong> follows the market and is agreed before delivery —
+          <a href="tel:+37129813958">call +371 29 813 958</a> for today's price.
+        </p>
       </div>
-    </section>
-    
-    
-    
-    
-    <!-- Footer--> 
-    <footer id="footer" class="wrapper alt">
-      <div class="inner">
-        <ul class="menu">
-          <li>&copy; LatVeneer. All rights reserved.</li>
-        </ul>
+      <img class="cover" src="images/opt/birch-logs.webp" alt="Birch veneer logs delivered to the LatVeneer mill in Jēkabpils" loading="lazy" width="1008" height="756" />
+    </div>
+  </section>
+
+  <section class="req-band">
+    <div class="wrap">
+      <p class="kicker">Quality</p>
+      <h2>Requirements for logs.</h2>
+      <ul class="req-list">
+        <li>Curvature per metre no more than 2 cm (within the cut)</li>
+        <li>S-shaped curvature is not allowed</li>
+        <li>Minimal branching (no more than three branches per metre)</li>
+        <li>Freshly sawn (staining logs are not suitable for production)</li>
+        <li>Maximum diameter 40 cm (if exceeded, the log will be marked as defective)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block sagebg" id="offer">
+    <div class="wrap">
+      <p class="kicker">Contact</p>
+      <h2>Selling roundwood?</h2>
+      <p class="copy">
+        Call or write with your volumes and location and we'll agree the price
+        and delivery time. Deliveries arrive metres from the peeling lines that
+        turn your logs into <a href="product.html">FSC®-certified birch veneer</a>.
+      </p>
+      <div class="person-card">
+        <div class="role">Procurement manager</div>
+        <div class="name">Roberts Dai</div>
+        <a href="mailto:roberts@latveneer.lv">roberts@latveneer.lv</a>
+        <a href="tel:+37129813958">+371 29 813 958</a>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/i18n.js"></script>
-    <script>
-      const toggleBtn = document.getElementById("menu-toggle");
-      const navMenu = document.getElementById("nav-menu");
+  <footer class="site">
+    <div class="wrap">
+      <div class="footer-in">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
+        <span style="font-family:var(--display);font-weight:800;letter-spacing:0.14em;font-size:0.9rem">LATVENEER</span>
+        <span class="note">© 2026 SIA LatVeneer · FSC®-certified birch veneer, made in Latvia</span>
+        <button id="editorDoor" aria-label="Editor login" title="Editor" style="border:0;background:none;color:inherit;opacity:0.45;cursor:pointer;font:inherit;font-size:0.82rem;padding:0 0.3rem">@</button>
+      </div>
+      <div class="footer-meta">
+        <nav aria-label="Footer">
+          <a href="product.html">Birch veneer — sizes &amp; grades</a>
+          <a href="procurement.html">We buy birch roundwood</a>
+          <a href="lv/iepirksana.html" lang="lv">Bērza apaļkoku iepirkšana</a>
+          <a href="news.html">News from the mill</a>
+        </nav>
+        <address>
+          SIA LatVeneer · Ausekļa iela 3A, Jēkabpils, LV-5201, Latvia<br />
+          <a href="mailto:info@latveneer.lv">info@latveneer.lv</a> ·
+          <a href="tel:+37128298028">+371 28 298 028</a>
+        </address>
+      </div>
+    </div>
+  </footer>
 
-      toggleBtn.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-      });
-    </script>
-
-  </body>
+  <script src="assets/js/edit-mode.js" defer></script>
+</body>
 </html>

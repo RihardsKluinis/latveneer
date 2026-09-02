@@ -1,208 +1,344 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Product</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/png" href="images/favicon.ico" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <header id="header">
-      <a href="index.html">
-        <img
-          src="images/logoYellow.png"
-          alt="LatVeneer Logo"
-          style="width: 8em; height: auto; object-fit: contain"
-        />
-      </a>
-      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav id="nav-menu">
-        <ul class="menu-items">
-          <li><a href="index.html"  data-i18n="menu.home">Home</a></li>
-          <li><a href="procurement.html" data-i18n="menu.procurement">Procurement</a></li>
-          <li><a href="product.html" class="active" data-i18n="menu.product">Product</a></li>
-          <li><a href="news.html" data-i18n="menu.news">Company News</a></li>
-          <li><a href="index.html#Contacts" data-i18n="menu.contact">Contacts</a></li>
-          <li class="lang-item">
-            <button class="lang-btn" onclick="switchLanguage('lv')" title="Latviešu">
-              <img src="images/lv.svg" alt="Latvian" />
-            </button>
-            <button class="lang-btn" onclick="switchLanguage('en')" title="English">
-              <img src="images/gb.svg" alt="English" />
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rotary-Cut Birch Veneer from Latvia — Sizes, Grades &amp; Specs | LatVeneer</title>
+  <meta name="description" content="Rotary-cut (spindleless-peeled) birch core veneer from LatVeneer, Jēkabpils, Latvia. Six sheet sizes, 1.0–3.0 mm thickness, 0.02 mm tolerance, ABCD and E grade packs, FSC®-certified." />
+  <link rel="canonical" href="https://latveneer.lv/product.html" />
+  <link rel="alternate" hreflang="en" href="https://latveneer.lv/product.html" />
+  <link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts.html" />
+  <link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product.html" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LatVeneer" />
+  <meta property="og:title" content="Rotary-Cut Birch Veneer from Latvia — Sizes, Grades &amp; Specs | LatVeneer" />
+  <meta property="og:description" content="Six sheet sizes, 1.0–3.0 mm thickness, 0.02 mm tolerance, ABCD and E grade packs. FSC®-certified birch veneer from Jēkabpils, Latvia." />
+  <meta property="og:image" content="https://latveneer.lv/images/og.jpg" />
+  <meta property="og:url" content="https://latveneer.lv/product.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rotary-Cut Birch Veneer from Latvia — Sizes, Grades &amp; Specs | LatVeneer" />
+  <meta name="twitter:description" content="Six sheet sizes, 1.0–3.0 mm thickness, 0.02 mm tolerance, ABCD and E grade packs. FSC®-certified birch veneer from Jēkabpils, Latvia." />
+  <meta name="twitter:image" content="https://latveneer.lv/images/og.jpg" />
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <section class="wrapper style1 fade-up">
-        <div class="inner">
-          <div class="row aln-top" style="align-items: center; flex-wrap: wrap">
-            <div class="col-6 col-12-medium">
-              <h1 class="major" data-i18n="product.title">Our Product Offer</h1>
-              <p>
-                <span data-i18n="product.intro">Spindleless birch veneer</span>
-                <br /><br />
-                <span data-i18n="product.sizesTitle">Two production lines 1300 and 1600mm. Available sizes:</span>
-                1300x1300, 1300x1600, 1300x2600, 1600x1300, 1600x1600, 1600x3100
-                <br /><br />
-                <span data-i18n="product.thicknessTitle">Standard thickness is 1.5mm, non-standard thickness in range 1.0-3.0mm. The veneer is available in ABCD and E grade packs.</span>
-                <br /><br />
-                <span class="highlight" data-i18n="product.contact">
-                  To place an order or if you have any questions, please
-                  contact our sales manager:
-                </span>
-                <br />
-                Nora Ziedkalna<br />
-                <a href="mailto:nora.ziedkalna@latveneer.lv">
-                  nora.ziedkalna@latveneer.lv
-                </a><br />
-                +371 28298028
-              </p>
-            </div>
-
-            <div class="col-6 col-12-medium" style="display: flex; align-items: center; justify-content: center;">
-              <span class="image fit" style="margin-top: 0">
-                <img src="images/img09.webp" alt="Product Image">
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="hero-section hero-production">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay">
-        <h1 class="hero-title" data-i18n="product.processTitle">Production Process</h1>
-        <p class="hero-subtitle" data-i18n="product.processSubtitle">From raw logs to sorted veneer</p>
-
-        <div class="production-timeline">
-          <div class="timeline-step">
-            <span class="step-number">1</span>
-            <p data-i18n="product.step1">Logs are peeled on two spindleless lines, at natural moisture levels without presoaking. Thickness and quality are monitored regularly.</p>
-          </div>
-          <div class="timeline-step">
-            <span class="step-number">2</span>
-            <p data-i18n="product.step2">Fresh veneer rests for at least 48 hours, allowing natural redistribution of moisture.</p>
-          </div>
-          <div class="timeline-step">
-            <span class="step-number">3</span>
-            <p data-i18n="product.step3">A 32m, four-belt dryer powered by recycled woodchips brings veneer to the required moisture levels.</p>
-          </div>
-          <div class="timeline-step">
-            <span class="step-number">4</span>
-            <p data-i18n="product.step4">Hourly inspections ensure the ideal 4-8% moisture range is maintained.</p>
-          </div>
-          <div class="timeline-step">
-            <span class="step-number">5</span>
-            <p data-i18n="product.step5">Each sheet is manually inspected and sorted into grade packs for consistent quality.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="carousel-section">
-      <div class="carousel-container">
-        <div class="carousel-slide">
-          <img src="images/carusel/page-0001.png" >
-          <img src="images/carusel/page-0002.png" >
-          <img src="images/carusel/page-0003.png" >
-          <img src="images/carusel/page-0004.png" >
-          <img src="images/carusel/page-0005.png" >
-        </div>
-    
-        <!-- Carousel Controls -->
-        <button class="carousel-btn prev">&#10094;</button>
-        <button class="carousel-btn next">&#10095;</button>
-      </div>
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer id="footer" class="wrapper alt">
-      <div class="inner">
-        <ul class="menu">
-          <li>&copy; LatVeneer. All rights reserved.</li>
-        </ul>
-      </div>
-    </footer>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/i18n.js"></script>
-
-    <script>
-      const toggleBtn = document.getElementById("menu-toggle");
-      const navMenu = document.getElementById("nav-menu");
-      toggleBtn.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-      });
-    </script>
-
-    <script>
-      const bg = document.querySelector(".hero-bg");
-      document.addEventListener("scroll", () => {
-        const scrolled = window.pageYOffset;
-        bg.style.transform = `translateY(${scrolled * 0.3}px)`;
-      });
-    </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slideContainer = document.querySelector(".carousel-slide");
-    const slides = document.querySelectorAll(".carousel-slide img");
-    const prevBtn = document.querySelector(".carousel-btn.prev");
-    const nextBtn = document.querySelector(".carousel-btn.next");
-  
-    let currentIndex = 0;
-  
-    function showSlide(index) {
-      if(index < 0) index = slides.length - 1;
-      if(index >= slides.length) index = 0;
-      currentIndex = index;
-      slideContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-  
-    // Auto-slide every 7 seconds
-    let autoSlide = setInterval(() => showSlide(currentIndex + 1), 5000);
-  
-    // Function to disable auto-slide on first click
-    function userInteracted() {
-      clearInterval(autoSlide);
-      prevBtn.removeEventListener("click", userInteracted);
-      nextBtn.removeEventListener("click", userInteracted);
-    }
-  
-    prevBtn.addEventListener("click", () => {
-      showSlide(currentIndex - 1);
-    });
-    nextBtn.addEventListener("click", () => {
-      showSlide(currentIndex + 1);
-    });
-  
-    // Detect first user click on either button
-    prevBtn.addEventListener("click", userInteracted);
-    nextBtn.addEventListener("click", userInteracted);
-  });
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": "https://latveneer.lv/product.html#product",
+        "name": "Rotary-cut birch core veneer",
+        "description": "Spindleless-peeled (rotary-cut) core birch veneer from Latvian silver birch. Six sheet sizes from 1300×1300 to 1600×3100 mm, 1.5 mm standard thickness (1.0–3.0 mm on request), 0.02 mm thickness tolerance, ABCD and E grade packs. FSC®-certified and traceable to the pallet.",
+        "image": "https://latveneer.lv/images/og.jpg",
+        "brand": { "@id": "https://latveneer.lv/#organization" },
+        "manufacturer": { "@id": "https://latveneer.lv/#organization" },
+        "material": "Silver birch (Betula pendula)",
+        "countryOfOrigin": "LV",
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Sheet sizes (mm)", "value": "1300×1300, 1300×1600, 1300×2600, 1600×1300, 1600×1600, 1600×3100" },
+          { "@type": "PropertyValue", "name": "Thickness", "value": "1.5 mm standard, 1.0–3.0 mm on request" },
+          { "@type": "PropertyValue", "name": "Thickness tolerance", "value": "0.02 mm" },
+          { "@type": "PropertyValue", "name": "Grades", "value": "ABCD and E grade packs" },
+          { "@type": "PropertyValue", "name": "Moisture after drying", "value": "4–8%" },
+          { "@type": "PropertyValue", "name": "Certification", "value": "FSC®-certified, pallet-level traceability" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://latveneer.lv/" },
+          { "@type": "ListItem", "position": 2, "name": "Product", "item": "https://latveneer.lv/product.html" }
+        ]
+      }
+    ]
+  }
   </script>
-  
-  
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="assets/css/veneer.css" rel="stylesheet" />
+</head>
+<body>
 
-  </body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="rings" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="24" cy="24" r="21" stroke-width="2.4" />
+        <ellipse cx="23.2" cy="24.6" rx="16.4" ry="15.6" />
+        <ellipse cx="24.8" cy="23.2" rx="12.1" ry="11.4" />
+        <ellipse cx="23.6" cy="24.9" rx="8" ry="7.3" />
+        <ellipse cx="24.4" cy="23.7" rx="4.6" ry="4.1" />
+        <circle cx="24" cy="24.2" r="1.6" fill="currentColor" stroke="none" />
+      </g>
+    </defs>
+  </svg>
+
+  <header class="site">
+    <div class="wrap header-in">
+      <a class="brand" href="/" aria-label="LatVeneer home">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
+        <strong>LATVENEER</strong>
+      </a>
+      <nav class="main" aria-label="Main">
+        <a href="index.html#film" class="hide-m">The film</a>
+        <a href="product.html" class="active hide-m">Product</a>
+        <a href="procurement.html" class="hide-m">Log buying</a>
+        <a href="news.html" class="hide-m">News</a>
+        <a href="index.html#contact" class="hide-m">Contact</a>
+        <details class="mobnav">
+          <summary aria-label="Open menu">Menu</summary>
+          <div class="sheet-menu">
+            <a href="index.html#film">The film</a>
+            <a href="product.html">Product</a>
+            <a href="procurement.html">Log buying</a>
+            <a href="news.html">News</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </details>
+        <button class="btn" data-open-modal>Request a sample</button>
+        <a class="btn ghost lang-btn" href="lv/produkts.html" lang="lv" hreflang="lv" title="Latviski">LV</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <svg class="rings" viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
+    <div class="wrap">
+      <p class="kicker">Our product offer</p>
+      <h1>Rotary-cut birch veneer.</h1>
+      <p class="lead">
+        Core birch veneer from two spindleless (rotary) peeling lines —
+        1300&nbsp;mm and 1600&nbsp;mm — peeled, dried and hand-sorted in
+        Jēkabpils, Latvia.
+      </p>
+      <div class="actions">
+        <button class="btn" data-open-modal>Request a sample</button>
+        <a class="btn ghost" href="#process">See the process</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker">Specifications</p>
+      <h2>Six sizes, one standard of quality.</h2>
+      <div class="spec-grid">
+        <div class="spec">
+          <h3>Available sizes</h3>
+          <div class="big">1300 × 1300 · 1300 × 1600<br />1300 × 2600 · 1600 × 1300<br />1600 × 1600 · 1600 × 3100&nbsp;mm</div>
+        </div>
+        <div class="spec">
+          <h3>Thickness</h3>
+          <div class="big">1.5 mm standard<br />1.0 – 3.0 mm on request</div>
+        </div>
+        <div class="spec">
+          <h3>Thickness tolerance</h3>
+          <div class="big">0.02 mm,<br />monitored hourly</div>
+        </div>
+        <div class="spec">
+          <h3>Grades</h3>
+          <div class="big">ABCD and E grade packs</div>
+        </div>
+        <div class="spec">
+          <h3>Production lines</h3>
+          <div class="big">Two spindleless lines<br />1300 &amp; 1600 mm</div>
+        </div>
+        <div class="spec">
+          <h3>Certification</h3>
+          <div class="big">FSC®-certified,<br />traceable to the pallet</div>
+        </div>
+      </div>
+      <p class="copy" style="margin-top:2rem">
+        Every pallet is traced individually under our FSC® Percentage and
+        Transfer systems, with EUDR due-diligence (DDS) reporting being built
+        alongside — and the company holds the Latvian State Revenue Service's
+        highest A rating for 2025. The logs themselves come from Latvian forests
+        through our own <a href="procurement.html">roundwood buying</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="block sagebg">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Sales</p>
+        <h2>Place an order.</h2>
+        <p class="copy">
+          To place an order or if you have any questions, please contact our
+          sales manager:
+        </p>
+        <div class="person-card">
+          <div class="role">Sales manager</div>
+          <div class="name">Nora Ziedkalna</div>
+          <a href="mailto:nora.ziedkalna@latveneer.lv">nora.ziedkalna@latveneer.lv</a>
+          <a href="tel:+37128298028">+371 28 298 028</a>
+        </div>
+      </div>
+      <img class="cover" src="images/opt/img09.webp" alt="Stacked rotary-cut birch veneer sheets in the LatVeneer mill" loading="lazy" width="1200" height="1600" />
+    </div>
+  </section>
+
+  <section class="block tint" id="process">
+    <div class="wrap">
+      <p class="kicker">Production process</p>
+      <h2>From raw logs to sorted veneer.</h2>
+      <div class="process">
+        <div class="step"><p>Logs are peeled on two spindleless lines, at natural moisture levels without presoaking. Thickness and quality are monitored regularly.</p></div>
+        <div class="step"><p>Fresh veneer rests for at least 48 hours, allowing natural redistribution of moisture.</p></div>
+        <div class="step"><p>A 32&nbsp;m, four-belt dryer powered by recycled woodchips brings veneer to the required moisture levels.</p></div>
+        <div class="step"><p>Hourly inspections ensure the ideal 4–8% moisture range is maintained.</p></div>
+        <div class="step"><p>Each sheet is manually inspected and sorted into grade packs for consistent quality.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="wrap">
+      <p class="kicker">Good to know</p>
+      <h2>Veneer, in plain words.</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>What is spindleless (rotary) peeling?</h3>
+          <p>
+            The log is spun against a long knife so the wood peels off as one
+            continuous sheet — like unrolling paper. A spindleless lathe grips
+            the log with drive rollers instead of centre spindles, so it can
+            peel down to a very small core, turning more of each birch log into
+            usable veneer.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Rotary-cut vs sliced veneer — what's the difference?</h3>
+          <p>
+            Rotary-cut veneer is peeled in a continuous sheet around the log,
+            giving a broad grain and full-size sheets — the standard for plywood
+            and moulded-plywood parts. Sliced veneer is cut leaf by leaf from a
+            flitch for decorative face grain. We produce rotary-cut core veneer.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>What does FSC®-certified veneer mean?</h3>
+          <p>
+            It means the wood is tracked from responsibly managed forests
+            through every step of production under a chain-of-custody
+            certificate. We run both FSC® Percentage and Transfer systems and
+            trace each pallet individually, so any order can carry the FSC®
+            label it needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap">
+      <p class="kicker">Brochure</p>
+      <h2>The offer, on paper.</h2>
+      <div class="gallery" aria-label="Product brochure pages">
+        <img src="images/opt/brochure-1.webp" alt="LatVeneer brochure, page 1 — company introduction" loading="lazy" width="1343" height="950" />
+        <img src="images/opt/brochure-2.webp" alt="LatVeneer brochure, page 2 — product and sizes" loading="lazy" width="1440" height="1019" />
+        <img src="images/opt/brochure-3.webp" alt="LatVeneer brochure, page 3 — production process" loading="lazy" width="1440" height="1019" />
+        <img src="images/opt/brochure-4.webp" alt="LatVeneer brochure, page 4 — quality and certification" loading="lazy" width="1440" height="1019" />
+        <img src="images/opt/brochure-5.webp" alt="LatVeneer brochure, page 5 — contacts" loading="lazy" width="1440" height="1019" />
+      </div>
+      <p class="copy" style="margin-top:1.6rem">
+        Want it in your inbox with a physical sheet to match? <button class="linklike" data-open-modal>Request a sample</button>
+        — or read how the mill was built in <a href="news.html">our news diary</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="footer-in">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
+        <span style="font-family:var(--display);font-weight:800;letter-spacing:0.14em;font-size:0.9rem">LATVENEER</span>
+        <span class="note">© 2026 SIA LatVeneer · FSC®-certified birch veneer, made in Latvia</span>
+        <button id="editorDoor" aria-label="Editor login" title="Editor" style="border:0;background:none;color:inherit;opacity:0.45;cursor:pointer;font:inherit;font-size:0.82rem;padding:0 0.3rem">@</button>
+      </div>
+      <div class="footer-meta">
+        <nav aria-label="Footer">
+          <a href="product.html">Birch veneer — sizes &amp; grades</a>
+          <a href="procurement.html">We buy birch roundwood</a>
+          <a href="lv/iepirksana.html" lang="lv">Bērza apaļkoku iepirkšana</a>
+          <a href="news.html">News from the mill</a>
+        </nav>
+        <address>
+          SIA LatVeneer · Ausekļa iela 3A, Jēkabpils, LV-5201, Latvia<br />
+          <a href="mailto:info@latveneer.lv">info@latveneer.lv</a> ·
+          <a href="tel:+37128298028">+371 28 298 028</a>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <!-- sample-request modal (shared) -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal" id="modal">
+      <button class="modal-close" aria-label="Close" data-close-modal>×</button>
+      <h3 id="modalTitle">Request a sample</h3>
+      <p class="sub">Tell us what you press, and we'll ship a sample sheet from the current production run.</p>
+      <form id="sampleForm" name="sample-request" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="sample-request" />
+        <p class="hp" aria-hidden="true">
+          <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <div class="row">
+          <div class="field">
+            <label for="fName">Name</label>
+            <input id="fName" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="fCompany">Company</label>
+            <input id="fCompany" name="company" required autocomplete="organization" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="fEmail">Work email</label>
+          <input id="fEmail" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="fSize">Sheet size</label>
+            <select id="fSize" name="size">
+              <option>1300 × 1300 mm</option>
+              <option>1300 × 2600 mm</option>
+              <option>1600 × 1600 mm</option>
+              <option>1600 × 3100 mm</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fThickness">Thickness</label>
+            <input id="fThickness" name="thickness" placeholder="e.g. 1.5 mm" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="fNotes">Notes</label>
+          <textarea id="fNotes" name="notes" placeholder="Grades, volumes, delivery country…"></textarea>
+        </div>
+        <button class="btn" type="submit">Send request</button>
+      </form>
+      <div class="done">
+        Thank you — your request is in. We'll get back to you within one working
+        day. Prefer email? Write to
+        <a href="mailto:info@latveneer.lv">info@latveneer.lv</a>.
+      </div>
+      <div class="fallback">
+        We couldn't send the form from here. Email us instead —
+        <a id="mailFallback" href="mailto:info@latveneer.lv">open a pre-filled email</a>
+        or <button type="button" class="linklike" id="copyRequest">copy your request</button>
+        and send it to <a href="mailto:info@latveneer.lv">info@latveneer.lv</a>.
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/modal.js" defer></script>
+
+  <script src="assets/js/edit-mode.js" defer></script>
+</body>
 </html>
