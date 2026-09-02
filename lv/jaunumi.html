@@ -245,40 +245,41 @@
         <p class="hp" aria-hidden="true">
           <label>Neaizpildīt šo lauku: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
         </p>
-        <div class="row">
-          <div class="field">
-            <label for="fName">Vārds</label>
-            <input id="fName" name="name" required autocomplete="name" />
-          </div>
-          <div class="field">
-            <label for="fCompany">Uzņēmums</label>
-            <input id="fCompany" name="company" required autocomplete="organization" />
-          </div>
+        <div class="field">
+          <label for="fName">Vārds</label>
+          <input id="fName" name="name" required autocomplete="name" />
         </div>
         <div class="field">
           <label for="fEmail">Darba e-pasts</label>
-          <input id="fEmail" name="email" type="email" required autocomplete="email" />
-        </div>
-        <div class="row">
-          <div class="field">
-            <label for="fSize">Loksnes izmērs</label>
-            <select id="fSize" name="size">
-              <option>1300 × 1300 mm</option>
-              <option>1300 × 2600 mm</option>
-              <option>1600 × 1600 mm</option>
-              <option>1600 × 3100 mm</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="fThickness">Biezums</label>
-            <input id="fThickness" name="thickness" placeholder="piem., 1.5 mm" />
-          </div>
+          <input id="fEmail" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="vards@uznemums.lv" />
         </div>
         <div class="field">
-          <label for="fNotes">Piezīmes</label>
-          <textarea id="fNotes" name="notes" placeholder="Šķiras, apjomi, piegādes valsts…"></textarea>
+          <label for="fCompany">Uzņēmums <span class="opt">· neobligāti</span></label>
+          <input id="fCompany" name="company" autocomplete="organization" />
         </div>
-        <button class="btn" type="submit">Nosūtīt pieprasījumu</button>
+        <fieldset class="field chips">
+          <legend>Loksnes izmērs</legend>
+          <div class="chip-row">
+            <label class="chip"><input type="radio" name="size" value="Vēl nezinu" checked /><span>Vēl nezinu</span></label>
+            <label class="chip"><input type="radio" name="size" value="1300 × 1300 mm" /><span>1300 × 1300</span></label>
+            <label class="chip"><input type="radio" name="size" value="1300 × 2600 mm" /><span>1300 × 2600</span></label>
+            <label class="chip"><input type="radio" name="size" value="1600 × 1600 mm" /><span>1600 × 1600</span></label>
+            <label class="chip"><input type="radio" name="size" value="1600 × 3100 mm" /><span>1600 × 3100</span></label>
+          </div>
+        </fieldset>
+        <details class="more">
+          <summary>Papildu informācija — biezums, šķiras, apjomi…</summary>
+          <div class="field">
+            <label for="fThickness">Biezums</label>
+            <input id="fThickness" name="thickness" placeholder="piem., 1.5 mm" inputmode="decimal" />
+          </div>
+          <div class="field">
+            <label for="fNotes">Piezīmes</label>
+            <textarea id="fNotes" name="notes" placeholder="Šķiras, apjomi, piegādes valsts…"></textarea>
+          </div>
+        </details>
+        <button class="btn btn-cta" type="submit">Saņemt paraugu</button>
+        <p class="assure">Bezmaksas parauga loksne · Atbildēsim vienas darba dienas laikā</p>
       </form>
       <div class="done">
         Paldies — pieprasījums saņemts. Atbildēsim vienas darba dienas laikā.
