@@ -14,7 +14,9 @@
 - Product: spindleless-peeled (rotary-cut) core birch veneer, Latvian silver birch
 - Production lines: two spindleless peeling lines (1300 mm and 1600 mm), two further lines being installed
 - Sheet sizes (mm): 1300×1300, 1300×1600, 1300×2600, 1600×1300, 1600×1600, 1600×3100
-- Thickness: 1.5 mm standard; 1.0–3.0 mm on request; target thickness tolerance 0.02 mm
+- Thickness: 1.5 mm standard; 1.0–3.0 mm on request; thickness tolerance ±0.05 mm
+- Width tolerance −20/+50 mm; length tolerance ±10 mm
+- Grading criteria (knots, splits, discoloration, rot, dirt, cut-off per grade A/B/C/D): https://latveneer.lv/product.html#grading
 - Grades: ABCD and E grade packs, manually inspected and sorted
 - Drying: 32 m four-belt dryer fired with recycled woodchips; 4–8% target moisture
 - Certification: FSC®-certified (Percentage and Transfer systems); every pallet traced individually; EUDR/DDS traceability in progress
