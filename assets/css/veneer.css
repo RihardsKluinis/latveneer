@@ -87,10 +87,22 @@ details.mobnav .sheet-menu a:hover { background: var(--sage-soft); color: var(--
 @media (max-width: 860px) {
   nav.main a.hide-m { display: none; }
   details.mobnav { display: block; }
+  .header-in { gap: 1rem; }
+  nav.main { gap: 0.8rem; }
+}
+@media (max-width: 600px) {
+  .brand strong { display: none; } /* the rings icon carries the brand */
 }
 @media (max-width: 560px) {
-  nav.main a:not(.btn) { display: none; }
-  .btn { font-size: 0.85rem; padding: 0.6rem 1rem; }
+  /* DIRECT nav links only — the dropdown sheet's links must stay visible
+     (a:not(.btn) once matched them too and the open menu showed empty) */
+  nav.main > a:not(.btn) { display: none; }
+  .btn { font-size: 0.82rem; padding: 0.6rem 0.9rem; }
+  details.mobnav summary { font-size: 0; gap: 0; padding: 0.55rem; }
+  details.mobnav summary::after { font-size: 1.3rem; }
+  details.mobnav .sheet-menu {
+    position: fixed; left: 0.8rem; right: 0.8rem; top: 3.8rem; min-width: 0;
+  }
 }
 
 /* ---------- page hero (subpages) ---------- */

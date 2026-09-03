@@ -47,6 +47,34 @@
       if (order.indexOf(i) === -1) order.push(i);
     }
   });
+  var coarseCount = order.length;
+
+  /* ---- cinema readiness: until EVERY frame is in (or the coarse set,
+     for Save-Data visitors), the film holds its poster frame, shows a
+     loading pill, and lets scrolling pass through natively. Interaction
+     arms only when playback can be smooth. ---- */
+  var readyCount = 0, cinemaReady = false;
+  var loaderEl = document.createElement("div");
+  loaderEl.className = "film-loader";
+  loaderEl.setAttribute("aria-live", "polite");
+  var LOADING_TEXT = CFG.loading || "Loading the film…";
+  loaderEl.textContent = LOADING_TEXT;
+  stage.querySelector(".film-stage").appendChild(loaderEl);
+
+  function updateLoader() {
+    if (cinemaReady) { return; }
+    var goal = saveData ? coarseCount : N;
+    if (readyCount >= goal) {
+      cinemaReady = true;
+      loaderEl.classList.add("done");
+      setTimeout(function () { loaderEl.remove(); }, 700);
+      lastDrawn = -1; /* repaint at the real scroll position */
+    } else {
+      var pct = Math.min(99, Math.round((readyCount / goal) * 100));
+      loaderEl.textContent = LOADING_TEXT + " " + pct + "%";
+    }
+  }
+
   var qi = 0, inflight = 0;
   function pump() {
     while (inflight < 6 && qi < order.length) {
@@ -54,10 +82,16 @@
         inflight++;
         var img = new Image();
         img.decoding = "async";
-        var fin = function () { ready[i] = true; inflight--; lastDrawn = -1; pump(); };
-        /* decode() here so the first drawImage never pays a sync decode */
-        img.onload = function () { img.decode ? img.decode().then(fin, fin) : fin(); };
-        img.onerror = function () { inflight--; pump(); };
+        /* readiness counts on LOAD, not decode: decode() defers on hidden
+           tabs and would freeze the loader at 0% for background loads.
+           Decoding is warmed non-blockingly here and by warm() at scrub time. */
+        img.onload = function () {
+          ready[i] = true; inflight--; lastDrawn = -1;
+          readyCount++; updateLoader();
+          pump();
+          if (img.decode) { img.decode().catch(function () {}); }
+        };
+        img.onerror = function () { inflight--; readyCount++; updateLoader(); pump(); };
         img.src = BASE + "assets/film/frames/f" + pad(i) + ".webp";
         frames[i] = img;
       })(order[qi++]);
@@ -89,7 +123,12 @@
         cx.drawImage(hd, 0, 0, c.width, c.height);
         frames[i] = c; ready[i] = true; lastDrawn = -1;
       }
-      hd.onload = function () { hd.decode ? hd.decode().then(swap, swap) : swap(); };
+      hd.onload = function () {
+        /* readiness counts on LOAD (decode defers on hidden tabs); the
+           swap itself waits for decode so the prescale never blocks */
+        readyCount++; updateLoader();
+        hd.decode ? hd.decode().then(swap, swap) : swap();
+      };
       hd.src = BASE + "assets/film/hd/f" + pad(i) + ".png";
     });
   }
@@ -116,6 +155,9 @@
   } else {
     queueFull();
   }
+  /* belt & braces: start the full pass shortly after load even if the
+     observer hasn't fired, so the film is ready before the user arrives */
+  window.addEventListener("load", function () { setTimeout(queueFull, 1200); });
 
   function readyBelow(x) {
     for (var i = Math.min(N - 1, Math.floor(x)); i >= 0; i--) { if (ready[i]) return i; }
@@ -223,6 +265,8 @@
     lastTick = now;
     target = progressOf();
     if (first) { smoothed = mapFrame(target); first = false; }
+    /* while loading, hold the poster frame — no scrubbing, no snapping */
+    if (!cinemaReady) { target = 0; smoothed = 0; }
     /* track the scroll tightly while a chapter glide drives it (the
        glide is already smooth); floatier during free scrolling */
     var k = gliding ? 16 : 6;
@@ -237,7 +281,7 @@
        entry plateau already shows the tree keyframe throughout, so the
        first scroll is never pulled backwards. */
     var isEng = engaged();
-    if (isEng && !wasEngaged && !gliding && !reduceMotion && target >= 0.5) {
+    if (isEng && !wasEngaged && !gliding && !reduceMotion && cinemaReady && target >= 0.5) {
       launch(CENTERS.length - 1);
       lastAdvance = now;
     }
@@ -253,6 +297,8 @@
     get t() { return target; },
     get frame() { return smoothed; },
     get gliding() { return gliding; },
+    get ready() { return cinemaReady; },
+    get loaded() { return readyCount; },
     kind: function (i) { var f = frames[i]; return f ? f.tagName : null; }
   };
 
@@ -338,7 +384,7 @@
   }
   var lastAdvance = 0;
   function advance(dir, e) {
-    if (reduceMotion || !engaged()) return;
+    if (reduceMotion || !cinemaReady || !engaged()) return;
     var now = performance.now();
     if (gliding) {
       var nidx = sp.targetIdx + dir;
@@ -398,7 +444,7 @@
      pausing on their way out of the section. */
   var lastScrollY = -1, lastMoveT = 0;
   function restGuard(now) {
-    if (reduceMotion) { return; }
+    if (reduceMotion || !cinemaReady) { return; }
     var y = window.scrollY;
     if (y !== lastScrollY) { lastScrollY = y; lastMoveT = now; return; }
     /* 220ms of true stillness before pulling: slow wheel notches during
@@ -415,7 +461,7 @@
 
   rail.addEventListener("click", function (e) {
     var btn = e.target.closest("button");
-    if (!btn) return;
+    if (!btn || !cinemaReady) return;
     launch(+btn.dataset.jump);
   });
 })();
