@@ -17,5 +17,7 @@
 /images/*
   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
 
-/assets/css/*
-  Cache-Control: public, max-age=86400
+# NOTE: deliberately NO caching rule for /assets/css/* or /assets/js/* —
+# Netlify's default (ETag revalidation) makes style/script changes visible
+# immediately after every deploy. A max-age here once kept a fixed
+# stylesheet invisible to returning visitors for a day.

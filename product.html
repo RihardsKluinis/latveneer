@@ -368,41 +368,40 @@
         <p class="hp" aria-hidden="true">
           <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
         </p>
-        <div class="field">
-          <label for="fName">Name</label>
-          <input id="fName" name="name" required autocomplete="name" />
+        <div class="row">
+          <div class="field">
+            <label for="fName">Name</label>
+            <input id="fName" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="fCompany">Company</label>
+            <input id="fCompany" name="company" required autocomplete="organization" />
+          </div>
         </div>
         <div class="field">
           <label for="fEmail">Work email</label>
-          <input id="fEmail" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="name@company.com" />
+          <input id="fEmail" name="email" type="email" required autocomplete="email" />
         </div>
-        <div class="field">
-          <label for="fCompany">Company <span class="opt">· optional</span></label>
-          <input id="fCompany" name="company" autocomplete="organization" />
-        </div>
-        <fieldset class="field chips">
-          <legend>Sheet size</legend>
-          <div class="chip-row">
-            <label class="chip"><input type="radio" name="size" value="Not sure yet" checked /><span>Not sure yet</span></label>
-            <label class="chip"><input type="radio" name="size" value="1300 × 1300 mm" /><span>1300 × 1300</span></label>
-            <label class="chip"><input type="radio" name="size" value="1300 × 2600 mm" /><span>1300 × 2600</span></label>
-            <label class="chip"><input type="radio" name="size" value="1600 × 1600 mm" /><span>1600 × 1600</span></label>
-            <label class="chip"><input type="radio" name="size" value="1600 × 3100 mm" /><span>1600 × 3100</span></label>
+        <div class="row">
+          <div class="field">
+            <label for="fSize">Sheet size</label>
+            <select id="fSize" name="size">
+              <option>1300 × 1300 mm</option>
+              <option>1300 × 2600 mm</option>
+              <option>1600 × 1600 mm</option>
+              <option>1600 × 3100 mm</option>
+            </select>
           </div>
-        </fieldset>
-        <details class="more">
-          <summary>Add details — thickness, grades, volumes…</summary>
           <div class="field">
             <label for="fThickness">Thickness</label>
-            <input id="fThickness" name="thickness" placeholder="e.g. 1.5 mm" inputmode="decimal" />
+            <input id="fThickness" name="thickness" placeholder="e.g. 1.5 mm" />
           </div>
-          <div class="field">
-            <label for="fNotes">Notes</label>
-            <textarea id="fNotes" name="notes" placeholder="Grades, volumes, delivery country…"></textarea>
-          </div>
-        </details>
-        <button class="btn btn-cta" type="submit">Request my sample</button>
-        <p class="assure">Free sample sheet · We reply within one working day</p>
+        </div>
+        <div class="field">
+          <label for="fNotes">Notes</label>
+          <textarea id="fNotes" name="notes" placeholder="Grades, volumes, delivery country…"></textarea>
+        </div>
+        <button class="btn" type="submit">Send request</button>
       </form>
       <div class="done">
         Thank you — your request is in. We'll get back to you within one working

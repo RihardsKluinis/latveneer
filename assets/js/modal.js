@@ -37,14 +37,14 @@
     var d = new FormData(form);
     lastBody =
       "Name: " + d.get("name") + "\n" +
-      "Company: " + (d.get("company") || "-") + "\n" +
+      "Company: " + d.get("company") + "\n" +
       "Email: " + d.get("email") + "\n" +
-      "Sheet size: " + (d.get("size") || "-") + "\n" +
+      "Sheet size: " + d.get("size") + "\n" +
       "Thickness: " + (d.get("thickness") || "-") + "\n\n" +
       (d.get("notes") || "");
     document.getElementById("mailFallback").href =
       "mailto:info@latveneer.lv" +
-      "?subject=" + encodeURIComponent("Sample request — " + (d.get("company") || d.get("name"))) +
+      "?subject=" + encodeURIComponent("Sample request — " + d.get("company")) +
       "&body=" + encodeURIComponent(lastBody);
     /* real submit (Netlify Forms). Only claim success on a 2xx; anything else
        keeps the form and offers the email fallback instead. */
