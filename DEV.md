@@ -5,7 +5,8 @@ ivory/sage/oat palette with dark-green accent `#273e1c`, Cabinet Grotesk (Fontsh
 + Inter Tight (Google Fonts), growth-ring logo (`images/LogoNoText.png` is the
 header/footer mark — CSS-inverted to ivory on the dark footer; the inline SVG
 `#rings` symbol now only draws the decorative hero rings; favicon is
-`images/favicon.png`, cache-busted with `?v=2`), scroll-scrubbed film,
+`images/favicon.png`; both PNGs are #273e1c on transparent and carry a `?v=N`
+query — bump it whenever the file changes, /images/* is cached a week), scroll-scrubbed film,
 FSC marquee, sample-request modal (mailto-based).
 
 ## Run locally
