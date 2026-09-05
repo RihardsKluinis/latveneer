@@ -2,7 +2,10 @@
 
 Static site, no build step. Redesigned front page + subpages (Sept 2026):
 ivory/sage/oat palette with dark-green accent `#273e1c`, Cabinet Grotesk (Fontshare)
-+ Inter Tight (Google Fonts), growth-ring SVG logo, scroll-scrubbed film,
++ Inter Tight (Google Fonts), growth-ring logo (`images/LogoNoText.png` is the
+header/footer mark — CSS-inverted to ivory on the dark footer; the inline SVG
+`#rings` symbol now only draws the decorative hero rings; favicon is
+`images/favicon.png`, cache-busted with `?v=2`), scroll-scrubbed film,
 FSC marquee, sample-request modal (mailto-based).
 
 ## Run locally
