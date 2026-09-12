@@ -34,12 +34,9 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="../assets/fonts/CabinetGrotesk-Extrabold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/InterTight-latin-ext.woff2" as="font" type="font/woff2" crossorigin />
   <link href="../assets/css/home.css" rel="stylesheet" />
 </head>
 <body>
@@ -66,22 +63,22 @@
       </a>
       <nav class="main" aria-label="Galvenā izvēlne">
         <a href="/lv/" class="hide-m">Sākums</a>
-        <a href="produkts.html" class="hide-m">Produkts</a>
-        <a href="iepirksana.html" class="hide-m">Meža īpašniekiem</a>
-        <a href="jaunumi.html" class="hide-m">Jaunumi</a>
+        <a href="/lv/produkts" class="hide-m">Produkts</a>
+        <a href="/lv/iepirksana" class="hide-m">Meža īpašniekiem</a>
+        <a href="/lv/jaunumi" class="hide-m">Jaunumi</a>
         <a href="#contact" class="hide-m">Kontakti</a>
         <details class="mobnav">
           <summary aria-label="Atvērt izvēlni">Izvēlne</summary>
           <div class="sheet-menu">
             <a href="/lv/">Sākums</a>
-            <a href="produkts.html">Produkts</a>
-            <a href="iepirksana.html">Meža īpašniekiem</a>
-            <a href="jaunumi.html">Jaunumi</a>
+            <a href="/lv/produkts">Produkts</a>
+            <a href="/lv/iepirksana">Meža īpašniekiem</a>
+            <a href="/lv/jaunumi">Jaunumi</a>
             <a href="#contact">Kontakti</a>
           </div>
         </details>
         <button class="btn" data-open-modal>Pieprasīt paraugu</button>
-        <a class="btn ghost lang-btn" href="../" lang="en" hreflang="en" title="In English">EN</a>
+        <a class="btn ghost lang-btn" href="/" lang="en" hreflang="en" title="In English">EN</a>
       </nav>
     </div>
   </header>
@@ -145,6 +142,9 @@
       <p class="copy">
         Ražojam bezvārpstas lobītu bērza serdes finieri divās ražošanas līnijās — 1300 un 1600 mm platumā — galvenokārt saplākšņa un liektā saplākšņa mēbeļu ražotājiem. Lai palielinātu ražošanas kapacitāti, šobrīd uzstādām vēl divas ražošanas līnijas.
       </p>
+      <p class="copy">
+        Kā bērza finiera piegādātājs saplākšņa nozarei apkalpojam ražotājus visā Eiropā — Baltijas valstis, Polija, Somija un Vācija ir sasniedzamas pa autoceļiem vai caur Rīgas ostu, kas atrodas aptuveni 140 km no ražotnes.
+      </p>
       <div class="spec-grid">
         <div class="spec">
           <h3>Izmēri</h3>
@@ -172,7 +172,7 @@
         </div>
       </div>
       <p class="copy" style="margin-top:2rem">
-        Pilna specifikācija, šķiras un ražošanas process — <a href="produkts.html">produkta lapā</a>.
+        Pilna specifikācija, šķiras un ražošanas process — <a href="/lv/produkts">produkta lapā</a>.
       </p>
       <div class="photo-row">
         <figure>
@@ -202,8 +202,8 @@
           Mūsu rūpnīca atrodas Jēkabpils industriālajā parkā, netālu no bērzu mežiem, no kuriem iepērkam apaļkokus. No meža līdz lobīšanas līnijai ir vien daži metri, nodrošinot efektīvu izejmateriālu plūsmu un pilnīgu tā izsekojamību. Katra palete, kas atstāj mūsu ražotni, ir izsekojama līdz tās izejmateriāla izcelsmei.
         </p>
         <div class="actions">
-          <a class="btn" href="produkts.html">Produkcija</a>
-          <a class="btn ghost" href="iepirksana.html">Apaļkoku iepirkšana</a>
+          <a class="btn" href="/lv/produkts">Produkcija</a>
+          <a class="btn ghost" href="/lv/iepirksana">Apaļkoku iepirkšana</a>
         </div>
       </div>
     </div>
@@ -220,8 +220,8 @@
       <p class="copy">Mūsu produkts ir bezvārpstas lobīšanas procesā iegūts serdes bērza finieris, ražots no Latvijā auguša āra bērza. Ražošana balstās uz divām lobīšanas līnijām — 1300 un 1600 mm platumā — un 32 metrus garu četru jostu žāvētavu, kuras darbībai izmantojam pašu ražošanas procesā iegūto šķeldu.</p>
       <p class="copy">Precizitāte ir viena no mūsu darba pamatvērtībām — finiera biezuma tolerance tiek nodrošināta ±0,05 mm robežās. Vienlaikus īpašu uzmanību pievēršam izsekojamībai: katra palete tiek individuāli izsekota visā piegādes ķēdē. Strādājam gan ar FSC® procentuālo, gan transfēra sistēmu, kā arī veidojam EUDR pienācīgas rūpības sistēmas (DDS) ziņošanu.</p>
       <p class="copy">Mūsu pieeju apliecina arī 2026. gadā saņemtais Valsts ieņēmumu dienesta augstākais — A — reitings par 2025. gadu.</p>
-      <p class="copy">Ražotnes attīstība turpinās — šobrīd tiek uzstādītas vēl divas ražošanas līnijas. Ceļš no tukšas halles līdz pilnvērtīgai ražotnei ir dokumentēts mēnesi pa mēnesim mūsu <a href="jaunumi.html">jaunumu dienasgrāmatā</a>, ļaujot sekot līdzi ražotnes tapšanai un izaugsmei.</p>
-      <p class="copy">Plašāka informācija par mūsu produktu un tā tehniskajiem parametriem pieejama <a href="produkts.html">produkta lapā</a>. Savukārt meža īpašnieki <a href="iepirksana.html">apaļkoku iepirkšanas noteikumus</a> var iepazīt latviešu un <a href="../procurement.html">angļu valodā</a>.</p>
+      <p class="copy">Ražotnes attīstība turpinās — šobrīd tiek uzstādītas vēl divas ražošanas līnijas. Ceļš no tukšas halles līdz pilnvērtīgai ražotnei ir dokumentēts mēnesi pa mēnesim mūsu <a href="/lv/jaunumi">jaunumu dienasgrāmatā</a>, ļaujot sekot līdzi ražotnes tapšanai un izaugsmei.</p>
+      <p class="copy">Plašāka informācija par mūsu produktu un tā tehniskajiem parametriem pieejama <a href="/lv/produkts">produkta lapā</a>. Savukārt meža īpašnieki <a href="/lv/iepirksana">apaļkoku iepirkšanas noteikumus</a> var iepazīt latviešu un <a href="/procurement">angļu valodā</a>.</p>
     </div>
   </section>
 
@@ -273,10 +273,10 @@
       </div>
       <div class="footer-meta">
         <nav aria-label="Kājenes izvēlne">
-          <a href="produkts.html">Bērza finieris — izmēri un šķiras</a>
-          <a href="iepirksana.html">Mēs iepērkam bērza apaļkokus</a>
-          <a href="jaunumi.html">Jaunumi no ražotnes</a>
-          <a href="../" hreflang="en" lang="en">In English</a>
+          <a href="/lv/produkts">Bērza finieris — izmēri un šķiras</a>
+          <a href="/lv/iepirksana">Mēs iepērkam bērza apaļkokus</a>
+          <a href="/lv/jaunumi">Jaunumi no ražotnes</a>
+          <a href="/" hreflang="en" lang="en">In English</a>
         </nav>
         <address>
           SIA LatVeneer · Ausekļa iela 3A, Jēkabpils, LV-5201, Latvija<br />

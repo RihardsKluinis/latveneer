@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LatVeneer bērza finiera ražotnes jaunumi | Jēkabpils</title>
   <meta name="description" content="LatVeneer jaunumi — jaunas bērza finiera ražotnes stāsts Jēkabpilī: no telpu līguma parakstīšanas līdz pilnai ražošanai." />
-  <link rel="canonical" href="https://latveneer.lv/lv/jaunumi.html" />
-  <link rel="alternate" hreflang="en" href="https://latveneer.lv/news.html" />
-  <link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi.html" />
-  <link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news.html" />
+  <link rel="canonical" href="https://latveneer.lv/lv/jaunumi" />
+  <link rel="alternate" hreflang="en" href="https://latveneer.lv/news" />
+  <link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi" />
+  <link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news" />
   <link rel="icon" type="image/png" href="../images/favicon.png?v=3" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LatVeneer" />
@@ -16,7 +16,7 @@
   <meta property="og:title" content="LatVeneer bērza finiera ražotnes jaunumi | Jēkabpils" />
   <meta property="og:description" content="Jaunas bērza finiera ražotnes stāsts Jēkabpilī — no līguma parakstīšanas līdz pilnai ražošanai." />
   <meta property="og:image" content="https://latveneer.lv/images/og.jpg" />
-  <meta property="og:url" content="https://latveneer.lv/lv/jaunumi.html" />
+  <meta property="og:url" content="https://latveneer.lv/lv/jaunumi" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="LatVeneer ražotnes jaunumi | Jēkabpils" />
   <meta name="twitter:description" content="No līguma parakstīšanas līdz pilnai ražošanai — visi pieturas punkti." />
@@ -28,17 +28,14 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://latveneer.lv/lv/" },
-      { "@type": "ListItem", "position": 2, "name": "Jaunumi", "item": "https://latveneer.lv/lv/jaunumi.html" }
+      { "@type": "ListItem", "position": 2, "name": "Jaunumi", "item": "https://latveneer.lv/lv/jaunumi" }
     ]
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="../assets/fonts/CabinetGrotesk-Extrabold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/InterTight-latin-ext.woff2" as="font" type="font/woff2" crossorigin />
   <link href="../assets/css/veneer.css" rel="stylesheet" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -65,22 +62,22 @@
       </a>
       <nav class="main" aria-label="Galvenā izvēlne">
         <a href="/lv/" class="hide-m">Sākums</a>
-        <a href="produkts.html" class="hide-m">Produkts</a>
-        <a href="iepirksana.html" class="hide-m">Meža īpašniekiem</a>
-        <a href="jaunumi.html" class="active hide-m">Jaunumi</a>
-        <a href="index.html#contact" class="hide-m">Kontakti</a>
+        <a href="/lv/produkts" class="hide-m">Produkts</a>
+        <a href="/lv/iepirksana" class="hide-m">Meža īpašniekiem</a>
+        <a href="/lv/jaunumi" class="active hide-m">Jaunumi</a>
+        <a href="/lv/#contact" class="hide-m">Kontakti</a>
         <details class="mobnav">
           <summary aria-label="Atvērt izvēlni">Izvēlne</summary>
           <div class="sheet-menu">
             <a href="/lv/">Sākums</a>
-            <a href="produkts.html">Produkts</a>
-            <a href="iepirksana.html">Meža īpašniekiem</a>
-            <a href="jaunumi.html">Jaunumi</a>
-            <a href="index.html#contact">Kontakti</a>
+            <a href="/lv/produkts">Produkts</a>
+            <a href="/lv/iepirksana">Meža īpašniekiem</a>
+            <a href="/lv/jaunumi">Jaunumi</a>
+            <a href="/lv/#contact">Kontakti</a>
           </div>
         </details>
         <button class="btn" data-open-modal>Pieprasīt paraugu</button>
-        <a class="btn ghost lang-btn" href="../news.html" lang="en" hreflang="en" title="In English">EN</a>
+        <a class="btn ghost lang-btn" href="/news" lang="en" hreflang="en" title="In English">EN</a>
       </nav>
     </div>
   </header>
@@ -96,6 +93,7 @@
 
   <section class="block">
     <div class="wrap">
+      <p class="copy" style="margin-bottom:2.5rem">Šeit hronoloģiski apkopojam LatVeneer ražotnes tapšanu Jēkabpilī — no telpu līguma parakstīšanas 2025. gada janvārī līdz FSC® sertifikātam, pirmajām nosūtītajām paletēm un Valsts ieņēmumu dienesta A reitingam. Jaunākie ieraksti ir augšā; ražotnes tehniskā specifikācija atrodama <a href="/lv/produkts">produkta lapā</a>.</p>
       <div class="news-list">
 
         <article class="news-item" id="vid-a-reitings">
@@ -240,10 +238,10 @@
       </div>
       <div class="footer-meta">
         <nav aria-label="Kājenes izvēlne">
-          <a href="produkts.html">Bērza finieris — izmēri un šķiras</a>
-          <a href="iepirksana.html">Mēs iepērkam bērza apaļkokus</a>
-          <a href="jaunumi.html">Jaunumi no ražotnes</a>
-          <a href="../news.html" hreflang="en" lang="en">In English</a>
+          <a href="/lv/produkts">Bērza finieris — izmēri un šķiras</a>
+          <a href="/lv/iepirksana">Mēs iepērkam bērza apaļkokus</a>
+          <a href="/lv/jaunumi">Jaunumi no ražotnes</a>
+          <a href="/news" hreflang="en" lang="en">In English</a>
         </nav>
         <address>
           SIA LatVeneer · Ausekļa iela 3A, Jēkabpils, LV-5201, Latvija<br />

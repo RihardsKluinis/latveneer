@@ -3,3 +3,14 @@
 /generic.html   /  301
 /elements       /  301
 /generic        /  301
+
+# Canonical URLs are extensionless (Sept 2026). The .html files still exist,
+# so these rules are forced (301!) — otherwise Netlify would serve the file.
+/index.html          /                301!
+/product.html        /product         301!
+/procurement.html    /procurement     301!
+/news.html           /news            301!
+/lv/index.html       /lv/             301!
+/lv/produkts.html    /lv/produkts     301!
+/lv/iepirksana.html  /lv/iepirksana   301!
+/lv/jaunumi.html     /lv/jaunumi      301!

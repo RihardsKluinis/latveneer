@@ -83,16 +83,32 @@ LAND/HD_FRAMES in sync).
 
 ## SEO layer (Sept 2026 audit implementation)
 
-- Canonical scheme: `https://latveneer.lv/` + `/product.html` etc. Every page
+- Canonical scheme is **extensionless** (since 2026-09-12): `https://latveneer.lv/`,
+  `/product`, `/procurement`, `/news`, `/lv/`, `/lv/produkts`, `/lv/iepirksana`,
+  `/lv/jaunumi`. Google had indexed the extensionless URLs while canonicals said
+  `.html`, so everything now agrees: canonical/hreflang/OG/JSON-LD/sitemap/llms.txt
+  use the bare form, internal links are root-absolute (`/product`, `/lv/#contact`),
+  `_redirects` force-301s every `.html` URL to its twin (`301!` because the files
+  exist), and serve.ps1 resolves `/product` → `product.html` locally. Every page
   carries canonical + OG/Twitter + JSON-LD (Organization/LocalBusiness +
-  WebSite on index, Product on product, BreadcrumbList everywhere, ItemList of
-  BlogPosting on news). `robots.txt` declares `sitemap.xml` (update lastmod on
-  meaningful edits). `llms.txt` is a plain-text fact sheet — keep in sync when
-  specs change.
+  WebSite on index, Product + FAQPage on product/produkts, BreadcrumbList
+  everywhere, ItemList of BlogPosting on news). `robots.txt` declares
+  `sitemap.xml` (update lastmod on meaningful edits). `llms.txt` is a
+  plain-text fact sheet — keep in sync when specs change.
+- Fonts are self-hosted in `assets/fonts/` (Cabinet Grotesk 500/700/800 from
+  Fontshare, ITF Free Font License; Inter Tight as one variable file per subset,
+  latin + latin-ext, from Google Fonts, OFL). `@font-face` sits at the top of
+  both `home.css` and `veneer.css`; every page preloads the 800 display weight
+  and the latin body file (LV pages also latin-ext). `/assets/fonts/*` is cached
+  immutable — rename the file if a font ever changes.
+- `#faq` on product/produkts has 7 Q&As mirrored in the FAQPage JSON-LD in the
+  head; keep the two in sync (FAQ rich results are no longer shown for
+  commercial sites, the value is the long-tail text itself).
 - Full Latvian mirror under `lv/`: `index.html` (canonical `/lv/`),
   `produkts.html`, `iepirksana.html`, `jaunumi.html` — every page hreflang-
   paired en↔lv with x-default→en (heads + sitemap). An LV/EN pill button sits
-  top-right in every header. LV pages use `../`-relative asset paths.
+  top-right in every header. LV pages use `../`-relative asset paths but
+  root-absolute links.
 - Shared JS/CSS extracted for the two homepages: `assets/css/home.css` (was
   index's inline styles), `assets/js/film.js` (the whole scroll-film engine —
   configure via `window.FILM_CONFIG = { base, chapters }` before loading) and
@@ -111,9 +127,9 @@ LAND/HD_FRAMES in sync).
   Save-Data; only the two coarse passes (~36 frames) load eagerly.
 - `_headers` (immutable frames, 1w images, security headers), `_redirects`
   (301s for the old build's elements/generic pages), branded `404.html`.
-- On Netlify: disable Pretty URLs (or commit to extensionless URLs and update
-  every canonical/sitemap/internal link to match), and verify the
-  "sample-request" form appears in the Forms dashboard after the first deploy.
+- On Netlify: Pretty URLs no longer matters (extensionless is canonical and
+  forced by `_redirects`); verify the "sample-request" form appears in the
+  Forms dashboard after the first deploy.
 
 ## Client edit mode
 

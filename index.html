@@ -60,13 +60,9 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
 
+  <link rel="preload" href="assets/fonts/CabinetGrotesk-Extrabold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link href="assets/css/home.css" rel="stylesheet" />
 </head>
 <body>
@@ -93,22 +89,22 @@
       </a>
       <nav class="main" aria-label="Main">
         <a href="/" class="hide-m">Home</a>
-        <a href="product.html" class="hide-m">Product</a>
-        <a href="procurement.html" class="hide-m">Log buying</a>
-        <a href="news.html" class="hide-m">News</a>
+        <a href="/product" class="hide-m">Product</a>
+        <a href="/procurement" class="hide-m">Log buying</a>
+        <a href="/news" class="hide-m">News</a>
         <a href="#contact" class="hide-m">Contact</a>
         <details class="mobnav">
           <summary aria-label="Open menu">Menu</summary>
           <div class="sheet-menu">
             <a href="/">Home</a>
-            <a href="product.html">Product</a>
-            <a href="procurement.html">Log buying</a>
-            <a href="news.html">News</a>
+            <a href="/product">Product</a>
+            <a href="/procurement">Log buying</a>
+            <a href="/news">News</a>
             <a href="#contact">Contact</a>
           </div>
         </details>
         <button class="btn" data-open-modal>Request a sample</button>
-        <a class="btn ghost lang-btn" href="lv/" lang="lv" hreflang="lv" title="Latviski">LV</a>
+        <a class="btn ghost lang-btn" href="/lv/" lang="lv" hreflang="lv" title="Latviski">LV</a>
       </nav>
     </div>
   </header>
@@ -173,6 +169,9 @@
       <p class="copy">
         We manufacture spindleless-peeled birch core veneer on two production lines — 1300 mm and 1600 mm — for plywood and moulded-plywood furniture manufacturers across Europe. Two more lines are currently being installed.
       </p>
+      <p class="copy">
+        As a birch veneer supplier to the plywood industry, we serve manufacturers across Europe — the Baltic states, Poland, Finland and Germany are all within reach by road or through the port of Riga, about 140 km from the mill.
+      </p>
       <div class="spec-grid">
         <div class="spec">
           <h3>Sizes</h3>
@@ -200,7 +199,7 @@
         </div>
       </div>
       <p class="copy" style="margin-top:2rem">
-        Full specifications, grades and production details are available on the <a href="product.html">product page</a>.
+        Full specifications, grades and production details are available on the <a href="/product">product page</a>.
       </p>
       <div class="photo-row">
         <figure>
@@ -230,8 +229,8 @@
           Our factory is located in the industrial park of Jēkabpils, Latvia, just minutes from the birch forests we source from. Logs travel only metres from delivery to the peeling lines, while every pallet leaving our factory can be traced back to the source of its timber.
         </p>
         <div class="actions">
-          <a class="btn" href="product.html">Product offering</a>
-          <a class="btn ghost" href="procurement.html">Log procurement</a>
+          <a class="btn" href="/product">Product offering</a>
+          <a class="btn ghost" href="/procurement">Log procurement</a>
         </div>
       </div>
     </div>
@@ -248,8 +247,8 @@
       <p class="copy">Every pallet is individually traceable. We operate both the FSC® Percentage and Transfer systems and are developing EUDR due-diligence (DDS) reporting alongside them.</p>
       <p class="copy">In 2026, the Latvian State Revenue Service awarded our company its highest A rating for 2025.</p>
       <p class="copy">Two further lines are currently being installed.</p>
-      <p class="copy">The story so far — from an empty hall to full production — is documented month by month in our <a href="news.html">news diary</a>, while the full specification is available on the <a href="product.html">product page</a>.</p>
-      <p class="copy">Forest owners can find our log-buying terms in <a href="procurement.html">English</a> and <a href="lv/iepirksana.html">Latvian</a>.</p>
+      <p class="copy">The story so far — from an empty hall to full production — is documented month by month in our <a href="/news">news diary</a>, while the full specification is available on the <a href="/product">product page</a>.</p>
+      <p class="copy">Forest owners can find our log-buying terms in <a href="/procurement">English</a> and <a href="/lv/iepirksana">Latvian</a>.</p>
     </div>
   </section>
 
@@ -301,10 +300,10 @@
       </div>
       <div class="footer-meta">
         <nav aria-label="Footer">
-          <a href="product.html">Birch veneer — sizes &amp; grades</a>
-          <a href="procurement.html">We buy birch roundwood</a>
-          <a href="lv/iepirksana.html" lang="lv">Bērza apaļkoku iepirkšana</a>
-          <a href="news.html">News from the mill</a>
+          <a href="/product">Birch veneer — sizes &amp; grades</a>
+          <a href="/procurement">We buy birch roundwood</a>
+          <a href="/lv/iepirksana" lang="lv">Bērza apaļkoku iepirkšana</a>
+          <a href="/news">News from the mill</a>
         </nav>
         <address>
           SIA LatVeneer · Ausekļa iela 3A, Jēkabpils, LV-5201, Latvia<br />

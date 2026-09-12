@@ -16,7 +16,7 @@
 - Sheet sizes (mm): 1300×1300, 1300×1600, 1300×2600, 1600×1300, 1600×1600, 1600×3100
 - Thickness: 1.5 mm standard; 1.0–3.0 mm on request; thickness tolerance ±0.05 mm
 - Width tolerance −20/+50 mm; length tolerance ±10 mm
-- Grading criteria (knots, splits, discoloration, rot, dirt, cut-off per grade A/B/C/D): https://latveneer.lv/product.html#grading
+- Grading criteria (knots, splits, discoloration, rot, dirt, cut-off per grade A/B/C/D): https://latveneer.lv/product#grading
 - Grades: ABCD and E grade packs, manually inspected and sorted
 - Drying: 32 m four-belt dryer fired with recycled woodchips; 4–8% target moisture
 - Certification: FSC®-certified (Percentage and Transfer systems); every pallet traced individually; EUDR/DDS traceability in progress
@@ -27,12 +27,12 @@
 
 English:
 - [Home](https://latveneer.lv/): company overview, specs, contact
-- [Product](https://latveneer.lv/product.html): sizes, grades, production process, brochure
-- [Log procurement](https://latveneer.lv/procurement.html): requirements and terms for selling roundwood
-- [News](https://latveneer.lv/news.html): dated build-out diary of the mill, from first contract (Jan 2025) to production
+- [Product](https://latveneer.lv/product): sizes, grades, production process, brochure
+- [Log procurement](https://latveneer.lv/procurement): requirements and terms for selling roundwood
+- [News](https://latveneer.lv/news): dated build-out diary of the mill, from first contract (Jan 2025) to production
 
 Latviski (full Latvian mirror):
 - [Sākums](https://latveneer.lv/lv/)
-- [Prece](https://latveneer.lv/lv/produkts.html)
-- [Bērza apaļkoku iepirkšana](https://latveneer.lv/lv/iepirksana.html)
-- [Jaunumi](https://latveneer.lv/lv/jaunumi.html)
+- [Prece](https://latveneer.lv/lv/produkts)
+- [Bērza apaļkoku iepirkšana](https://latveneer.lv/lv/iepirksana)
+- [Jaunumi](https://latveneer.lv/lv/jaunumi)

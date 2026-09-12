@@ -23,6 +23,7 @@ while ($listener.IsListening) {
     if ($rel -eq "") { $rel = "index.html" }
     elseif ($rel.EndsWith("/")) { $rel = $rel + "index.html" }
     elseif ((Test-Path (Join-Path $root $rel) -PathType Container)) { $rel = $rel + "/index.html" }
+    elseif (-not [IO.Path]::HasExtension($rel) -and (Test-Path (Join-Path $root ($rel + ".html")) -PathType Leaf)) { $rel = $rel + ".html" }  # extensionless URLs, as on Netlify
     if ($rel -match '\.\.') {
       $res.StatusCode = 400; $res.Close(); continue
     }

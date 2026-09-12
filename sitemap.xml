@@ -3,58 +3,58 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://latveneer.lv/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/" />
     <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/" />
   </url>
   <url>
     <loc>https://latveneer.lv/lv/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/" />
     <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/" />
   </url>
   <url>
-    <loc>https://latveneer.lv/product.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/product.html" />
-    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product.html" />
+    <loc>https://latveneer.lv/product</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/product" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product" />
   </url>
   <url>
-    <loc>https://latveneer.lv/lv/produkts.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/product.html" />
-    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product.html" />
+    <loc>https://latveneer.lv/lv/produkts</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/product" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product" />
   </url>
   <url>
-    <loc>https://latveneer.lv/procurement.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement.html" />
-    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement.html" />
+    <loc>https://latveneer.lv/procurement</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement" />
   </url>
   <url>
-    <loc>https://latveneer.lv/lv/iepirksana.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement.html" />
-    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement.html" />
+    <loc>https://latveneer.lv/lv/iepirksana</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement" />
   </url>
   <url>
-    <loc>https://latveneer.lv/news.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/news.html" />
-    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news.html" />
+    <loc>https://latveneer.lv/news</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/news" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news" />
   </url>
   <url>
-    <loc>https://latveneer.lv/lv/jaunumi.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/news.html" />
-    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news.html" />
+    <loc>https://latveneer.lv/lv/jaunumi</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/news" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news" />
   </url>
 </urlset>
