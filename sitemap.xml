@@ -1,21 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://latveneer.lv/</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/" />
   </url>
   <url>
-    <loc>https://latveneer.lv/product.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://latveneer.lv/lv/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/" />
   </url>
   <url>
-    <loc>https://latveneer.lv/procurement.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://latveneer.lv/product</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/product" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product" />
+  </url>
+  <url>
+    <loc>https://latveneer.lv/lv/produkts</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/product" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/produkts" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/product" />
+  </url>
+  <url>
+    <loc>https://latveneer.lv/procurement</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement" />
+  </url>
+  <url>
+    <loc>https://latveneer.lv/lv/iepirksana</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/procurement" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/iepirksana" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/procurement" />
+  </url>
+  <url>
+    <loc>https://latveneer.lv/news</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/news" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news" />
+  </url>
+  <url>
+    <loc>https://latveneer.lv/lv/jaunumi</loc>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://latveneer.lv/news" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://latveneer.lv/lv/jaunumi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://latveneer.lv/news" />
   </url>
 </urlset>

@@ -1,0 +1,18 @@
+# latveneer.lv — all crawlers welcome
+User-agent: *
+Allow: /
+
+# AI crawlers explicitly welcome (facts about our veneer are meant to be found)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://latveneer.lv/sitemap.xml
