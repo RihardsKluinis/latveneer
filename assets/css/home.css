@@ -19,9 +19,16 @@
       --green: #273e1c;        /* the one dark accent */
       --ink: #232b1d;
       --line: rgba(39, 62, 28, 0.16);
+      --mustard: #e2a23b;      /* catalogue ochre accent (2026) */
+      --brick: #a03d24;        /* catalogue kicker red */
+      --bark: #7c2d16;         /* headline highlight */
       --display: "Cabinet Grotesk", "Inter Tight", system-ui, sans-serif;
+      --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       --body: "Inter Tight", system-ui, sans-serif;
     }
+
+    .accent-bark { color: var(--bark); }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -127,14 +134,17 @@
       width: 58vw; max-width: 780px; color: var(--green); opacity: 0.14;
       pointer-events: none;
     }
+    .hero-logo { width: min(260px, 62vw); height: auto; margin-bottom: 1.8rem; }
     .hero .kicker {
-      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.22em;
-      text-transform: uppercase; color: var(--green); margin-bottom: 1.4rem;
+      font-family: var(--mono); font-size: 0.82rem; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--brick);
+      margin-bottom: 1.4rem;
     }
     .hero h1 {
-      font-size: clamp(3rem, 8.6vw, 7rem); font-weight: 800;
-      line-height: 0.98; letter-spacing: -0.02em; color: var(--green);
-      max-width: 11em;
+      font-family: var(--serif);
+      font-size: clamp(2.7rem, 7.6vw, 6.2rem); font-weight: 700;
+      line-height: 1.02; letter-spacing: -0.01em; color: var(--green);
+      max-width: 12em;
     }
     .hero p.lead {
       margin-top: 1.6rem; max-width: 34em; font-size: 1.08rem; opacity: 0.9;
@@ -224,12 +234,14 @@
     /* ---------- sections ---------- */
     section.block { padding: 6.5rem 0; }
     .block .kicker {
-      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.22em;
-      text-transform: uppercase; color: var(--green); margin-bottom: 1rem;
+      font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--brick);
+      margin-bottom: 1rem;
     }
     .block h2 {
-      font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800;
-      letter-spacing: -0.015em; line-height: 1.05; color: var(--green);
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 4.3vw, 3.1rem); font-weight: 700;
+      letter-spacing: -0.005em; line-height: 1.08; color: var(--green);
       max-width: 16em;
     }
     .block p.copy { margin-top: 1.2rem; max-width: 38em; opacity: 0.9; }
@@ -244,10 +256,10 @@
       background: var(--ivory); padding: 1.6rem;
     }
     .spec h3 {
-      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--green); margin-bottom: 0.7rem;
+      font-family: var(--mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--green); margin-bottom: 0.7rem; opacity: 0.85;
     }
-    .spec .big { font-family: var(--display); font-weight: 700; font-size: 1.25rem; line-height: 1.45; }
+    .spec .big { font-family: var(--serif); font-weight: 700; font-size: 1.25rem; line-height: 1.45; }
     .photo-row {
       margin-top: 3.4rem; display: grid; gap: 1.2rem;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -255,7 +267,35 @@
     .photo-row figure { position: relative; overflow: hidden; background: var(--oat); }
     .photo-row img { width: 100%; height: 320px; object-fit: cover; }
     .photo-row figcaption {
-      font-size: 0.82rem; letter-spacing: 0.06em; padding: 0.6rem 0.2rem; opacity: 0.75;
+      font-size: 0.85rem; letter-spacing: 0.04em; padding: 0.7rem 1rem;
+      background: var(--oat);
+    }
+    .photo-row figcaption .n {
+      font-family: var(--mono); font-weight: 600; font-size: 0.72rem;
+      letter-spacing: 0.12em; color: var(--brick); margin-right: 0.5rem;
+    }
+
+    /* ---------- two peels, two products ---------- */
+    .peel { background: var(--sage-soft); }
+    .peel-grid {
+      margin-top: 3rem; display: grid; gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .peel-card { background: var(--ivory); border: 1px solid var(--line); display: flex; flex-direction: column; }
+    .peel-card img { width: 100%; height: 240px; object-fit: cover; }
+    .peel-card .pad { padding: 1.5rem 1.6rem 1.8rem; }
+    .peel-card .tag {
+      display: inline-block; font-family: var(--mono); font-size: 0.66rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; padding: 0.3rem 0.6rem;
+      border-radius: 3px; background: var(--green); color: var(--ivory);
+    }
+    .peel-card .tag.new { background: var(--mustard); color: var(--green); }
+    .peel-card h3 { font-family: var(--serif); font-weight: 700; font-size: 1.35rem; color: var(--green); margin-top: 0.8rem; }
+    .peel-card ul { list-style: none; margin-top: 0.9rem; display: grid; gap: 0.5rem; font-size: 0.95rem; }
+    .peel-card li strong {
+      font-family: var(--mono); font-weight: 500; font-size: 0.7rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--green); opacity: 0.7;
+      display: inline-block; min-width: 6.4rem;
     }
 
     .mill { background: var(--oat); }
@@ -272,8 +312,8 @@
       font-size: 0.95rem;
     }
     .contact-grid h3 {
-      font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
-      opacity: 0.65; margin-bottom: 0.5rem; font-family: var(--body); font-weight: 600;
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      opacity: 0.65; margin-bottom: 0.5rem; font-family: var(--mono); font-weight: 500;
     }
     .contact-grid a { color: var(--ivory); }
     .contact .btn { background: var(--ivory); color: var(--green); margin-top: 2.5rem; }
@@ -281,7 +321,7 @@
 
     footer {
       background: var(--green); color: var(--ivory); padding: 2.4rem 0 2.6rem;
-      border-top: 1px solid rgba(245, 241, 232, 0.18);
+      border-top: 4px solid var(--mustard);
     }
     .footer-in { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .footer-in img { height: 2rem; width: auto; display: block; filter: brightness(0) invert(1); opacity: 0.9; } /* dark-green PNG -> ivory on the green footer */
@@ -311,12 +351,12 @@
       padding: 2.2rem; border-radius: 4px; position: relative;
     }
     .modal h3 {
-      font-size: 1.7rem; font-weight: 800; color: var(--green); letter-spacing: -0.01em;
+      font-family: var(--serif); font-size: 1.7rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em;
     }
     .modal p.sub { font-size: 0.92rem; opacity: 0.8; margin-top: 0.4rem; }
     .modal form { margin-top: 1.6rem; display: grid; gap: 1rem; }
     .field label {
-      display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
+      display: block; font-family: var(--mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
       text-transform: uppercase; color: var(--green); margin-bottom: 0.35rem;
     }
     .field input, .field select, .field textarea {

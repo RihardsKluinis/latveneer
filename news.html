@@ -57,6 +57,9 @@
 
   <link rel="preload" href="assets/fonts/CabinetGrotesk-Extrabold.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link href="assets/css/veneer.css" rel="stylesheet" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -85,7 +88,7 @@
         <a href="/" class="hide-m">Home</a>
         <a href="/product" class="hide-m">Product</a>
         <a href="/procurement" class="hide-m">Log buying</a>
-        <a href="/news" class="active hide-m">News</a>
+        <a href="/about" class="hide-m">About</a>
         <a href="/#contact" class="hide-m">Contact</a>
         <details class="mobnav">
           <summary aria-label="Open menu">Menu</summary>
@@ -93,7 +96,7 @@
             <a href="/">Home</a>
             <a href="/product">Product</a>
             <a href="/procurement">Log buying</a>
-            <a href="/news">News</a>
+            <a href="/about">About</a>
             <a href="/#contact">Contact</a>
           </div>
         </details>
@@ -108,7 +111,7 @@
     <div class="wrap">
       <p class="kicker">Company news</p>
       <h1>From empty hall to working mill.</h1>
-      <p class="lead">From signing the contract for our facility to full pallets of <a href="/product">rotary-cut birch veneer</a> leaving the gate — the story of our mill, month by month.</p>
+      <p class="lead">From signing the contract for our facility to full pallets of <a href="/product">rotary-cut birch veneer</a> leaving the gate — the story of our mill, month by month. The short version, with a timeline, is on the <a href="/about">about page</a>.</p>
     </div>
   </section>
 
@@ -275,6 +278,7 @@
           <a href="/product">Birch veneer — sizes &amp; grades</a>
           <a href="/procurement">We buy birch roundwood</a>
           <a href="/lv/iepirksana" lang="lv">Bērza apaļkoku iepirkšana</a>
+          <a href="/about">About the mill</a>
           <a href="/news">News from the mill</a>
         </nav>
         <address>
@@ -316,9 +320,10 @@
             <label for="fSize">Sheet size</label>
             <select id="fSize" name="size">
               <option>1300 × 1300 mm</option>
+              <option>1300 × 1600 mm</option>
               <option>1300 × 2600 mm</option>
+              <option>1600 × 1300 mm</option>
               <option>1600 × 1600 mm</option>
-              <option>1600 × 3100 mm</option>
             </select>
           </div>
           <div class="field">

@@ -33,7 +33,7 @@
         "url": "https://latveneer.lv/",
         "logo": "https://latveneer.lv/images/LogoGoogle.png",
         "image": "https://latveneer.lv/images/og.jpg",
-        "description": "Birch veneer manufacturer in Jēkabpils, Latvia. FSC®-certified, rotary-cut (spindleless-peeled) core birch veneer for plywood and moulded-furniture makers across Europe. Buys birch roundwood locally.",
+        "description": "Birch veneer manufacturer in Jēkabpils, Latvia. FSC®-certified, rotary-cut birch veneer — spindleless-peeled core veneer and spindle-peeled face veneer — for plywood and moulded-furniture makers across Europe. Buys birch roundwood locally.",
         "email": "info@latveneer.lv",
         "telephone": "+37128298028",
         "vatID": "LV40203561748",
@@ -63,6 +63,12 @@
 
   <link rel="preload" href="assets/fonts/CabinetGrotesk-Extrabold.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- Catalogue-look display faces (2026): serif headlines + mono kickers.
+       TODO: self-host like Cabinet/Inter Tight above (sandbox couldn't reach
+       fonts.gstatic.com to download the woff2s; graceful fallbacks are set). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link href="assets/css/home.css" rel="stylesheet" />
 </head>
 <body>
@@ -91,7 +97,7 @@
         <a href="/" class="hide-m">Home</a>
         <a href="/product" class="hide-m">Product</a>
         <a href="/procurement" class="hide-m">Log buying</a>
-        <a href="/news" class="hide-m">News</a>
+        <a href="/about" class="hide-m">About</a>
         <a href="#contact" class="hide-m">Contact</a>
         <details class="mobnav">
           <summary aria-label="Open menu">Menu</summary>
@@ -99,7 +105,7 @@
             <a href="/">Home</a>
             <a href="/product">Product</a>
             <a href="/procurement">Log buying</a>
-            <a href="/news">News</a>
+            <a href="/about">About</a>
             <a href="#contact">Contact</a>
           </div>
         </details>
@@ -113,8 +119,9 @@
   <section class="hero">
     <svg class="hero-rings" viewBox="0 0 48 48" aria-hidden="true"><use href="#rings" /></svg>
     <div class="wrap">
+      <img class="hero-logo" src="images/LogoFull.png?v=1" alt="LatVeneer" width="361" height="203" />
       <p class="kicker">Jēkabpils, Latvia</p>
-      <h1>Latvian Birch. Peeled to Precision.</h1>
+      <h1>Latvian Birch. <span class="accent-bark">Peeled to&nbsp;Precision.</span></h1>
       <p class="lead">
         LatVeneer is a Latvian birch veneer manufacturer supplying traceable, FSC®-certified rotary-cut veneer to plywood and moulded-furniture manufacturers across Europe — with peeling, drying, sorting and palletising all carried out at a single production facility.
       </p>
@@ -133,11 +140,11 @@
       <span>FSC®-certified birch veneer</span><span class="dot">●</span>
       <span>Traceable from forest to pallet</span><span class="dot">●</span>
       <span>Grown in Latvia</span><span class="dot">●</span>
-      <span>Spindleless-peeled core veneer</span><span class="dot">●</span>
+      <span>Spindleless &amp; spindle peeled</span><span class="dot">●</span>
       <span>FSC®-certified birch veneer</span><span class="dot">●</span>
       <span>Traceable from forest to pallet</span><span class="dot">●</span>
       <span>Grown in Latvia</span><span class="dot">●</span>
-      <span>Spindleless-peeled core veneer</span><span class="dot">●</span>
+      <span>Spindleless &amp; spindle peeled</span><span class="dot">●</span>
     </div>
   </div>
 
@@ -167,7 +174,7 @@
       <p class="kicker">The sheet</p>
       <h2>Core birch veneer, squared to the millimetre.</h2>
       <p class="copy">
-        We manufacture spindleless-peeled birch core veneer on two production lines — 1300 mm and 1600 mm — for plywood and moulded-plywood furniture manufacturers across Europe. Two more lines are currently being installed.
+        We manufacture rotary-cut birch veneer on three peeling lines — two spindleless lines (1300 mm and 1600 mm) for core veneer and, commissioned in September 2026, a spindle lathe with an adjustable peeling length of 1300–1600 mm — for plywood and moulded-plywood furniture manufacturers across Europe.
       </p>
       <p class="copy">
         As a birch veneer supplier to the plywood industry, we serve manufacturers across Europe — the Baltic states, Poland, Finland and Germany are all within reach by road or through the port of Riga, about 140 km from the mill.
@@ -175,7 +182,7 @@
       <div class="spec-grid">
         <div class="spec">
           <h3>Sizes</h3>
-          <div class="big">1300 × 1300 · 1300 × 1600<br />1300 × 2600 · 1600 × 1300<br />1600 × 1600 · 1600 × 3100&nbsp;mm</div>
+          <div class="big">1300 × 1300 · 1300 × 1600<br />1300 × 2600 · 1600 × 1300<br />1600 × 1600&nbsp;mm</div>
         </div>
         <div class="spec">
           <h3>Thickness</h3>
@@ -187,7 +194,7 @@
         </div>
         <div class="spec">
           <h3>Format</h3>
-          <div class="big">Spindleless-peeled core veneer</div>
+          <div class="big">Core veneer (spindleless)<br />Face veneer (spindle)</div>
         </div>
         <div class="spec">
           <h3>Species</h3>
@@ -203,18 +210,58 @@
       </p>
       <div class="photo-row">
         <figure>
+          <img src="images/opt/img08.webp" alt="Birch logs entering the peeling line" loading="lazy" width="900" height="675" />
+          <figcaption><span class="n">01</span>Birch logs ready for peeling</figcaption>
+        </figure>
+        <figure>
           <img src="images/opt/img09.webp" alt="Tall stacks of rotary-cut birch veneer sheets in the mill" loading="lazy" width="1200" height="1600" />
-          <figcaption>Freshly peeled veneer sheets</figcaption>
+          <figcaption><span class="n">02</span>Freshly peeled veneer sheets</figcaption>
         </figure>
         <figure>
           <img src="images/opt/img07.webp" alt="Strapped pallets of finished birch veneer" loading="lazy" width="900" height="638" />
-          <figcaption>Ready for transport</figcaption>
-        </figure>
-        <figure>
-          <img src="images/opt/img08.webp" alt="Birch logs entering the peeling line" loading="lazy" width="900" height="675" />
-          <figcaption>Birch logs ready for peeling</figcaption>
+          <figcaption><span class="n">03</span>Ready for transport</figcaption>
         </figure>
       </div>
+    </div>
+  </section>
+
+  <!-- two peels, two products -->
+  <section class="block peel" id="peel">
+    <div class="wrap">
+      <p class="kicker">Two methods, two surfaces</p>
+      <h2>Choose the peel that fits the ply.</h2>
+      <p class="copy">
+        Both use the same Latvian silver birch, the same dryer, grading and tolerances. What changes is how the log is held — and so what the sheet surface looks like.
+      </p>
+      <div class="peel-grid">
+        <article class="peel-card">
+          <img src="images/opt/surface-mesh.webp" alt="Spindleless-peeled birch surface with a light roller-mesh texture" loading="lazy" width="1200" height="796" />
+          <div class="pad">
+            <span class="tag">Core veneer</span>
+            <h3>Spindleless-peeled, built for core plies.</h3>
+            <ul>
+              <li><strong>Surface</strong> Light roller-mesh texture</li>
+              <li><strong>Lines</strong> 1 &amp; 2 — 1300 and 1600 mm</li>
+              <li><strong>Best for</strong> Core plies in plywood and moulded plywood</li>
+            </ul>
+          </div>
+        </article>
+        <article class="peel-card">
+          <img src="images/opt/surface-clean.webp" alt="Spindle-peeled birch surface — smooth, with no roller marks" loading="lazy" width="1200" height="796" />
+          <div class="pad">
+            <span class="tag new">Face veneer · New</span>
+            <h3>Spindle-peeled, clean enough for the face.</h3>
+            <ul>
+              <li><strong>Surface</strong> Smooth — no roller marks</li>
+              <li><strong>Line</strong> 3 — adjustable 1300–1600 mm</li>
+              <li><strong>Best for</strong> Face plies</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="copy" style="margin-top:2rem">
+        Sizes, grades and the full specification are on the <a href="/product">product page</a>.
+      </p>
     </div>
   </section>
 
@@ -243,11 +290,10 @@
       <h2>A new mill, built with purpose.</h2>
       <p class="copy">LatVeneer was founded in 2025. In January, we signed the agreement for our facility in the Jēkabpils industrial park. Soon after, the machinery began arriving by sea — sixteen 40-foot containers filled with peeling, drying and sorting equipment.</p>
       <p class="copy">By September, the first finished pallets were leaving the factory, and that same month we received our FSC® chain-of-custody certificate.</p>
-      <p class="copy">Our product is rotary-cut, spindleless-peeled core birch veneer made from Latvian silver birch. Production runs on two peeling lines — 1300 mm and 1600 mm — supported by a 32-metre, four-belt dryer fired with woodchips generated in our own production process. We maintain a thickness tolerance of ±0.05 mm.</p>
+      <p class="copy">Our product is rotary-cut birch veneer made from Latvian silver birch — core veneer from two spindleless lines (1300 mm and 1600 mm) and, since September 2026, face veneer from a spindle lathe with an adjustable peeling length of 1300–1600 mm. Production is supported by a 32-metre, four-belt dryer fired with woodchips generated in our own production process. We maintain a thickness tolerance of ±0.05 mm.</p>
       <p class="copy">Every pallet is individually traceable. We operate both the FSC® Percentage and Transfer systems and are developing EUDR due-diligence (DDS) reporting alongside them.</p>
       <p class="copy">In 2026, the Latvian State Revenue Service awarded our company its highest A rating for 2025.</p>
-      <p class="copy">Two further lines are currently being installed.</p>
-      <p class="copy">The story so far — from an empty hall to full production — is documented month by month in our <a href="/news">news diary</a>, while the full specification is available on the <a href="/product">product page</a>.</p>
+      <p class="copy">The story so far — from an empty hall to full production — is told on our <a href="/about">about page</a> and documented month by month in our <a href="/news">news diary</a>, while the full specification is available on the <a href="/product">product page</a>.</p>
       <p class="copy">Forest owners can find our log-buying terms in <a href="/procurement">English</a> and <a href="/lv/iepirksana">Latvian</a>.</p>
     </div>
   </section>
@@ -303,6 +349,7 @@
           <a href="/product">Birch veneer — sizes &amp; grades</a>
           <a href="/procurement">We buy birch roundwood</a>
           <a href="/lv/iepirksana" lang="lv">Bērza apaļkoku iepirkšana</a>
+          <a href="/about">About the mill</a>
           <a href="/news">News from the mill</a>
         </nav>
         <address>
@@ -350,9 +397,10 @@
             <label for="fSize">Sheet size</label>
             <select id="fSize" name="size">
               <option>1300 × 1300 mm</option>
+              <option>1300 × 1600 mm</option>
               <option>1300 × 2600 mm</option>
+              <option>1600 × 1300 mm</option>
               <option>1600 × 1600 mm</option>
-              <option>1600 × 3100 mm</option>
             </select>
           </div>
           <div class="field">

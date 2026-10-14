@@ -1,5 +1,14 @@
 # LatVeneer site — dev notes
 
+> **Oct 2026 restyle (catalogue look):** serif display headlines (Source Serif 4)
+> + mono kickers/labels (IBM Plex Mono) on top of the existing palette, with
+> catalogue accents `--mustard #e2a23b`, `--brick #a03d24`, `--bark #7c2d16`
+> (tokens in both CSS files — keep in sync). The two new families load from
+> Google Fonts via `<link>` for now; self-host them like Cabinet/Inter Tight
+> when convenient. Full logo lives at `images/LogoFull.png` (hero + about).
+> New `/about` page (story carousel); News stays as the archive and left the
+> main nav. 1600×3100 removed from all size lists. LV pages not yet updated.
+
 Static site, no build step. Redesigned front page + subpages (Sept 2026):
 ivory/sage/oat palette with dark-green accent `#273e1c`, Cabinet Grotesk (Fontshare)
 + Inter Tight (Google Fonts), growth-ring logo (`images/LogoNoText.png` is the
